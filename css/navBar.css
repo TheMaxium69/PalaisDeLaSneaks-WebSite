@@ -1,0 +1,14 @@
+.navbar-link:not(.is-arrowless)::after {
+    border-color: red;
+}
+
+
+.button.is-primary {
+    background-color: red;
+}
+
+
+.navbar-item a:hover {
+    color: red;
+    text-decoration: none;
+}
