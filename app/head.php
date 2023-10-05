@@ -6,7 +6,12 @@ function head($page)
     //Page
     if ($page == 1) {
         $title = "Exemple";
-    } else {
+    }
+    else if ($page == 2) {
+
+        $title = "Home";
+
+    }else {
         $title = "404 | Exemple";
     }
 
