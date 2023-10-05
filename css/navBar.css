@@ -1,7 +1,6 @@
-* {
+.naviguation {
     font-weight: bold;
 }
-
 /* FLECHE DES SNEAKERS */
 .navbar-link:not(.is-arrowless)::after {
     border-color: red;
@@ -19,3 +18,4 @@
     color: red;
     text-decoration: none;
 }
+
