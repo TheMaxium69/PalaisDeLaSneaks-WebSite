@@ -15,8 +15,6 @@ $produitAll = product();
 
 foreach ($produitAll as $productCompresse) {
 
-    foreach ($productCompresse as $product){
-
     var_dump($product);
 
 }
