@@ -1,6 +1,18 @@
 .naviguation {
     font-weight: bold;
 }
+
+.logo a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+/* Item de nav */
+.navbar-item a:hover {
+    color: red;
+    text-decoration: none;
+}
+
 /* FLECHE DES SNEAKERS */
 .navbar-link:not(.is-arrowless)::after {
     border-color: red;
@@ -9,13 +21,5 @@
 /* BOUTON SE CONNECTER */
 .button.is-primary {
     background-color: red;
-}
-
-
-
-
-.navbar-item a:hover {
-    color: red;
-    text-decoration: none;
 }
 
