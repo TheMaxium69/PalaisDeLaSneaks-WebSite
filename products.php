@@ -5,7 +5,6 @@
 
     <p>Exemple</p>
 
-    <i class="fas fa-folder"></i>
 
 </main>
 
