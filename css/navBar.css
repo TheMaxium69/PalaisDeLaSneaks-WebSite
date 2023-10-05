@@ -1,11 +1,18 @@
+* {
+    font-weight: bold;
+}
+
+/* FLECHE DES SNEAKERS */
 .navbar-link:not(.is-arrowless)::after {
     border-color: red;
 }
 
-
+/* BOUTON SE CONNECTER */
 .button.is-primary {
     background-color: red;
 }
+
+
 
 
 .navbar-item a:hover {
