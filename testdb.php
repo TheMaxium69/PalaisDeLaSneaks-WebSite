@@ -13,8 +13,9 @@ require_once 'api/whmcs/connect.php';
 
 $produitAll = product();
 
+foreach ($produitAll as $productCompresse) {
 
-foreach ($produitAll['product'] as $product) {
+    foreach ($productCompresse as $product){
 
     var_dump($product);
 
