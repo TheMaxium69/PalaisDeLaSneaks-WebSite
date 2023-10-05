@@ -13,13 +13,11 @@ require_once 'api/whmcs/connect.php';
 
 $produitAll = product();
 
-foreach ($produitAll as $productCompresse) {
 
-    foreach ($productCompresse as $product){
+foreach ($produitAll['product'] as $product) {
 
-       var_dump($product);
+    var_dump($product);
 
-    }
 }
 
 ?>
