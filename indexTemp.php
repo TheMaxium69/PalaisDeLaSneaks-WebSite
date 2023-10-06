@@ -30,7 +30,7 @@ $productAll = product();
             <?php
 
             $products = $productAll['product'];
-            for ($i = 1; $i <= 10; $i++) {
+            for ($i = 0; $i <= 9; $i++) {
             ?>
 
             <div class="card" style="width: 18rem;">
