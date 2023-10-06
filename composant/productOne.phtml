@@ -16,6 +16,7 @@ foreach ($productAll['product'] as $product) {
 
     if ($product['pid'] == $id){ ?>
 
+            <?php var_dump($product['customfields']); ?>
 
         <p>Le nom : <?= $product['name'] ?></p>
 
