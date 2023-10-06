@@ -1,0 +1,43 @@
+<?php
+require_once 'panel/init.php';
+require_once 'api/whmcs/connect.php';
+
+$productAll = product();
+
+?>
+
+
+<main>
+
+
+<?php
+foreach ($productAll['product'] as $product) {
+
+
+    if ($product['pid'] == $id){ ?>
+
+
+        <p>Le nom : <?= $product['name'] ?></p>
+
+        <p>description : <?= $product['description'] ?></p>
+
+    <?php }
+
+
+} ?>
+
+
+
+<h2> <?php echo $id ?></h2>
+
+
+
+
+
+
+
+
+
+
+
+</main>
