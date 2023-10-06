@@ -44,17 +44,11 @@ i {
     transform: translate3d(0, 3px, 0)scale(1.1);
 }
 
-
-
-
-/***********
-    NAVBAR
- ***********/
-
-.navbar-item.is-mega {
-    position: static;
+h3 {
+    font-weight: bold;
 }
-.navbar-item.is-mega .is-mega-menu-title {
-    margin-bottom: 0;
-    padding: 0.375rem 1rem;
+
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
 }

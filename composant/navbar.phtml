@@ -1,4 +1,6 @@
-<nav>
+<div style="height: 70px"></div>
+
+<nav class="fixed-top">
     <div class="row">
 
         <div class="logo col-3">Le Palais De La Sneaks</div>
@@ -17,8 +19,23 @@
             <li><a href="actu.php">Actualité</a></li>
         </ul>
         <ul class="col-2 connexion">
-        <button type="button" class="btn btn-danger">Se connecter</button>
+        <a href="panel/clientarea.php" type="button" class="btn btn-danger">Se connecter</a>
         </ul>
       
     </div>
 </nav>
+
+<style>
+
+    nav{
+        border: 2px solid rgba(0, 0, 0, 0.30);
+        background: #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    nav ul{
+        margin-bottom: unset;
+    }
+
+
+</style>
