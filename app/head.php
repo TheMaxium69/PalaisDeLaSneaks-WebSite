@@ -5,14 +5,26 @@ function head($page)
 
     //Page
     if ($page == 1) {
-        $title = "Exemple";
+        $title = "Palais de la Sneaks";
     }
     else if ($page == 2) {
 
-        $title = "Home";
+        $title = "Palais de la Sneaks";
 
-    }else {
-        $title = "404 | Exemple";
+    } else if ($page == 3) {
+
+        $title = "Nettoyage | Palais de la Sneaks";
+
+    } else if ($page == 4) {
+
+        $title = "Actualités | Palais de la Sneaks";
+
+    } else if ($page == 5) {
+
+        $title = "Therms | Palais de la Sneaks";
+
+    } else {
+        $title = "404 | Palais de la Sneaks";
     }
 
 
