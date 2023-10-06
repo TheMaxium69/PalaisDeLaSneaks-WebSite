@@ -1,76 +1,24 @@
-<nav class="navbar naviguation">
-    <div class="navbar-brand logo">
-        <!-- LOGO -->
-        <a class="navbar-item" href="index.php">
-            <img src="img/LogoSneaks.PNG" width="30" class="d-inline-block align-top mx-2" alt="">
-            Le Palais De La Sneaks
-        </a>
-        <!-- / LOGO -->
+<nav>
+    <div class="row">
 
-        <!-- MENU BURGER -->
-        <div class="navbar-burger burger" data-target="navMenubd-example">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <!-- / MENU BURGER -->
+        <div class="logo col-3">Le Palais De La Sneaks</div>
+        <ul class="col-6">
+            <li><a href="/">Accueil</a></li>
+            <li>
+                <a href="/">Sneakers</a>
+                <ul>
+                    <li><a href=""></a>Adidas</li>
+                    <li><a href=""></a>Nike</li>
+                    <li><a href=""></a>Jordan</li>
+                    <li><a href=""></a>Yeezy</li>
+                </ul>
+            </li>
+            <li><a href="/">Nettoyage</a></li>
+            <li><a href="/">Actualité</a></li>
+        </ul>
+        <ul class="col-2 connexion">
+        <button type="button" class="btn btn-danger">Se connecter</button>
+        </ul>
+      
     </div>
-
-    <div id="navMenubd-example" class="navbar-menu" style="justify-content: center;">
-        <div class="navbar col-9 justify-content-center">
-            <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-item mx-4 " href="index.php">
-                    Accueil
-                </a>
-                <!-- LISTE DEROULANTE -->
-                <a class="navbar-link mx-4" href="products.php">
-                    Sneakers
-                </a>
-                <div class="navbar-dropdown ">
-                    <a class="navbar-item " href="products.php">
-                        Nike
-                    </a>
-                    <a class="navbar-item " href="products.php">
-                        Jordan
-                    </a>
-                    <a class="navbar-item " href="products.php">
-                        Adidas
-                    </a>
-                    <a class="navbar-item " href="products.php">
-                        Yeezy
-                    </a>
-                </div>
-                <!-- / LISTE DEROULANTE -->
-
-                <!-- NETTOYAGE -->
-                <a class="navbar-item mx-4" href="nettoyage.php">
-                    Nettoyage
-                </a>
-
-                <!-- ACTUALITE -->
-                <a class="navbar-item mx-4" href="actu.php">
-                    Actualités
-                </a>
-            </div>
-        </div>
-
-        <!-- PANIER -->
-
-    </div>
-    <!-- BOUTON SE CONNECTER -->
-    <div class="navbar justify-content-end  col-3 p-2">
-        <a class="mx-2 pt-1" href="panel/cart.php?a=view">
-            <img src="img/panier.png" width="30" class="" alt="">
-        </a>
-        <p class="control">
-            <a class="button is-primary" href="panel/index.php?rp=/login">
-                <img src="img/login.png" class="mx-2" width="20" alt="">
-                <span>Se connecter</span>
-            </a>
-        </p>
-    </div>
-
 </nav>
-<script src="javascript/navbar.js"></script>
-
-<!-- Image and text -->

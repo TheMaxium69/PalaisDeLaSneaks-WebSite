@@ -9,7 +9,7 @@
     </div>
 </main>
 
-<h1>Nouveauté</h1>
+<h3 class="text-center m-3">Nouveauté</h3>
 
 <div class="row justify-content-around px-5">
     <div class="card" style="width: 18rem;">
