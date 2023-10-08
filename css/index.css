@@ -3,9 +3,9 @@
  ***********/
 
 #header {
-    background-image: url("https://edgard-lelegant.com/wp-content/uploads/2019/08/lefteris-kallergis-j1GiPlvSGWI-unsplash-scaled.jpg");
+    background-image: url(../assets/barriere.jpg);
     background-size: cover;
-    background-position: center 50%;
+    background-position: center 70%;
     height: 400px;
     border-radius: 25px;
     margin: 38px;
@@ -31,8 +31,16 @@
 
 .card {
     border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.30);
+    border: 1px solid rgba(0, 0, 0, 0.10);
     background: #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 8px 8px 12px #aaa;
     margin-bottom: 20px;
+}
+
+.nettoyage {
+    background-image: url(../assets/nettoyage.png);
+    background-size: cover;
+    background-position: center 70%;
+    height: 600px;
+    border-radius: 15px;
 }

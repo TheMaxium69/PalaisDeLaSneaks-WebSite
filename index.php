@@ -104,7 +104,20 @@
 
 </section>
 
-<div style="height: 100000px"></div>
+<article>
+    <!-- NETTOYAGE -->
+    <div class="row d-flex justify-content-center mt-5">
+        <div class="col-6 nettoyage">
+        </div>
+        <!-- / NETTOYAGE -->
+
+        <!-- RESEAUX SOCIAUX -->
+        <div class="col-5">
+        <p>d,amokfnaôifna</p>
+        </div>
+        <!-- / RESEAUX SOCIAUX -->
+    </div>
+</article>
 
 </main>
 
