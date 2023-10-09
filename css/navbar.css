@@ -20,7 +20,6 @@
 
 .panier {
     color: black;
-    width: 100px;
 }
 
 
@@ -281,7 +280,7 @@
 }
 
 .panierMobile {
-    position: absolute;
+    position: fixed;
     top: 38px;
     right: 63px;
     z-index: 4;
