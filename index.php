@@ -45,33 +45,18 @@ require_once 'api/whmcs/connect.php'; $productAll = product();
         <!-- NETTOYAGE -->
         <article>
             <div class="row d-flex justify-content-center mt-5">
-                <h3 class="text-center my-5">On vous propose</h3>
+                <h3 class="text-center my-5">Nettoyage de vos sneakers</h3>
                 <div class="col-6 nettoyage">
                 </div>
                 
                 <!-- FORMULES DE NETTOAYGE  -->
-                <div class="col-5">
-                    <h3 class="text-center mt-5">Nettoyage de vos sneakers</h3>
-                    <p class="text-center mt-3">Découvez nos formule pour vos sneakers :</p>
-                    <div class="list-group w-75 mx-auto">
-                        <a href="#" class="list-group-item list-group-item-action item-nettoyage" aria-current="true">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Clean Prenium</h5>
-                            </div>
-                            <small>And some small print.</small>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Clean Medium</h5>
-                            </div>
-                            <small class="text-muted">And some muted small print.</small>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Clean Standard</h5>
-                            </div>
-                            <small class="text-muted">And some muted small print.</small>
-                        </a>
+                <div class="col-5 d-flex flex-column justify-content-center">
+                    <h4 class="text-center mt-3">Découvez nos formules pour vos sneakers :</h4>
+                    <p class="my-5 w-75 mx-auto">Nos services de nettoyage de baskets sont conçus pour répondre aux besoins de tous les amateurs de sneakers. 
+                        Nous utilisons des techniques de nettoyage avancées et des produits de haute qualité pour éliminer la saleté, 
+                        les taches et les odeurs de vos baskets, tout en préservant leur couleur et leur texture d'origine.</p>
+                    <div class="d-flex justify-content-center mx-auto">
+                        <button class="custom-btn btn-5"><span>Nos formules</span></button>
                     </div>
                 </div>
                 <!-- / FORMULE DE NETTOYAGE -->
@@ -80,51 +65,43 @@ require_once 'api/whmcs/connect.php'; $productAll = product();
         <!-- / NETTOYAGE -->
 
         <!-- RESEAUX SOCIAUX -->
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mb-5">
             <h3 class="text-center my-5">Suivez nous ! </h3>
             <div class="card col-4">
                     <div class="card-body">
-                        <h3>
+                        <h3 class="d-flex justify-content-center">
                             <a class="navbar-brand" href="#">
                             <i class="fa-brands fa-instagram"></i>
                             Instagram
                             </a>
                         </h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text my-4">Rejoignez-nous sur Instagram pour découvrir des contenus exclusifs et inspirants au quotidien !</p>
                     <div class="d-flex justify-content-center">
-                        <a href="#" class="btn btn-primary">Suivre</a>
+                    <button class="custom-btn btn-2">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>Suivre</span>
+                    </button>
                     </div>
                 </div>
             </div>
-            <div class="card col-4">
+            <div class="card col-4 ms-4">
                 <div class="card-body">
-                    <h3>
+                    <h3 class="d-flex justify-content-center">
                         <a class="navbar-brand" href="#">
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
                         TikTok
                         </a>
                     </h3>
+                    <p class="card-text my-4">Soyez au cœur de l'actualité en nous suivant sur TikTok, pour des informations de première main !</p>
                     <div class="d-flex justify-content-center">
-                        <a href="#" class="btn btn-primary">Suivre</a>
+                    <button class="custom-btn btn-2">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>Suivre</span>
+                    </button>
                     </div>
                 </div>
             </div>
-            <!-- Facebook -->
-            <i class="fab fa-facebook-f fa-2x" style="color: #3b5998;"></i>
-
-            <!-- Twitter -->
-            <i class="fab fa-twitter fa-2x" style="color: #55acee;"></i>
-
-            <!-- Google -->
-            <i class="fab fa-google fa-2x" style="color: #dd4b39;"></i>
-
-            <!-- Instagram -->
-            <i class="fab fa-instagram fa-2x" style="color: #ac2bac;"></i>
-
-
-            <!-- Whatsapp -->
-            <i class="fab fa-whatsapp fa-2x" style="color: #25d366;"></i>
-        </div>
+            
         <!-- / RESEAUX SOCIAUX -->
 
     </main>

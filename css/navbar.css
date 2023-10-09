@@ -20,11 +20,10 @@
 
 .panier {
     color: black;
+    width: 100px;
 }
 
-.panier:hover{
-    color: red;
-}
+
 
 /***********
     PC
