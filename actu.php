@@ -1,11 +1,18 @@
-<?php include "app/app.php"; $page = 4; head($page); ?>
-<body> <header> <?php navbar($page); ?> </header>
+<?php include "app/app.php";
+$page = 4;
+head($page); ?>
 
-<main>
+<body>
+    <header> <?php navbar($page); ?> </header>
 
-    <p>Actualité</p>
+    <main>
 
-</main>
+        <p>Actualité</p>
 
+    </main>
 
-</body> </html>
+    <footer> <?php footer($page); ?> </footer>
+
+</body>
+
+</html>

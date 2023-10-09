@@ -56,4 +56,5 @@ $productAll = product();
 
 <?php } ?>
 
+<footer> <?php footer($page); ?> </footer>
 </body> </html>

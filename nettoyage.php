@@ -7,4 +7,5 @@
 
 </main>
 
+<footer> <?php footer($page); ?> </footer>
 </body> </html>

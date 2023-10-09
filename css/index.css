@@ -37,10 +37,17 @@
     margin-bottom: 20px;
 }
 
+/* IMAGE SECTION NETTOYAGE */
 .nettoyage {
     background-image: url(../assets/nettoyage.png);
     background-size: cover;
     background-position: center 70%;
     height: 600px;
     border-radius: 15px;
+}
+
+/* FORMULE NETTOYAGE */
+.list-group-item-action:hover {
+    background-color: rgb(196, 23, 23);
+    color: white;
 }
