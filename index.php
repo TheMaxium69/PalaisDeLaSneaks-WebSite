@@ -5,7 +5,6 @@ head($page); ?>
 <body>
     <header> <?php navbar($page); ?> </header>
 
-
     <main>
         <div class="accueil">
 

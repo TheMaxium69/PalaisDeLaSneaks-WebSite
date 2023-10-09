@@ -2,7 +2,6 @@
 <body> <header> <?php navbar($page); ?> </header>
 
 <?php
-require_once 'panel/init.php';
 require_once 'api/whmcs/connect.php';
 
 $productAll = product();
