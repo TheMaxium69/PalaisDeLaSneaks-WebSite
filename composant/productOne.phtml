@@ -10,26 +10,23 @@ $productAll = product();
 <main>
 
 
-<?php
-foreach ($productAll['product'] as $product) {
+    <?php
+    foreach ($productAll['product'] as $product) {
 
 
-    if ($product['pid'] == $id){ ?>
+        if ($product['pid'] == $id) { ?>
 
-            <?php var_dump($product); ?>
 
-        <p>Le nom : <?= $product['name'] ?></p>
+            <p>Le nom : <?= $product['name'] ?></p>
 
-        <p>description : <?= $product['description'] ?></p>
+            <p>description : <?= $product['description'] ?></p>
 
     <?php }
-
-
-} ?>
+    } ?>
 
 
 
-<h2> <?php echo $id ?></h2>
+    <h2> <?php echo $id ?></h2>
 
 
 
