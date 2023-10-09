@@ -2,4 +2,10 @@
     box-shadow: 0px -10px 12px rgba(0, 0, 0, 0.1);
 }
 
-
+@media (max-width: 960px) {
+    footer.text-center .col-md-3 {
+        width: 100%;
+        flex: unset;
+        text-align: center!important;
+    }
+}

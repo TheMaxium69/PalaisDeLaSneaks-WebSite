@@ -11,7 +11,7 @@
  */
 
 
-require_once '../../whmcs/whmcs-8.2.1/whmcs-8.2.1/init.php';
+require_once './panel/init.php';
 var_dump($_SESSION);
 
 if ($_SESSION['login_auth_tk']){

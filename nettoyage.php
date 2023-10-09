@@ -1,6 +1,6 @@
 <?php include "app/app.php"; $page = 3; head($page); ?>
 
-<body> <header> <?php navbar($page); ?> </header>
+<body id="nettoyage"> <header> <?php navbar($page); ?> </header>
 
 <main>
         <h1>Nettoyage</h1>

@@ -19,6 +19,10 @@
 }
 
 .panier {
+    color: black;
+}
+
+.panier:hover{
     color: red;
 }
 
@@ -76,7 +80,7 @@
 
 #nav-desktop ul li a:hover {
     color: red;
-    box-shadow: 0 0 5px red;
+    box-shadow: 0 0 2px red;
 }
 
 #nav-desktop ul ul {
@@ -228,7 +232,7 @@
 #nav-mobile input ~ nav > ul {
     text-align: center;
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 20%;
     right: 20%;
 }
@@ -269,4 +273,17 @@
 
 .titleMobile{
     text-decoration: none !important;
+}
+
+.burger-btn-connect{
+    background-color: #e51e1e;
+    border-radius: 20px;
+    color: white;
+}
+
+.panierMobile {
+    position: absolute;
+    top: 38px;
+    right: 63px;
+    z-index: 4;
 }

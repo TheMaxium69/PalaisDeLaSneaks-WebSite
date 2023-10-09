@@ -18,10 +18,15 @@
             <li><a href="actu.php">Actualité</a></li>
         </ul>
         <ul class="col-2 connexion">
+
+            <a href="panel/cart.php?a=view" class="panier">
+                <i class="fa-solid fa-basket-shopping"></i>
+            </a>
+
             <?php
 
 
-            require_once 'panel/init.php';
+            require_once './panel/init.php';
 
 
             if ($_SESSION['login_auth_tk']){
@@ -40,20 +45,24 @@
 
 
             ?>
-            <div class="panier">
-                <i class="fa-solid fa-basket-shopping"></i>      
-            </div>
         </ul>
     </div>
 </nav>
 
-<?php //var_dump($_SESSION);?>
+<?php // var_dump($_SESSION); ?>
 
 <!--Navbar-->
 <header id="nav-mobile">
+
+
+    <a href="panel/cart.php?a=view" class="panier panierMobile">
+        <i class="fa-solid fa-basket-shopping"></i>
+    </a>
+
     <h1><a href="./" class="titleMobile"><img class="img-mobile" src="assets/logoDetoure.png">Palais de la sneaks</a></h1>
 
     <input id="burger" type="checkbox" />
+
 
     <label for="burger">
         <span></span>
@@ -67,6 +76,28 @@
             <li><a href="products.php">Sneakers</a></li>
             <li><a href="nettoyage.php">Nettoyage</a></li>
             <li><a href="actu.php">Actualité</a></li>
+            <li><?php
+
+
+            require_once 'panel/init.php';
+
+
+            if ($_SESSION['login_auth_tk']){
+                $isLog = true;
+
+                $firstName = $_SESSION['cart']['user']['firstname']; ?>
+
+                <a href="panel/clientarea.php" class="burger-btn-connect">Profil <?php if ($firstName){echo $firstName;} ?></a>
+
+                <?php
+            } else {
+                $isLog = false;
+
+                echo '<a href="panel/clientarea.php" class="burger-btn-connect">Espace Client</a>';
+            }
+
+
+            ?></li>
         </ul>
     </nav>
 </header>

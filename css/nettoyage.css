@@ -1,15 +1,13 @@
-main {
+#nettoyage main {
     text-align: center;
-    ;
-
 }
 
-h1 {
+#nettoyage h1 {
     text-align: center;
     margin: 30px;
 }
 
-img {
+#nettoyage img {
     max-width: 80%;
     margin-top: 5px;
 }

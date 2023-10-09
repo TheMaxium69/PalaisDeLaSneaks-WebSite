@@ -1,6 +1,9 @@
 <?php include "app/app.php"; $page = 1; head($page); ?>
 <body> <header> <?php navbar($page); ?> </header>
-<?php require_once 'api/whmcs/connect.php'; $productAll = product(); ?>
+<?php
+require_once 'api/whmcs/connect.php'; $productAll = product();
+//var_dump($_SESSION);
+?>
 
     <main>
         <div class="accueil">
