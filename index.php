@@ -39,14 +39,13 @@
 
         </section>
 
+        <!-- NETTOYAGE -->
         <article>
             <div class="row d-flex justify-content-center mt-5">
                 <h3 class="text-center my-5">On vous propose</h3>
-                <!-- NETTOYAGE -->
                 <div class="col-6 nettoyage">
                 </div>
-                <!-- / NETTOYAGE -->
-
+                
                 <!-- FORMULES DE NETTOAYGE  -->
                 <div class="col-5">
                     <h3 class="text-center mt-5">Nettoyage de vos sneakers</h3>
@@ -75,10 +74,30 @@
                 <!-- / FORMULE DE NETTOYAGE -->
             </div>
         </article>
+        <!-- / NETTOYAGE -->
 
         <!-- RESEAUX SOCIAUX -->
-        <div>
+        <div class="row d-flex justify-content-center">
             <h3 class="text-center my-5">Suivez nous ! </h3>
+            <div class="card col-4">
+                <div class="card-body">
+                <a href="#">
+                <i class="fa-brands fa-tiktok"></i>
+                    <span> Some longer sample text</span>
+
+                </a>
+                    <h5 class="card-title text-center">Instagram</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Button</a>
+                </div>
+            </div>
+            <div class="card col-4">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Tik Tok</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Button</a>
+                </div>
+            </div>
             <!-- Facebook -->
             <i class="fab fa-facebook-f fa-2x" style="color: #3b5998;"></i>
 
