@@ -39,9 +39,9 @@
 
 /* IMAGE SECTION NETTOYAGE */
 .nettoyage {
-    background-image: url(../assets/nettoyage.png);
+    background-image: url("https://images.pexels.com/photos/3651833/pexels-photo-3651833.jpeg");
     background-size: cover;
-    background-position: center 70%;
+    background-position: center 20%;
     height: 600px;
     border-radius: 15px;
 }
