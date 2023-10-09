@@ -1,0 +1,49 @@
+main {
+    text-align: center;
+    ;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+}
+
+img {
+    max-width: 80%;
+    margin-top: 5px;
+}
+
+.cartes-container {
+    display: flex; 
+    justify-content: center;
+
+}
+
+.carte {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    flex: 1; /* Distribuer l'espace disponible entre les cartes */
+    max-width: 300px; /* Limiter la largeur des cartes si nécessaire */
+}
+
+.carte:hover {
+    background-color: #f0f0f0;
+}
+
+.description {
+    display: none;
+}
+
+.description.active {
+    display: block;
+}
+
+
+
+
+
+
