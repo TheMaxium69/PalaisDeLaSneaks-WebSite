@@ -1,9 +1,14 @@
 <div style="height: 70px"></div>
 
-<nav class="fixed-top">
+<nav id="nav-desktop" class="fixed-top">
     <div class="row">
 
-        <div class="logo col-3">Le Palais De La Sneaks</div>
+        <div class="logo col-3">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.png" alt="Logo" class="d-inline-block align-text-top">
+                Palais de la sneaks
+            </a>
+        </div>
         <ul class="col-6">
             <li><a href="index.php">Accueil</a></li>
             <li>
@@ -25,17 +30,21 @@
     </div>
 </nav>
 
-<style>
+<!--Navbar-->
+<header id="nav-mobile">
+    <h1><a href="./"><img class="img-mobile" src="assets/logo.png">Palais de la sneaks</a></h1>
 
-    nav{
-        border: 2px solid rgba(0, 0, 0, 0.30);
-        background: #FFF;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
+    <input id="burger" type="checkbox" />
 
-    nav ul{
-        margin-bottom: unset;
-    }
+    <label for="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
 
-
-</style>
+    <nav>
+        <ul>
+            <li class="nav-active"><a href=""> test </a></li>
+        </ul>
+    </nav>
+</header>
