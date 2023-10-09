@@ -34,16 +34,21 @@ img {
     background-color: #f0f0f0;
 }
 
-.description {
+
+.carte-detail {
     display: none;
 }
 
-.description.active {
-    display: block;
+.carte-active {
+    display: unset!important;
 }
 
 
-
-
-
+.carte-d {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    max-width: 300px;
+}
 
