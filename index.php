@@ -80,22 +80,30 @@
         <div class="row d-flex justify-content-center">
             <h3 class="text-center my-5">Suivez nous ! </h3>
             <div class="card col-4">
-                <div class="card-body">
-                <a href="#">
-                <i class="fa-brands fa-tiktok"></i>
-                    <span> Some longer sample text</span>
-
-                </a>
-                    <h5 class="card-title text-center">Instagram</h5>
+                    <div class="card-body">
+                        <h3>
+                            <a class="navbar-brand" href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                            </a>
+                        </h3>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-primary">Suivre</a>
+                    </div>
                 </div>
             </div>
             <div class="card col-4">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Tik Tok</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
+                    <h3>
+                        <a class="navbar-brand" href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                        TikTok
+                        </a>
+                    </h3>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-primary">Suivre</a>
+                    </div>
                 </div>
             </div>
             <!-- Facebook -->
