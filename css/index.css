@@ -40,6 +40,7 @@
 /* IMAGE SECTION NETTOYAGE */
 .nettoyage {
     background-image: url(../assets/nettoyage.png);
+    background-size: cover;
     background-position: center 70%;
     height: 600px;
     border-radius: 15px;
