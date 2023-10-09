@@ -7,4 +7,6 @@ $APP_ENV = "PROD";
 //Variable Share
 
 $env_urlFile = "./extension/";
-$env_urlLogo = "assets/zlogo.png";
+$env_urlLogo = "assets/logoDetoure.png";
+
+
