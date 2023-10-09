@@ -7,6 +7,6 @@
 panel/
 
 # Other files and folders
-api/whmcs/connect.php
+connect.php
 
 # file/
