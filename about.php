@@ -13,7 +13,7 @@
         <div style="text-align: center">
             <h2 style="text-align: center; margin-bottom: 20px; color: #bb2d3b"><i class="fas fa-scroll"></i>Administratif de l'entreprise</h2>
             <p>Palais de la sneaks est une entreprise à but lucratif, toute création de l'entreprise nous appartient.</p>
-            <p>Fondé par </p>
+            <p>Fondé par Loïc Hassenforder et Anthony Caron</p>
             <p>Siège Social : <br> 52 boulevard des castors, 69005 Lyon</p>
             <p>Contact : <br> palaisdelasneaks@gmail.com <br> +33 6 51 72 66 93</p>
         </div>
