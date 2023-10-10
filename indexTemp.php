@@ -51,8 +51,6 @@ head($page); ?>
 
         </section>
 
-        <div style="height: 100000px"></div>
-
     </main>
 
 </body>

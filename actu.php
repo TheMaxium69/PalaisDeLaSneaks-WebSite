@@ -1,9 +1,5 @@
-<?php include "app/app.php";
-$page = 4;
-head($page); ?>
-
-<body>
-    <header> <?php navbar($page); ?> </header>
+<?php include "app/app.php"; $page = 4;head($page); ?>
+<body> <header> <?php navbar($page); ?> </header>
 
     <main>
 
@@ -11,8 +7,13 @@ head($page); ?>
 
     </main>
 
-    <footer> <?php footer($page); ?> </footer>
 
-</body>
 
-</html>
+
+
+
+
+
+
+<footer> <?php footer($page); ?> </footer>
+</body></html>

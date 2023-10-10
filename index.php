@@ -1,9 +1,14 @@
-<?php include "app/app.php"; $page = 1; head($page); ?>
-<body> <header> <?php navbar($page); ?> </header>
-<?php
-require_once 'api/whmcs/connect.php'; $productAll = product();
-//var_dump($_SESSION);
-?>
+<?php include "app/app.php";
+$page = 1;
+head($page); ?>
+
+<body>
+    <header> <?php navbar($page); ?> </header>
+    <?php
+    require_once 'api/whmcs/connect.php';
+    $productAll = product();
+    //var_dump($_SESSION);
+    ?>
 
     <main>
         <div class="accueil">
@@ -25,7 +30,7 @@ require_once 'api/whmcs/connect.php'; $productAll = product();
 
                 $products = $productAll['product'];
                 for ($i = 0; $i <= 9; $i++) {
-                    ?>
+                ?>
 
                     <div class="card" style="width: 18rem;">
                         <h3 class="p-4 text-center"><?= $products[$i]['name'] ?></h3>
@@ -48,10 +53,10 @@ require_once 'api/whmcs/connect.php'; $productAll = product();
                 <h3 class="text-center my-5">Nettoyage de vos sneakers</h3>
                 <div class="col-6 nettoyage">
                 </div>
-                
+
                 <!-- FORMULES DE NETTOAYGE  -->
                 <div class="col-5 d-flex flex-column justify-content-center">
-                    <h2 class="text-center mt-3" id="titleNettoyage"><span>Une deuxième vie</span> pour vos sneakers</h2>
+                    <h4 class="text-center mt-3">Découvez nos formules pour vos sneakers :</h4>
                     <p class="my-5 w-75 mx-auto">Nos services de nettoyage de baskets sont conçus pour répondre aux besoins de tous les amateurs de sneakers. 
                         Nous utilisons des techniques de nettoyage avancées et des produits de haute qualité pour éliminer la saleté, 
                         les taches et les odeurs de vos baskets, tout en préservant leur couleur et leur texture d'origine.</p>
@@ -67,15 +72,15 @@ require_once 'api/whmcs/connect.php'; $productAll = product();
         <!-- RESEAUX SOCIAUX -->
         <div class="row d-flex justify-content-center mb-5">
             <h3 class="text-center my-5">Suivez nous ! </h3>
-                <div class="card col-3">
-                    <div class="row">
-                        <div class="w-25 logoInsta">
-                        <i class="fa-brands fa-instagram" id="logoInsta"></i>
-                    </div>
-                    <div class=" card-bod w-75">
-                        <p class="card-text text-center my-4">Rejoignez-nous sur Instagram pour découvrir des contenus exclusifs et inspirants au quotidien !</p>
-                    </div>
-                </div>
+            <div class="card col-4">
+                    <div class="card-body">
+                        <h3 class="d-flex justify-content-center">
+                            <a class="navbar-brand" href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                            </a>
+                        </h3>
+                    <p class="card-text my-4">Rejoignez-nous sur Instagram pour découvrir des contenus exclusifs et inspirants au quotidien !</p>
                     <div class="d-flex justify-content-center">
                     <button class="custom-btn btn-2">
                         <i class="fa-solid fa-bell"></i>
@@ -84,8 +89,7 @@ require_once 'api/whmcs/connect.php'; $productAll = product();
                     </div>
                 </div>
             </div>
-
-            <div class="card col-3 ms-4">
+            <div class="card col-4 ms-4">
                 <div class="card-body">
                     <h3 class="d-flex justify-content-center">
                         <a class="navbar-brand" href="#">
@@ -107,7 +111,7 @@ require_once 'api/whmcs/connect.php'; $productAll = product();
 
     </main>
 
-    
+
     <footer> <?php footer($page); ?> </footer>
 
 </body>
