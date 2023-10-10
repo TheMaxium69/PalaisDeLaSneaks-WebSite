@@ -11,10 +11,11 @@
  * @link       http://www.whmcs.com/
  */
 
-function product(){
+function product()
+{
     $command = 'GetProducts';
     $postData = array();
-    $adminUsername = 'TheMaxium69';
+    $adminUsername = 'Ayaaaaaaaaaaaa';
 
     $results = localAPI($command, $postData, $adminUsername);
 

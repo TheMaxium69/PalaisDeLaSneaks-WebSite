@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("je suis un test");
     const cartes = document.querySelectorAll(".carte");
     const carteDetail = document.querySelector(".carte-detail");
     const carteDetailDescri = document.querySelector(".carte-detail .description");
