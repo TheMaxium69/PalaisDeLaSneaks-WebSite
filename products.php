@@ -17,10 +17,6 @@ head($page); ?>
     ?>
 
 
-
-
-
-
     <?php if (!empty($_GET['p'])) {
 
         $id = $_GET['p'];
