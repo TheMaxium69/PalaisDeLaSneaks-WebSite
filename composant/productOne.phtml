@@ -8,34 +8,26 @@ $productAll = product();
 
 
 <main>
-
-
     <?php
     foreach ($productAll['product'] as $product) {
-
-
         if ($product['pid'] == $id) { ?>
-
-
-            <p>Le nom : <?= $product['name'] ?></p>
-
-            <p>description : <?= $product['description'] ?></p>
-
+            <div class="product-card">
+                <div class="product-image">
+                    <img id="main-image" src="https://www.mimanerashop.com/images/nike-comics-red-rossa-cartoon-disegnato-a-mano-ros.1200x1200.11914.webp" alt="<?= $product['name'] ?>">
+                </div>
+                <div class="product-details">
+                    <h1><?= $product['name'] ?></h1>
+                    <p><?= $product['description'] ?></p>
+                    <p class="price">Prix : <?= $product['price'] ?> €</p>
+                    <a href="panel/cart.php?a=add&pid=<?= $product['pid'] ?>" class="buy-button">Acheter</a>
+                </div>
+                <div class="secondary-images">
+                    <img class="secondary-image" src="https://www.mimanerashop.com/images/nike-comics.1200x1200.11917.webp" alt="Image 2">
+                    <img class="secondary-image" src="https://www.mimanerashop.com/images/nike-comics.1200x1200.11919.webp" alt="Image 3">
+                </div>
+            </div>
     <?php }
     } ?>
-
-
-
-    <h2> <?php echo $id ?></h2>
-
-
-
-
-
-
-
-
-
-
-
 </main>
+
+

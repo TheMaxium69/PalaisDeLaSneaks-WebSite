@@ -1,0 +1,49 @@
+/* Style des images */
+.product-image {
+    text-align: center; /* Centre le contenu dans le conteneur */
+}
+
+.product-image img {
+    max-width: 100%; /* Les images ne dépassent pas la largeur du conteneur */
+    height: 800px; /* Ajuste la hauteur proportionnellement à la largeur */
+    border: 1px solid #ddd; /* Une légère bordure grise autour de l'image */
+    transition: transform 0.3s ease-in-out; /* Effet de transition en douceur */
+}
+
+
+/* Style des images de survol */
+.secondary-images {
+    display: flex; /* Utilisation d'une flexbox pour aligner les images secondaires */
+    justify-content: center; /* Centre les images horizontalement */
+    gap: 10px; /* Espacement entre les images secondaires */
+}
+
+.secondary-image {
+    max-width: 30%; /* Les images ne dépassent pas la largeur du conteneur */
+    height: auto; /* Ajuste la hauteur proportionnellement à la largeur */
+    border: 10px solid #ddd; /* Une légère bordure grise autour de l'image */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style du texte descriptif et du bouton */
+.product-details {
+    text-align: center; /* Centre le texte */
+    margin-top: 10px; /* Espace en haut pour séparer du contenu précédent */
+}
+
+.price {
+    font-weight: bold; /* Texte du prix en gras */
+}
+
+.buy-button {
+    background-color: #f90; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none;
+    padding: 10px 20px; /* Marge interne du bouton */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Effet de transition pour la couleur de fond */
+}
+
+.buy-button:hover {
+    background-color: #ff6600; /* Couleur de fond du bouton au survol */
+}
