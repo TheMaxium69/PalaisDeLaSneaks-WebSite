@@ -4,8 +4,8 @@
 }
 
 .product-image img {
-    max-width: 100%; /* Les images ne dépassent pas la largeur du conteneur */
-    height: 800px; /* Ajuste la hauteur proportionnellement à la largeur */
+    max-width: 90%; /* Les images ne dépassent pas la largeur du conteneur */
+    height: 600px; /* Ajuste la hauteur proportionnellement à la largeur */
     border: 1px solid #ddd; /* Une légère bordure grise autour de l'image */
     transition: transform 0.3s ease-in-out; /* Effet de transition en douceur */
 }
@@ -49,3 +49,9 @@
 .buy-button:hover {
     background-color: #ff6600; /* Couleur de fond du bouton au survol */
 }
+
+.description {
+    max-width: 50%; /* Limite la largeur du paragraphe à 50% de la page */
+    margin: 0 auto; /* Centre le paragraphe horizontalement */
+}
+
