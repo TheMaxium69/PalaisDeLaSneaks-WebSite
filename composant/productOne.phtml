@@ -18,7 +18,7 @@ $productAll = product();
                 <div class="product-details">
                     <h1><?= $product['name'] ?></h1>
                     <p><?= $product['description'] ?></p>
-                    <p class="price">Prix : <?= $product['price'] ?> €</p>
+                    <p class="price">Prix : <?= $product['pricing']['EUR']['monthly'] ?> €</p>
                     <a href="panel/cart.php?a=add&pid=<?= $product['pid'] ?>" class="buy-button">Acheter</a>
                 </div>
                 <div class="secondary-images">
