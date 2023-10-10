@@ -11,9 +11,24 @@
     margin: 38px;
 }
 
-#header a{
-    transform: translate(38%, 643%);
-}
+/* Bouton Shop Now */
+.btn-1 {
+  background: black;
+  background: linear-gradient rgb(0, 162, 243);
+  border: none;
+  transform: translate(38%, 643%);
+  
+  }
+  .btn-1:before {
+  height: 0%;
+  width: 2px;
+  }
+  .btn-1:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  }
 
 /************
     GALLERY
@@ -58,67 +73,22 @@
 }
 
 /* bouton formule nettoayge */
+
+.btn-2 {
+  background: #dc3545;
+  background: linear-gradient #dc3545;
+  border: none;
   
-  button {
-    margin: 20px;
   }
-  .custom-btn {
-    width: 130px;
-    height: 40px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
+  .btn-2:before {
+  height: 0%;
+  width: 2px;
   }
-.btn-5 {
-    width: 200px;
-    height: 40px;
-    line-height: 42px;
-    padding: 0;
-    border: none;
-    background: red;
-    background: linear-gradient(red 100%);
-  }
-  .btn-5:hover {
-    color: red;
-    background: transparent;
-     box-shadow:none;
-  }
-  .btn-5:before,
-  .btn-5:after{
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    height:2px;
-    width:0;
-    background: red;
-    box-shadow:
-     -1px -1px 5px 0px #fff,
-     7px 7px 20px 0px #0003,
-     4px 4px 5px 0px #0002;
-    transition:400ms ease all;
-  }
-  .btn-5:after{
-    right:inherit;
-    top:inherit;
-    left:0;
-    bottom:0;
-  }
-  .btn-5:hover:before,
-  .btn-5:hover:after{
-    width:100%;
-    transition:800ms ease all;
+  .btn-2:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
   }
 
   /***********
@@ -130,22 +100,7 @@
   margin-bottom: 100px;
  }
 
-  /* BOUTON SUIVRE */
-  .btn-2 {
-    background: rgb(0, 162, 243);
-    background: linear-gradient rgb(0, 162, 243);
-    border: none;
-    
-  }
-  .btn-2:before {
-    height: 0%;
-    width: 2px;
-  }
-  .btn-2:hover {
-    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-      inset -4px -4px 6px 0 rgba(255,255,255,.2),
-      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
-  }
-  /* / BOUTON SUIVRE */
+ 
+
+
 
