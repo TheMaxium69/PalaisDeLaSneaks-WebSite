@@ -26,3 +26,8 @@
     background-position: center;
     background-size: cover;
 }
+
+#search {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
