@@ -19,6 +19,8 @@
 }
 
 .secondary-image {
+    margin-top: 50px;
+    margin-bottom: 100px;
     max-width: 30%; /* Les images ne dépassent pas la largeur du conteneur */
     height: auto; /* Ajuste la hauteur proportionnellement à la largeur */
     border: 10px solid #ddd; /* Une légère bordure grise autour de l'image */
