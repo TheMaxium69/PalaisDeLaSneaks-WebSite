@@ -47,34 +47,13 @@ head($page); ?>
                     <?php } ?>
                 </div>
 
-
-                <div class="card-group">
-
-                    <?php foreach ($productAll['product'] as $product) {  ?>
-
-
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><?= $product['name'] ?></h5>
-                                <p class="card-text"><?= $product['description'] ?></p>
-                                <p class="card-text"><small class="text-muted"><?= $product['pricing']['EUR']['monthly'] ?></small></p>
-                                <a href='?p=<?= $product['pid'] ?>'>je suis le detail</a>
-                            </div>
-                        </div>
-
-
-                    <?php } ?>
-                </div>
-
         </main>
 
+        <script src="javascript/filtre.js"></script>
 
     <?php } ?>
 
     <footer> <?php footer($page); ?> </footer>
-    <script src="javascript/filtre.js"></script>
-
 </body>
 
 </html>
