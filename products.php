@@ -36,16 +36,17 @@ head($page); ?>
 
                 <div class="row justify-content-around px-5" id="tableTEST">
                     <?php foreach ($productAll['product'] as $product) { ?>
-                        <div class="card" style="width: 18rem;">
+                        <div class="card card__one" style="width: 18rem;">
                             <h3 class="p-4 text-center"><?= $product['name'] ?></h3>
                             <p class="card-text text-center">MEN'S TRAINING SHOES</p>
                             <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="Card image cap">
                             <div class="card-body">
-                                <p class="card-text text-center"><?= $product['pricing']['EUR']['monthly'] ?> €</p>
+                                <p class="card-text text-center text-danger"><?= $product['pricing']['EUR']['monthly'] ?> €</p>
                             </div>
                         </div>
                     <?php } ?>
                 </div>
+            </div>
 
         </main>
 
