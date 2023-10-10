@@ -19,9 +19,12 @@ if ($nbImage !== 0 && !empty($pid)){
     for ($i = 1; $i <= $nbImage; $i++){
 
         $uploadOk = 1;
-        $target_file = $target_dir . basename($_FILES["fileToUpload".$i]["name"]);
+
+        $namePicture = basename(randomName());
+        $target_file = $target_dir . basename($_FILES["fileToUpload". $i]["name"]);
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-        $namePicture = basename($_FILES["fileToUpload".$i]["name"]);
+        $namePictureWithExtend = basename($namePicture) . "." . $imageFileType;
+        $target_fileUpload = $target_dir . $namePictureWithExtend;
 
         // Check if image file is a actual image or fake image
         if(isset($_POST["submit"])) {
@@ -53,12 +56,12 @@ if ($nbImage !== 0 && !empty($pid)){
             echo "Sorry, your file was not uploaded.";
         // if everything is ok, try to upload file
         } else {
-            if (move_uploaded_file($_FILES["fileToUpload". $i]["tmp_name"], $target_file)) {
+            if (move_uploaded_file($_FILES["fileToUpload". $i]["tmp_name"], $target_fileUpload)) {
                 echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload". $i]["name"])). " has been uploaded.";
-                uploadPicture($pid, $i, $namePicture);
-            } else if (file_exists($target_file)) {
+                uploadPicture($pid, $i, $namePictureWithExtend);
+            } else if (file_exists($target_fileUpload)) {
                 echo "<strong>Sorry, file already exists.</strong>";
-                uploadPicture($pid, $i, $namePicture);
+//                uploadPicture($pid, $i, $namePictureWithExtend);
             } else {
                 echo "Sorry, there was an error uploading your file.";
             }
@@ -66,4 +69,14 @@ if ($nbImage !== 0 && !empty($pid)){
     }
 } else {
     echo "Sorry, your file was not uploaded.";
+}
+
+
+function randomName($length=20){
+    $chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $string = '';
+    for($i=0; $i<$length; $i++){
+        $string .= $chars[rand(0, strlen($chars)-1)];
+    }
+    return $string;
 }
