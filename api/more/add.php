@@ -23,7 +23,8 @@ if ($nbImage !== 0 && !empty($pid)){
         $namePicture = basename(randomName());
         $target_file = $target_dir . basename($_FILES["fileToUpload". $i]["name"]);
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-        $target_fileUpload = $target_dir . basename($namePicture) . $imageFileType;
+        $namePictureWithExtend = basename($namePicture) . "." . $imageFileType;
+        $target_fileUpload = $target_dir . $namePictureWithExtend;
 
         // Check if image file is a actual image or fake image
         if(isset($_POST["submit"])) {
@@ -57,10 +58,10 @@ if ($nbImage !== 0 && !empty($pid)){
         } else {
             if (move_uploaded_file($_FILES["fileToUpload". $i]["tmp_name"], $target_fileUpload)) {
                 echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload". $i]["name"])). " has been uploaded.";
-                uploadPicture($pid, $i, $namePicture);
+                uploadPicture($pid, $i, $namePictureWithExtend);
             } else if (file_exists($target_fileUpload)) {
                 echo "<strong>Sorry, file already exists.</strong>";
-                uploadPicture($pid, $i, $namePicture);
+//                uploadPicture($pid, $i, $namePictureWithExtend);
             } else {
                 echo "Sorry, there was an error uploading your file.";
             }

@@ -14,10 +14,7 @@ head($page); ?>
         <div class="accueil">
 
             <div id="header">
-            <button class="custom-btn btn-1">
-                <i class="fa-solid fa-tags"></i>
-                <span>Show Now</span>
-            </button>
+                <button type="button" class="btn btn-dark" id="btnShop">Shop now</button>
             </div>
 
         </div>
@@ -59,9 +56,9 @@ head($page); ?>
                 <!-- FORMULES DE NETTOAYGE  -->
                 <div class="col-6 d-flex flex-column justify-content-center text-center">
                     <h3 class="text-center mt-5">La deuxième vie de vos sneakers</h3>
-                    <p class="mt-5 w-75 mx-auto">Nos services de nettoyage de baskets sont conçus pour répondre aux besoins de tous les amateurs de sneakers.
+                    <p class="mt-5 w-50 mx-auto">Nos services de nettoyage de baskets sont conçus pour répondre aux besoins de tous les amateurs de sneakers.
                     </p>
-                    <p class="w-75 mx-auto">Nous utilisons des techniques de nettoyage avancées et des produits de haute qualité pour éliminer la saleté,
+                    <p class="w-50 mx-auto">Nous utilisons des techniques de nettoyage avancées et des produits de haute qualité pour éliminer la saleté,
                     les taches et les odeurs de vos baskets, tout en préservant leur couleur et leur texture d'origine.</p>
                         <div class="d-flex justify-content-center mx-auto">
                     <button class="custom-btn btn-2">Formules</button>

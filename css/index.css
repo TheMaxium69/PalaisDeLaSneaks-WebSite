@@ -1,6 +1,7 @@
+
 /***********
-    header
- ***********/
+header
+***********/
 
 #header {
     background-image: url(../assets/barriere.jpg);
@@ -12,24 +13,18 @@
 }
 
 /* Bouton Shop Now */
-.btn-1 {
-  background: black;
-  background: linear-gradient rgb(0, 162, 243);
-  border: none;
-  transform: translate(38%, 643%);
+#btnShop {
+  transform: translate(38%, 715%);
   
   }
-  .btn-1:before {
-  height: 0%;
-  width: 2px;
-  }
-  .btn-1:hover {
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-      inset -4px -4px 6px 0 rgba(255,255,255,.2),
-      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
-  }
 
+  @media(max-width: 1200px){
+  
+    #btnShop{
+      transform: translate(0%, 800%);
+    }
+  
+  }
 /************
     GALLERY
  ***********/
@@ -105,6 +100,7 @@
   margin-top: 100px;
   margin-bottom: 100px;
  }
+
 
  
 
