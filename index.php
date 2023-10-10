@@ -49,19 +49,19 @@ head($page); ?>
 
         <!-- NETTOYAGE -->
         <article>
-            <div class="row d-flex justify-content-center mt-5">
-                <h3 class="text-center my-5">Nettoyage de vos sneakers</h3>
+            <div class="row d-flex justify-content-center" id="sectionNettoyage">
+                <!-- <h3 class="text-center my-5">Nettoyage de vos sneakers</h3> -->
                 <div class="col-6 nettoyage">
                 </div>
 
                 <!-- FORMULES DE NETTOAYGE  -->
                 <div class="col-5 d-flex flex-column justify-content-center">
-                    <h4 class="text-center mt-3">Découvez nos formules pour vos sneakers :</h4>
+                    <h4 class="text-center mt-5">La deuxième vie de vos sneakers</h4>
                     <p class="my-5 w-75 mx-auto">Nos services de nettoyage de baskets sont conçus pour répondre aux besoins de tous les amateurs de sneakers.
                         Nous utilisons des techniques de nettoyage avancées et des produits de haute qualité pour éliminer la saleté,
                         les taches et les odeurs de vos baskets, tout en préservant leur couleur et leur texture d'origine.</p>
                     <div class="d-flex justify-content-center mx-auto">
-                        <button class="custom-btn btn-5"><span>Nos formules</span></button>
+                        <button class="custom-btn btn-5"><span>Découvrez nos formules</span></button>
                     </div>
                 </div>
                 <!-- / FORMULE DE NETTOYAGE -->
@@ -70,7 +70,8 @@ head($page); ?>
         <!-- / NETTOYAGE -->
 
         <!-- RESEAUX SOCIAUX -->
-        <div class="row d-flex justify-content-center"">
+        <div class="row d-flex justify-content-center" id="socialMedia">
+            <h3 class="text-center mb-5">Rejoignez-vous !</h3>
             <div class=" col-xl-4 col-sm-6 col-12">
             <div class="card">
                 <div class="card-content">

@@ -37,22 +37,27 @@
     margin-bottom: 20px;
 }
 
-/* IMAGE SECTION NETTOYAGE */
+/***********
+    section nettoyage
+ ***********/
 .nettoyage {
     background-image: url("https://images.pexels.com/photos/3651833/pexels-photo-3651833.jpeg");
     background-size: cover;
-    background-position: center 20%;
-    height: 600px;
+    background-position: center 60%;
+    height: 400px;
     border-radius: 15px;
 }
 
-/* FORMULE NETTOYAGE */
 .list-group-item-action:hover {
     background-color: rgb(196, 23, 23);
     color: white;
 }
 
-/* BOUTON FORMULE NETTOYAGE */
+#sectionNettoyage{
+  margin-top: 100px;
+}
+
+/* bouton formule nettoayge */
   
   button {
     margin: 20px;
@@ -76,13 +81,13 @@
     outline: none;
   }
 .btn-5 {
-    width: 130px;
+    width: 200px;
     height: 40px;
     line-height: 42px;
     padding: 0;
     border: none;
-    background: rgb(255,27,0);
-    background: linear-gradient(0deg, rgba(255,27,0,1) 0%, red 100%);
+    background: red;
+    background: linear-gradient(red 100%);
   }
   .btn-5:hover {
     color: red;
@@ -116,10 +121,19 @@
     transition:800ms ease all;
   }
 
+  /***********
+    section reseaux sociaux
+ ***********/
+
+ #socialMedia {
+  margin-top: 100px;
+  margin-bottom: 100px;
+ }
+
   /* BOUTON SUIVRE */
   .btn-2 {
-    background: #dc3545;
-    background: linear-gradient#dc3545;
+    background: rgb(0, 162, 243);
+    background: linear-gradient rgb(0, 162, 243);
     border: none;
     
   }
