@@ -69,52 +69,7 @@ head($page); ?>
         </article>
         <!-- / NETTOYAGE -->
 
-        <!-- RESEAUX SOCIAUX -->
-        <div class="row d-flex justify-content-center" id="socialMedia">
-            <h3 class="text-center mb-5">Rejoignez-vous !</h3>
-            <div class=" col-xl-4 col-sm-6 col-12">
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-body">
-                        <div class="media d-flex">
-                            <div class="align-self-center">
-                                <i style="font-size:100px" class="fa-brands fa-instagram"></i>
-                            </div>
-                            <div class="media-body text-center">
-                                <h5 class="text-right">Rejoignez-nous sur Instagram pour découvrir des contenus exclusifs et inspirants au quotidien !</h5>
-                                <button class="custom-btn btn-2">
-                                    <i class="fa-solid fa-bell"></i>
-                                    <span>Suivre</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4 col-sm-6 col-12">
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-body">
-                        <div class="media d-flex">
-                            <div class="align-self-center">
-                                <i style="font-size:100px" class="fa-brands fa-tiktok"></i>
-                            </div>
-                            <div class="media-body text-center">
-                                <h5 class="text-right">Soyez au cœur de l'actualité en nous suivant sur TikTok, pour des informations de première main !</h5>
-                                <button class="custom-btn btn-2">
-                                    <i class="fa-solid fa-bell"></i>
-                                    <span>Suivre</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-
-        <!-- / RESEAUX SOCIAUX -->
+        <?php socialLink($page); ?>
 
     </main>
 
