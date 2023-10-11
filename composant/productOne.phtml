@@ -29,7 +29,7 @@ $productAll = product();
                     </div>
                 </div>
                 <section aria-labelledby="product" class="product">
-                    <h3 class="product__brand">Sneaker Company</h3>
+                    <h3 class="product__brand">NIKE</h3>
                     <h2 id="product" class="product__title">
                         <?= $product['name'] ?>
                     </h2>
@@ -46,11 +46,11 @@ $productAll = product();
                     <div class="cart">
                         <div class="cart__items">
                             <button type="button" id="less" class="cart__remove-item buttonP">
-                                <img class="imgP" src="https://ainesc.github.io/product/images/icon-minus.svg" alt="" />
+                                <i class="fa-solid fa-minus" style="color: #dc3545;"></i>
                             </button>
                             <p class="cart__current-items baliseP">0</p>
                             <button type="button" id="more" class="cart__add-item buttonP">
-                                <img class="imgP" src="https://ainesc.github.io/product/images/icon-plus.svg" alt="" />
+                                <i class="fa-solid fa-plus" style="color: #dc3545;"></i>
                             </button>
                         </div>
                         <a id="addToCart" class="cart__button btn btnP btnP--primary">
@@ -63,4 +63,5 @@ $productAll = product();
     <?php }
     } ?>
     <script src="javascript/productOne.js"></script>
+    <?php socialLink($page); ?>
 </main>

@@ -22,7 +22,7 @@
     font-weight  : 700;
     line-height  : 1.2rem;
     color        : black;
-    border       : 3px solid #ff7d1a;
+    border       : 3px solid #dc3545;
     border-radius: 10px;
     box-shadow   : -1px 3px 1px 3px #ffede0;
     padding      : 0.8rem;
@@ -30,12 +30,12 @@
 
 .btnP--primary {
     color           : white;
-    background-color: #ff7d1a;
+    background-color: #dc3545;
     width           : 90vw;
 }
 
 .btnP--primary:hover {
-    color           : #ff7d1a;
+    color           : #dc3545;
     background-color: transparent;
 }
 
@@ -120,7 +120,7 @@
     font-weight   : 700;
     line-height   : 0.8rem;
     color         : black;
-    color         : #ff7d1a;
+    color         : #dc3545;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
 }
@@ -165,7 +165,7 @@
     font-weight     : 700;
     line-height     : 1.2rem;
     color           : black;
-    color           : #ff7d1a;
+    color           : #dc3545;
     background-color: #ffede0;
     padding         : 0.3rem;
     border-radius   : 5px;
@@ -235,7 +235,7 @@
 }
 
 .cart__button svg:hover {
-    fill: #ff7d1a;
+    fill: #dc3545;
 }
 
 .cart__button span {
