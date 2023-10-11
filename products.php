@@ -26,7 +26,21 @@ head($page); ?>
     } else { ?>
 
         <main>
-            <input id="search" type="text" class="form-control w-75 mx-auto" placeholder="Rechercher un porduit, marque...">
+            <!-- FILTRE SEARCH -->
+            <div class="container w-100" id="search">
+                <div class="cover">
+                    <form  class="flex-form">
+                    <label for="from">
+                        <i class="ion-location"></i>
+                    </label>
+                    <input type="search" placeholder="Recherchez une marque, un produit..">
+                    <input type="submit" value="Recherche">
+                    </form>
+                </div>
+            </div>
+            <!-- FILTRE SEARCH -->
+
+
             <div class="row">
                 <div class="col-2">
                     <h3 class="text-center mb-5">Trier par : </h3>
