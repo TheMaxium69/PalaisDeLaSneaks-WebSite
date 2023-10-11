@@ -1,0 +1,23 @@
+#socialMedia {
+    margin-top: 100px;
+    margin-bottom: 100px;
+   }
+  
+#socialMedia .card {
+    /*width: 18rem;*/
+    transition: transform 0.3s;
+}
+
+#socialMedia .card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#socialMedia .card:hover h3 {
+    color: red;
+}
+
+#socialMedia .card:hover .card-body .card-text {
+    font-weight: bold; 
+}
+  

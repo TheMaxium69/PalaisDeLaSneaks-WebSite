@@ -11,12 +11,8 @@ head($page); ?>
     ?>
 
     <main>
-        <div class="accueil">
-
-            <div id="header">
-                <button type="button" class="btn btn-dark" id="btnShop">Shop now</button>
-            </div>
-
+        <div id="header">
+            <button type="button" class="btn">D E C O U V R I R</button>
         </div>
 
         <section id="gallery">

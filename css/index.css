@@ -3,32 +3,33 @@
 header
 ***********/
 
+/* bannière */
 #header {
     background-image: url(../assets/barriere.jpg);
     background-size: cover;
-    background-position: center 70%;
-    height: 400px;
+    background-position: center 40%;
+    height: 500px;
     border-radius: 25px;
     margin: 38px;
 }
+    
 
-/* Bouton Shop Now */
-#btnShop {
-  transform: translate(38%, 715%);
-  
-  }
+/* Bouton décoouvrir */
+#header .btn {
+  background-color: #bf081a;
+  font-weight: 900;
+  padding: 30px;
+  font-size: x-large;
+  border-radius: 0px;
+  transform: translate(582px, 69px);
+}
 
-  @media(max-width: 1200px){
-  
-    #btnShop{
-      transform: translate(0%, 800%);
-    }
-  
-  }
+
 /************
     GALLERY
  ***********/
 
+ /* titre */
 #gallery h3.title{
     margin: 4rem;
 }
@@ -39,7 +40,7 @@ header
     margin-right: auto;
 }
 
-.card {
+#gallery .card {
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.10);
     background: #FFF;
@@ -91,34 +92,5 @@ header
       inset -4px -4px 6px 0 rgba(255,255,255,.2),
       inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
   }
-
-  /***********
-    section reseaux sociaux
- ***********/
-
- #socialMedia {
-  margin-top: 100px;
-  margin-bottom: 100px;
- }
-
-
-
-#socialMedia .card {
-   /*width: 18rem;*/
-   transition: transform 0.3s;
- }
-
- .card:hover {
-   transform: scale(1.05);
-   cursor: pointer;
- }
-
- .card:hover h3 {
-   color: red;
- }
-
- .card:hover .card-body .card-text {
-   font-weight: bold; 
- }
 
 
