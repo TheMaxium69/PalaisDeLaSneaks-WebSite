@@ -101,10 +101,10 @@ header
   margin-bottom: 100px;
  }
 
- 
 
- .card {
-   width: 18rem;
+
+#socialMedia .card {
+   /*width: 18rem;*/
    transition: transform 0.3s;
  }
 
