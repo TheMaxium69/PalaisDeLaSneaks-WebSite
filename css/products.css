@@ -38,3 +38,13 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+.text-danger {
+    font-weight: bold;
+    color: red;
+    font-size: large;
+  }
+
+  .text-dark {
+    font-weight: bold;
+  }
