@@ -7,61 +7,38 @@ $productAll = product();
 ?>
 
 
-<main class="mainProductOne">
+<main>
     <?php
     foreach ($productAll['product'] as $product) {
-        if ($product['pid'] == $id) {
-            $productPicture = getPicture($product['pid']); ?>
-            <p id="hidd1" class="hidden"><?= $productPicture['picture1'] ?></p>
-            <p id="hidd2" class="hidden"><?= $productPicture['picture2'] ?></p>
-            <p id="hidd3" class="hidden"><?= $productPicture['picture3'] ?></p>
-
-            <div class="main-container">
-                <div class="images">
-                    <div class="carrousel">
-                        <button class="carrousel__previous buttonP" type="button" id="previousImg">
-                            <img class="prev imgP" src="https://ainesc.github.io/product/images/icon-previous.svg" alt="Previous image" />
-                        </button>
-                        <img id="image" class="carrousel__img imgP" src="api/more/uploads/<?= $productPicture['picture1'] ?>" alt="" />
-                        <button class="carrousel__next buttonP" type="button" id="nextImg">
-                            <img class="next imgP" src="https://ainesc.github.io/product/images/icon-next.svg" alt="" />
-                        </button>
-                    </div>
+        if ($product['pid'] == $id) { ?>
+            <div class="product-card">
+                <div class="product-image">
+                    <img id="main-image" src="https://www.mimanerashop.com/images/nike-comics-red-rossa-cartoon-disegnato-a-mano-ros.1200x1200.11914.webp" alt="<?= $product['name'] ?>">
                 </div>
-                <section aria-labelledby="product" class="product">
-                    <h3 class="product__brand">NIKE</h3>
-                    <h2 id="product" class="product__title">
-                        <?= $product['name'] ?>
-                    </h2>
-                    <p class="product__description baliseP">
-                        <?= $product['description'] ?>
-                    </p>
-                    <div class="product__price">
-                        <div class="product__current">
-                            <p class="product__current-price baliseP"><?= $product['pricing']['EUR']['monthly'] ?> €</p>
-                            <!-- <span class="product__discount">50%</span> -->
-                        </div>
-                        <!-- <p class="product__former-price baliseP">$250.00</p> -->
-                    </div>
-                    <div class="cart">
-                        <div class="cart__items">
-                            <button type="button" id="less" class="cart__remove-item buttonP">
-                                <i class="fa-solid fa-minus" style="color: #dc3545;"></i>
-                            </button>
-                            <p class="cart__current-items baliseP">0</p>
-                            <button type="button" id="more" class="cart__add-item buttonP">
-                                <i class="fa-solid fa-plus" style="color: #dc3545;"></i>
-                            </button>
-                        </div>
-                        <a id="addToCart" class="cart__button btn btnP btnP--primary">
-                            Add to cart
-                        </a>
-                    </div>
-                </section>
-            </div>
+                <div class="product-details">
+                    <h1><?= $product['name'] ?></h1>
+                    <br>
+                    <p class="description"><?= $product['description'] ?></p>
+                    <br>
+                    <p class="price">Prix : <?= $product['pricing']['EUR']['monthly'] ?> €</p>
+                    <label for="taille">Sélectionnez votre taille :</label>
+                    <select id="taille" name="taille">
+    <?php
+    for ($pointure = 40; $pointure <= 45; $pointure++) {
+        echo "<option value=\"$pointure\">Pointure $pointure</option>";
+    }
+    ?>
+</select>
 
+                    <a href="panel/cart.php?a=add&pid=<?= $product['pid'] ?>" class="buy-button">Acheter</a>
+                </div>
+                <div class="secondary-images">
+                    <img class="secondary-image" src="https://www.mimanerashop.com/images/nike-comics.1200x1200.11917.webp" alt="Image 2">
+                    <img class="secondary-image" src="https://www.mimanerashop.com/images/nike-comics.1200x1200.11919.webp" alt="Image 3">
+                </div>
+            </div>
     <?php }
     } ?>
-    <script src="javascript/productOne.js"></script>
-    <?php socialLink($page); ?>
 </main>
+
+
