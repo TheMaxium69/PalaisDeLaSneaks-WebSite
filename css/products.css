@@ -20,7 +20,14 @@
     opacity: 1;
 }
 
-/* CARD SNEAKERS */
+.card__one:hover h3 {
+    color: red;
+  }
+ 
+  .card__one:hover .card-body .card-text {
+    font-weight: bold; 
+  }
+
 .cardSneaker {
     height: 200px;
     background-position: center;
@@ -31,3 +38,13 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+.text-danger {
+    font-weight: bold;
+    color: red;
+    font-size: large;
+  }
+
+  .text-dark {
+    font-weight: bold;
+  }
