@@ -14,7 +14,6 @@ head($page); ?>
 
     $productAll = product();
 
-    var_dump($productAll);
 
     ?>
 
