@@ -19,3 +19,15 @@
 .card__one:hover::after, .card__one:focus::after {
     opacity: 1;
 }
+
+/* CARD SNEAKERS */
+.cardSneaker {
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+#search {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
