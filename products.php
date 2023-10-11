@@ -38,14 +38,15 @@ head($page); ?>
                     </form>
                 </div>
             </div>
+            <!-- <input id="search" type="text" class="form-control w-75 mx-auto" placeholder="Rechercher un porduit, marque..."> -->
+
             <!-- FILTRE SEARCH -->
 
-
             <div class="row">
-                <div class="col-2">
-                    <h3 class="text-center mb-5">Trier par : </h3>
+                <div class="col-3" id="filter">
+                    <h3 class="text-center mb-5">Filtrer par : </h3>
                     <div class="">
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select w-75 mx-auto" aria-label="Default select example">
                             <option selected>Taille</option>
                             <option value="1">37</option>
                             <option value="2">38</option>
@@ -59,7 +60,7 @@ head($page); ?>
                         </select>
                     </div>
                     <div class="mt-2">
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select w-75 mx-auto" aria-label="Default select example">
                             <option selected>Marque</option>
                             <option value="1">Nike</option>
                             <option value="2">Adidas</option>
@@ -67,19 +68,38 @@ head($page); ?>
                             <option value="4">Jordan</option>
                         </select>
                     </div>
-                    <div class="mt-2">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Prix</option>
-                            <option value="1">0€ - 50€</option>
-                            <option value="2">51€ - 100€</option>
-                            <option value="3">101€ - 150€</option>
-                            <option value="4">151€ - 200€</option>
-                            <option value="5">200€ et plus</option>
-                        </select>
-                    </div>
+
+                    <!-- FILTRE PRICE -->
+                    <p class="mt-4 text-center">Prix : </p>
+                    <div class="wrapper" id="filterPrice">
+                    <fieldset class="filter-price">
+
+                        <div class="price-field">
+                        <input type="range" min="100" max="500" value="135" id="lower">
+                        <input type="range" min="100" max="500" value="500" id="upper">
+                        </div>
+                        <div class="price-wrap">
+                    
+                        <div class="price-container">
+                            <div class="price-wrap-1">
+
+                            <input id="one">
+                            <label for="one">€</label>
+                            </div>
+                            <div class="price-wrap_line">-</div>
+                            <div class="price-wrap-2">
+                            <input id="two">
+                            <label for="two">€</label>
+
+                            </div>
+                        </div>
+                        </div>
+                    </fieldset>
+                    </div>   
+                    <!-- / FILTRE PRICE -->
                 </div>
 
-                <div class="container alert alert-light col-10">
+                <div class="container col-9">
                     <div class="row justify-content-around px-5" id="tableTEST">
                         <?php foreach ($productAll['product'] as $product) {
                             $productPicture = getPicture($product['pid']);
