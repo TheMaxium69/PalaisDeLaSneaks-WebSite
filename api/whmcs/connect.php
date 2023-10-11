@@ -15,7 +15,7 @@ function product()
 {
     $command = 'GetProducts';
     $postData = array();
-    $adminUsername = 'marilyne69';
+    $adminUsername = 'Ayaaaaaaaaaaaa';
 
     $results = localAPI($command, $postData, $adminUsername);
 

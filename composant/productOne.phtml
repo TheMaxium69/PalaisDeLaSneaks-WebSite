@@ -28,16 +28,36 @@ $productAll = product();
                         </button>
                     </div>
                 </div>
-                <div class="product-details">
-                    <h1><?= $product['name'] ?></h1>
-                    <p><?= $product['description'] ?></p>
-                    <p class="price">Prix : <?= $product['pricing']['EUR']['monthly'] ?> €</p>
-                    <a href="panel/cart.php?a=add&pid=<?= $product['pid'] ?>" class="buy-button">Acheter</a>
-                </div>
-                <div class="secondary-images">
-                    <img class="secondary-image" src="https://www.mimanerashop.com/images/nike-comics.1200x1200.11917.webp" alt="Image 2">
-                    <img class="secondary-image" src="https://www.mimanerashop.com/images/nike-comics.1200x1200.11919.webp" alt="Image 3">
-                </div>
+                <section aria-labelledby="product" class="product">
+                    <h3 class="product__brand">Sneaker Company</h3>
+                    <h2 id="product" class="product__title">
+                        <?= $product['name'] ?>
+                    </h2>
+                    <p class="product__description baliseP">
+                        <?= $product['description'] ?>
+                    </p>
+                    <div class="product__price">
+                        <div class="product__current">
+                            <p class="product__current-price baliseP"><?= $product['pricing']['EUR']['monthly'] ?> €</p>
+                            <!-- <span class="product__discount">50%</span> -->
+                        </div>
+                        <!-- <p class="product__former-price baliseP">$250.00</p> -->
+                    </div>
+                    <div class="cart">
+                        <div class="cart__items">
+                            <button type="button" id="less" class="cart__remove-item buttonP">
+                                <img class="imgP" src="https://ainesc.github.io/product/images/icon-minus.svg" alt="" />
+                            </button>
+                            <p class="cart__current-items baliseP">0</p>
+                            <button type="button" id="more" class="cart__add-item buttonP">
+                                <img class="imgP" src="https://ainesc.github.io/product/images/icon-plus.svg" alt="" />
+                            </button>
+                        </div>
+                        <a id="addToCart" class="cart__button btn btnP btnP--primary">
+                            Add to cart
+                        </a>
+                    </div>
+                </section>
             </div>
 
     <?php }
