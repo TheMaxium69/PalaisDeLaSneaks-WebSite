@@ -26,6 +26,8 @@ head($page); ?>
 
     <main>
         <input id="search" type="text" class="form-control w-75 mx-auto" placeholder="Rechercher un porduit, marque...">
+        
+        <!-- FILTRE -->
         <div class="row">
             <div class="col-2">
             <h3 class="text-center mb-5">Trier par : </h3>
@@ -84,7 +86,12 @@ head($page); ?>
                     <?php } ?>
                 </div>
             </div>
-    </div>
+        </div>
+        <!-- / FILTRE -->
+
+        <!-- PRICE RANGE -->
+        <div id="slider"></div>
+        <!-- / PRICE RANGE -->
         
 
     </main>
