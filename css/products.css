@@ -1,7 +1,13 @@
-.card__one {
+/************
+    CARDS
+ ***********/
+
+#cardProductAll .card__one {
   transition: transform 0.5s;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.card__one::after {
+#cardProductAll .card__one::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -13,41 +19,44 @@
   opacity: 0;
   z-index: -1;
 }
-.card__one:hover, .card__one:focus {
+#cardProductAll .card__one:hover, .card__one:focus {
   transform: scale3d(1.06, 1.06, 1);
 }
-.card__one:hover::after, .card__one:focus::after {
+#cardProductAll .card__one:hover::after, .card__one:focus::after {
   opacity: 1;
 }
 
-.card__one:hover h3 {
+#cardProductAll .card__one:hover h3 {
   color: red;
 }
 
-.card__one:hover .card-body .card-text {
+#cardProductAll .card__one:hover .card-body .card-text {
   font-weight: bold; 
 }
 
-.cardSneaker {
+#cardProductAll .cardSneaker {
   height: 200px;
   background-position: center;
   background-size: cover;
 }
 
 
-.text-danger {
+#cardProductAll .text-danger {
 font-weight: bold;
   color: red;
   font-size: large;
 }
 
-.text-dark {
+#cardProductAll .text-dark {
   font-weight: bold;
 }
 
 /************
     FILTER
  ***********/
+ #filter {
+  padding-top: 30px;
+ }
   
 /* FILTRE SEARCH */
 #search {
@@ -71,29 +80,14 @@ font-weight: bold;
   opacity: 1;
 }
 
-#search .flex-form input[type="submit"] {
-  background: #ef3f5a;
-  border: 1px solid #ef3f5a;
-  color: #fff;
-  padding: 0 30px;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-#search .flex-form input[type="submit"]:hover {
-  background: #d73851;
-  border: 1px solid #d73851;
-}
-
 #search .flex-form {
   display: -webkit-box;
   display: flex;
   z-index: 10;
   position: relative;
-  width: 600px;
+  width: 954px;
   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+  margin: 40px;
 }
 
 #search .flex-form > * {

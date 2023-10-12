@@ -35,6 +35,7 @@ head($page); ?>
     } else { ?>
 
         <main>
+            <h1 class="text-center mt-5">Trouvez votre paire préférée</h1>
             <!-- FILTRE SEARCH -->
             <div class="container w-100" id="search">
                 <div class="cover">
@@ -43,12 +44,9 @@ head($page); ?>
                             <i class="ion-location"></i>
                         </label>
                         <input id="searchInput" type="search" placeholder="Recherchez une marque, un produit..">
-                        <input type="submit" value="Recherche">
                     </form>
                 </div>
             </div>
-            <!-- <input id="search" type="text" class="form-control w-75 mx-auto" placeholder="Rechercher un porduit, marque..."> -->
-
             <!-- FILTRE SEARCH -->
 
             <div class="row">
@@ -108,7 +106,7 @@ head($page); ?>
                     <!-- / FILTRE PRICE -->
                 </div>
 
-                <div class="container col-9">
+                <div class="container col-9" id="cardProductAll">
                     <div class="row justify-content-around px-5" id="tableTEST">
                         <?php foreach ($productAll['product'] as $product) {
                             $productPicture = getPicture($product['pid']);
