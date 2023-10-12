@@ -5,7 +5,7 @@
 
         <div class="logo col-3">
             <a class="navbar-brand" href="#">
-                <img src="assets/logoDetoure.png" alt="Logo" class="d-inline-block align-text-top">
+                <img src="app/assets/logoDetoure.png" alt="Logo" class="d-inline-block align-text-top">
                 Palais de la sneaks
             </a>
         </div>
@@ -31,12 +31,14 @@
             require_once './panel/init.php';
 
 
-            if ($_SESSION['login_auth_tk']){
+            if ($_SESSION['login_auth_tk']) {
                 $isLog = true;
 
                 $firstName = $_SESSION['cart']['user']['firstname']; ?>
 
-                <a href="panel/clientarea.php" type="button" class="btn btn-danger">Profil <?php if ($firstName){echo $firstName;} ?></a>
+                <a href="panel/clientarea.php" type="button" class="btn btn-danger">Profil <?php if ($firstName) {
+                                                                                                echo $firstName;
+                                                                                            } ?></a>
 
             <?php
             } else {
@@ -51,7 +53,8 @@
     </div>
 </nav>
 
-<?php // var_dump($_SESSION); ?>
+<?php // var_dump($_SESSION); 
+?>
 
 <!--Navbar-->
 <header id="nav-mobile">
@@ -61,7 +64,7 @@
         <i class="fa-solid fa-basket-shopping"></i>
     </a>
 
-    <h1><a href="./" class="titleMobile"><img class="img-mobile" src="assets/logoDetoure.png">Palais de la sneaks</a></h1>
+    <h1><a href="./" class="titleMobile"><img class="img-mobile" src="app/assets/logoDetoure.png">Palais de la sneaks</a></h1>
 
     <input id="burger" type="checkbox" />
 
@@ -83,25 +86,28 @@
             <li><?php
 
 
-            require_once 'panel/init.php';
+                require_once 'panel/init.php';
 
 
-            if ($_SESSION['login_auth_tk']){
-                $isLog = true;
+                if ($_SESSION['login_auth_tk']) {
+                    $isLog = true;
 
-                $firstName = $_SESSION['cart']['user']['firstname']; ?>
+                    $firstName = $_SESSION['cart']['user']['firstname']; ?>
 
-                <a href="panel/clientarea.php" class="burger-btn-connect">Profil <?php if ($firstName){echo $firstName;} ?></a>
+                    <a href="panel/clientarea.php" class="burger-btn-connect">Profil <?php if ($firstName) {
+                                                                                            echo $firstName;
+                                                                                        } ?></a>
 
                 <?php
-            } else {
-                $isLog = false;
+                } else {
+                    $isLog = false;
 
-                echo '<a href="panel/clientarea.php" class="burger-btn-connect">Espace Client</a>';
-            }
+                    echo '<a href="panel/clientarea.php" class="burger-btn-connect">Espace Client</a>';
+                }
 
 
-            ?></li>
+                ?>
+            </li>
         </ul>
     </nav>
 </header>
