@@ -46,8 +46,10 @@
 }
 
 
-.carrousel {
+.mainProductOne .carrousel {
     position: relative;
+    background: #f6f6f6;
+    border-radius: 33px;
 }
 
 .carrousel__previous {
