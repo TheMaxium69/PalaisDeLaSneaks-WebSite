@@ -43,7 +43,7 @@ head($page); ?>
                         <label for="from">
                             <i class="ion-location"></i>
                         </label>
-                        <input id="searchInput" type="search" placeholder="Recherchez une marque, un produit..">
+                        <input class="w-100 pe-4" id="searchInput" type="search" placeholder="Recherchez un produit ...">
                     </form>
                 </div>
             </div>
@@ -52,7 +52,7 @@ head($page); ?>
             <div class="row">
                 <div class="col-3" id="filter">
                     <h3 class="text-center mb-5">Filtrer par : </h3>
-                    <div class="">
+                    <div class="w-100">
                         <select class="form-select w-75 mx-auto" aria-label="Default select example">
                             <option selected>Taille</option>
                             <option value="1">37</option>
@@ -66,7 +66,7 @@ head($page); ?>
                             <option value="9">45</option>
                         </select>
                     </div>
-                    <div class="mt-2">
+                    <div class="mt-2 w-100">
                         <select class="form-select w-75 mx-auto" aria-label="Default select example">
                             <option selected>Marque</option>
                             <option value="1">Nike</option>
@@ -107,7 +107,7 @@ head($page); ?>
                 </div>
 
                 <div class="container col-9" id="cardProductAll">
-                    <div class="row justify-content-around px-5" id="tableTEST">
+                    <div class="row justify-content-around" id="tableTEST">
                         <?php foreach ($productAll['product'] as $product) {
                             $productPicture = getPicture($product['pid']);
 
