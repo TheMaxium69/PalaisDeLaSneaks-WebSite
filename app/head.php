@@ -23,6 +23,9 @@ function head($page)
 
         $title = "Therms | Palais de la Sneaks";
 
+    } else if ($page == 6) {
+
+        $title = "Rachat | Palais de la Sneaks";
     } else {
         $title = "404 | Palais de la Sneaks";
     }
