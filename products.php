@@ -43,7 +43,7 @@ head($page); ?>
                         <label for="from">
                             <i class="ion-location"></i>
                         </label>
-                        <input id="searchInput" type="search" placeholder="Recherchez un produit ...">
+                        <input class="w-100 pe-4" id="searchInput" type="search" placeholder="Recherchez un produit ...">
                     </form>
                 </div>
             </div>
