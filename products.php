@@ -35,7 +35,7 @@ head($page); ?>
     } else { ?>
 
         <main>
-            <h1 class="text-center mt-5">Trouvez votre paire préférée</h1>
+            <h1 class="text-center mt-5" id="title">Trouvez votre paire préférée</h1>
             <!-- FILTRE SEARCH -->
             <div class="container w-100" id="search">
                 <div class="cover">
