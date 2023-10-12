@@ -5,7 +5,7 @@ header
 
 /* bannière */
 #header {
-    background-image: url(../assets/barriere.jpg);
+    background-image: url(../app/assets/barriere.jpg);
     background-size: cover;
     background-position: center 40%;
     height: 500px;
