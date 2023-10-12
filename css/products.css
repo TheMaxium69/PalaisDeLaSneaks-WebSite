@@ -11,6 +11,7 @@
   transition: transform 0.5s;
   margin-top: 30px;
   margin-bottom: 30px;
+  text-transform: capitalize;
 }
 #cardProductAll .card__one::after {
   position: absolute;
@@ -31,10 +32,6 @@
   opacity: 1;
 }
 
-#cardProductAll .card__one:hover h3 {
-  color: red;
-}
-
 #cardProductAll .card__one:hover .card-body .card-text {
   font-weight: bold; 
 }
@@ -46,7 +43,7 @@
 }
 
 
-#cardProductAll .text-danger {
+#cardProductAll .marque {
 font-weight: bold;
   color: red;
   font-size: large;
