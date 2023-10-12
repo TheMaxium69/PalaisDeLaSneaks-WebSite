@@ -14,6 +14,15 @@ head($page); ?>
 
     $productAll = product();
 
+    $productMax = 40;
+    $productMin = 40;
+
+    foreach ($productAll['product'] as $product) {
+
+        if ($productMax < $product['pricing']['EUR']['monthly']) {
+            $productMax = $product['pricing']['EUR']['monthly'];
+        }
+    }
 
     ?>
 
@@ -75,8 +84,8 @@ head($page); ?>
                         <fieldset class="filter-price">
 
                             <div class="price-field">
-                                <input type="range" min="100" max="500" value="135" id="lower">
-                                <input type="range" min="100" max="500" value="500" id="upper">
+                                <input type="range" min="<?= $productMin ?>" max="<?= $productMax ?>" value="<?= $productMin ?>" id="lower">
+                                <input type="range" min="<?= $productMin ?>" max="<?= $productMax ?>" value="<?= $productMax ?>" id="upper">
                             </div>
                             <div class="price-wrap">
 
@@ -103,19 +112,29 @@ head($page); ?>
                     <div class="row justify-content-around px-5" id="tableTEST">
                         <?php foreach ($productAll['product'] as $product) {
                             $productPicture = getPicture($product['pid']);
-                        ?>
-                            <div class="card card__one" style="width: 18rem;" onclick="window.location.href = '?p=<?= $product['pid'] ?>';">
-                                <h3 class="p-4 text-center"><?= $product['name'] ?></h3>
-                                <p class="card-text text-center text-danger">Nike</p> <!--                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="Card image cap">-->
-                                <div class="cardSneaker" style="height: 200px; background-image: url('api/more/uploads/<?= $productPicture['picture1'] ?>')">
 
+                            if ($productMax < $product['pricing']['EUR']['monthly']) {
+                                $productMax = $product['pricing']['EUR']['monthly'];
+                            }
+
+                            if ($product['pricing']['EUR']['monthly'] < 40) {
+                            } else {
+
+                        ?>
+                                <div class="card card__one" style="width: 18rem;" onclick="window.location.href = '?p=<?= $product['pid'] ?>';">
+                                    <h3 class="p-4 text-center"><?= $product['name'] ?></h3>
+                                    <p class="card-text text-center text-danger">Nike</p> <!--                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="Card image cap">-->
+                                    <div class="cardSneaker" style="height: 200px; background-image: url('api/more/uploads/<?= $productPicture['picture1'] ?>')">
+
+                                    </div>
+                                    <!-- <img class="card-img-top" src="api/more/uploads/<?= $productPicture['picture1'] ?>" alt="Card image cap"> -->
+                                    <div class="card-body">
+                                        <p class="card-text text-center text-dark"><?= $product['pricing']['EUR']['monthly'] ?> €</p>
+                                    </div>
                                 </div>
-                                <!-- <img class="card-img-top" src="api/more/uploads/<?= $productPicture['picture1'] ?>" alt="Card image cap"> -->
-                                <div class="card-body">
-                                    <p class="card-text text-center text-dark"><?= $product['pricing']['EUR']['monthly'] ?> €</p>
-                                </div>
-                            </div>
-                        <?php } ?>
+                        <?php
+                            }
+                        } ?>
                     </div>
                 </div>
             </div>
@@ -126,7 +145,6 @@ head($page); ?>
         <script src="javascript/filtre.js"></script>
 
     <?php } ?>
-
     <footer> <?php footer($page); ?> </footer>
 </body>
 

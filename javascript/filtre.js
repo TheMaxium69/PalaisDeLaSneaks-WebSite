@@ -40,3 +40,4 @@ lowerSlider.oninput = function () {
     }
     document.querySelector('#one').value=this.value
 }; 
+
