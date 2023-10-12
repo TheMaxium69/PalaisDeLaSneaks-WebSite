@@ -29,12 +29,12 @@ head($page); ?>
             <!-- FILTRE SEARCH -->
             <div class="container w-100" id="search">
                 <div class="cover">
-                    <form  class="flex-form">
-                    <label for="from">
-                        <i class="ion-location"></i>
-                    </label>
-                    <input type="search" placeholder="Recherchez une marque, un produit..">
-                    <input type="submit" value="Recherche">
+                    <form class="flex-form">
+                        <label for="from">
+                            <i class="ion-location"></i>
+                        </label>
+                        <input id="searchInput" type="search" placeholder="Recherchez une marque, un produit..">
+                        <input type="submit" value="Recherche">
                     </form>
                 </div>
             </div>
@@ -72,30 +72,30 @@ head($page); ?>
                     <!-- FILTRE PRICE -->
                     <p class="mt-4 text-center">Prix : </p>
                     <div class="wrapper" id="filterPrice">
-                    <fieldset class="filter-price">
+                        <fieldset class="filter-price">
 
-                        <div class="price-field">
-                        <input type="range" min="100" max="500" value="135" id="lower">
-                        <input type="range" min="100" max="500" value="500" id="upper">
-                        </div>
-                        <div class="price-wrap">
-                    
-                        <div class="price-container">
-                            <div class="price-wrap-1">
-
-                            <input id="one">
-                            <label for="one">€</label>
+                            <div class="price-field">
+                                <input type="range" min="100" max="500" value="135" id="lower">
+                                <input type="range" min="100" max="500" value="500" id="upper">
                             </div>
-                            <div class="price-wrap_line">-</div>
-                            <div class="price-wrap-2">
-                            <input id="two">
-                            <label for="two">€</label>
+                            <div class="price-wrap">
 
+                                <div class="price-container">
+                                    <div class="price-wrap-1">
+
+                                        <input id="one">
+                                        <label for="one">€</label>
+                                    </div>
+                                    <div class="price-wrap_line">-</div>
+                                    <div class="price-wrap-2">
+                                        <input id="two">
+                                        <label for="two">€</label>
+
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        </div>
-                    </fieldset>
-                    </div>   
+                        </fieldset>
+                    </div>
                     <!-- / FILTRE PRICE -->
                 </div>
 
@@ -106,7 +106,7 @@ head($page); ?>
                         ?>
                             <div class="card card__one" style="width: 18rem;" onclick="window.location.href = '?p=<?= $product['pid'] ?>';">
                                 <h3 class="p-4 text-center"><?= $product['name'] ?></h3>
-                                <p class="card-text text-center text-danger">Nike</p>                                <!--                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="Card image cap">-->
+                                <p class="card-text text-center text-danger">Nike</p> <!--                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="Card image cap">-->
                                 <div class="cardSneaker" style="height: 200px; background-image: url('api/more/uploads/<?= $productPicture['picture1'] ?>')">
 
                                 </div>
