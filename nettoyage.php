@@ -8,9 +8,9 @@ head($page); ?>
     <main>
         <h1 class="mt-5">Service de Nettoyage</h1>
 
-        <img id="imgPremium" class="" src="app/assets\sneakers.png" alt="nettoyage">
-        <img id="imgMedium" class="hiddenNett" src="app/assets\sneakers.png" alt="nettoyage">
-        <img id="imgStandard" class="hiddenNett" src="app/assets\sneakers.png" alt="nettoyage">
+        <img id="imgPremium" class="" src="https://www.apyart.com/1220-large_default/rouge-de-securite-500ml.jpg" alt="nettoyage">
+        <img id="imgMedium" class="hiddenNett" src="https://www.apyart.com/2804-large_default/bleu-de-cobalt.jpg" alt="nettoyage">
+        <img id="imgStandard" class="hiddenNett" src="https://www.apyart.com/1458-large_default/vert-pur-500ml-peinture-acrylique.jpg" alt="nettoyage">
 
         <br><br>
 
@@ -28,24 +28,25 @@ head($page); ?>
 
         <br><br>
 
-        <div class="card">
+        <div class="card mb-3">
             <div id="textPremium" class="card-body">
                 <h5 class="card-title">Clean Premium</h5>
-                <p class="card-text">PremiumPremiumPremiumPremiumPremiumPremiumPremiumPremiumPremiumPremium</p>
-                <p class="card-text">PremiumPremiumPremiumPremiumPremiumPremiumPremiumPremiumPremiumPremium</p>
-                <p class="card-text">PremiumPremiumPremiumPremiumPremiumPremiumPremiumPremiumPremiumPremium</p>
+                <p class="card-text w-50 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor nec feugiat nisl pretium fusce. Suscipit adipiscing bibendum est ultricies. Dictum at tempor commodo ullamcorper. Adipiscing vitae proin sagittis nisl rhoncus mattis. Bibendum est ultricies integer quis auctor elit. Mauris in aliquam sem fringilla ut morbi. Quis eleifend quam adipiscing vitae proin sagittis. Orci phasellus egestas tellus rutrum. </p>
+                <a name="" id="" class="btn btn-primary underline" href="#" role="button">je choisis cette formule !</a>
+
             </div>
             <div id="textMedium" class="card-body hiddenNett">
                 <h5 class="card-title">Clean Medium</h5>
-                <p class="card-text">MediumMediumMediumMediumMediumMediumMediumMediumMediumMediumMedium</p>
-                <p class="card-text">MediumMediumMediumMediumMediumMediumMediumMediumMediumMediumMedium</p>
-                <p class="card-text">MediumMediumMediumMediumMediumMediumMediumMediumMediumMediumMedium</p>
+                <p class="card-text w-50 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor nec feugiat nisl pretium fusce. Suscipit adipiscing bibendum est ultricies. Dictum at tempor commodo ullamcorper. Adipiscing vitae proin sagittis nisl rhoncus mattis. Bibendum est ultricies integer quis auctor elit. Mauris in aliquam sem fringilla ut morbi. Quis eleifend quam adipiscing vitae proin sagittis. Orci phasellus egestas tellus rutrum.</p>
+                <a name="" id="" class="btn btn-primary underline" href="#" role="button">je choisis cette formule !</a>
+
+
             </div>
             <div id="textStandard" class="card-body hiddenNett">
                 <h5 class="card-title">Clean Standard</h5>
-                <p class="card-text">StandardStandardStandardStandardStandardStandardStandardStandardStandard</p>
-                <p class="card-text">StandardStandardStandardStandardStandardStandardStandardStandardStandard</p>
-                <p class="card-text">StandardStandardStandardStandardStandardStandardStandardStandardStandard</p>
+                <p class="card-text w-50 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor nec feugiat nisl pretium fusce. Suscipit adipiscing bibendum est ultricies. Dictum at tempor commodo ullamcorper. Adipiscing vitae proin sagittis nisl rhoncus mattis. Bibendum est ultricies integer quis auctor elit. Mauris in aliquam sem fringilla ut morbi. Quis eleifend quam adipiscing vitae proin sagittis. Orci phasellus egestas tellus rutrum.</p>
+                <a name="" id="" class="btn btn-primary underline" href="#" role="button">je choisis cette formule !</a>
+
             </div>
         </div>
 
