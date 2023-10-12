@@ -8,9 +8,9 @@ head($page); ?>
     <main>
         <h1 class="mt-5">Service de Nettoyage</h1>
 
-        <img id="imgPremium" class="" src="assets\sneakers.png" alt="nettoyage">
-        <img id="imgMedium" class="hiddenNett" src="assets\sneakers.png" alt="nettoyage">
-        <img id="imgStandard" class="hiddenNett" src="assets\sneakers.png" alt="nettoyage">
+        <img id="imgPremium" class="" src="app/assets\sneakers.png" alt="nettoyage">
+        <img id="imgMedium" class="hiddenNett" src="app/assets\sneakers.png" alt="nettoyage">
+        <img id="imgStandard" class="hiddenNett" src="app/assets\sneakers.png" alt="nettoyage">
 
         <br><br>
 
