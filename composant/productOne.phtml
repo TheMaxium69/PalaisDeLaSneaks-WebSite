@@ -45,11 +45,11 @@ $productAll = product();
                     </div>
                     <div class="cart">
                         <div class="cart__items">
-                            <button type="button" id="less" class="cart__remove-item buttonP">
+                            <button onclick="removeQuantite()" type="button" id="less" class="cart__remove-item buttonP">
                                 <i class="fa-solid fa-minus" style="color: #dc3545;"></i>
                             </button>
-                            <p class="cart__current-items baliseP">0</p>
-                            <button type="button" id="more" class="cart__add-item buttonP">
+                            <p id="quantiteAdd" class="cart__current-items baliseP">0</p>
+                            <button onclick="addQuantite()" type="button" id="more" class="cart__add-item buttonP">
                                 <i class="fa-solid fa-plus" style="color: #dc3545;"></i>
                             </button>
                         </div>

@@ -57,3 +57,11 @@
     
         image.src = images[i];
     });
+
+    var quantiteAdd = document.getElementById("quantiteAdd").innerHTML;
+    console.log(quantiteAdd);
+
+    function addQuantite(){
+        console.log(quantiteAdd);
+        quantiteAdd = Number(quantiteAdd) + 1;
+    }
