@@ -8,9 +8,9 @@ head($page); ?>
     <main>
         <h1 class="mt-5">Service de Nettoyage</h1>
 
-        <img id="imgPremium" class="" src="https://www.apyart.com/1220-large_default/rouge-de-securite-500ml.jpg" alt="nettoyage">
-        <img id="imgMedium" class="hiddenNett" src="https://www.apyart.com/2804-large_default/bleu-de-cobalt.jpg" alt="nettoyage">
-        <img id="imgStandard" class="hiddenNett" src="https://www.apyart.com/1458-large_default/vert-pur-500ml-peinture-acrylique.jpg" alt="nettoyage">
+        <img id="imgPremium" class="" src="app/assets/cleanPremium.jpg" alt="nettoyage">
+        <img id="imgMedium" class="hiddenNett" src="app/assets/cleanMedium.jpg" alt="nettoyage">
+        <img id="imgStandard" class="hiddenNett" src="app/assets/cleanStandard.jpg" alt="nettoyage">
 
         <br><br>
 
