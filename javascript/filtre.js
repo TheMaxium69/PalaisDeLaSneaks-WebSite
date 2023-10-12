@@ -41,3 +41,14 @@ lowerSlider.oninput = function () {
     document.querySelector('#one').value=this.value
 }; 
 
+function showValMin(newVal){
+    priceMin = newVal;
+}
+
+function showValMax(newVal){
+    priceMax = newVal;
+}
+
+function showProduct(priceProduct){
+    
+}
