@@ -18,7 +18,7 @@ head($page); ?>
         <section id="gallery">
             <h3 class="text-center title">N O U V E A U T E</h3>
 
-            <div class="row justify-content-around px-5">
+            <div class="row justify-content-center px-5">
 
 
                 <?php
@@ -46,7 +46,7 @@ head($page); ?>
         <article>
             <div class="row d-flex justify-content-center" id="sectionNettoyage">
                 <!-- <h3 class="text-center my-5">Nettoyage de vos sneakers</h3> -->
-                <div class="col-5 nettoyage">
+                <div class="col-5 picture">
                 </div>
 
                 <!-- FORMULES DE NETTOAYGE  -->

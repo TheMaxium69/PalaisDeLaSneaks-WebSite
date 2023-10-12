@@ -30,8 +30,12 @@ header
  ***********/
 
  /* titre */
-#gallery h3.title{
-    margin: 4rem;
+#gallery .title {
+    margin: 50px;
+}
+
+#gallery h3 {
+    text-transform: capitalize;
 }
 
 #gallery div.row{
@@ -45,13 +49,29 @@ header
     border: 1px solid rgba(0, 0, 0, 0.10);
     background: #FFF;
     box-shadow: 8px 8px 12px #aaa;
-    margin-bottom: 20px;
+    margin: 10px 10px 20px 10px;
+    transition: transform 0.3s;
+}
+#gallery .card:hover, #gallery .card:focus {
+    transform: scale3d(1.06, 1.06, 1);
+}
+
+#gallery .card::after{
+    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 /***********
     section nettoyage
  ***********/
-.nettoyage {
+ #sectionNettoyage{
+   margin-top: 100px;
+   background-color: #ececec;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   box-shadow: 5px -3px 66px #aaa;
+ }
+
+ #sectionNettoyage .picture {
     background-image: url("https://media.istockphoto.com/id/157973580/fr/photo/les-baskets.jpg?s=612x612&w=0&k=20&c=6HVWJVxo5SRHyM4UXDADWwmfp_Lft1ZzrfG5juAz2wk=");
     background-size: cover;
     background-position: center 60%;
@@ -61,18 +81,6 @@ header
     margin-bottom: 20px;
 }
 
-.list-group-item-action:hover {
-    background-color: rgb(196, 23, 23);
-    color: white;
-}
-
-#sectionNettoyage{
-  margin-top: 100px;
-  background-color: #ececec;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  box-shadow: 5px -3px 66px #aaa;
-}
 
 /* bouton formule nettoayge */
 

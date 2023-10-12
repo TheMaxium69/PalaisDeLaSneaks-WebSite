@@ -106,8 +106,9 @@ head($page); ?>
                     <!-- / FILTRE PRICE -->
                 </div>
 
+                <!-- CARD -->
                 <div class="container col-9" id="cardProductAll">
-                    <div class="row justify-content-around" id="tableTEST">
+                    <div class="row justify-content-center" id="tableTEST">
                         <?php foreach ($productAll['product'] as $product) {
                             $productPicture = getPicture($product['pid']);
 
@@ -119,22 +120,24 @@ head($page); ?>
                             } else {
 
                         ?>
-                                <div class="card card__one" style="width: 18rem;" onclick="window.location.href = '?p=<?= $product['pid'] ?>';">
-                                    <h3 class="p-4 text-center"><?= $product['name'] ?></h3>
-                                    <p class="card-text text-center marque">Nike</p> <!--                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="Card image cap">-->
-                                    <div class="cardSneaker" style="height: 200px; background-image: url('api/more/uploads/<?= $productPicture['picture1'] ?>')">
-
-                                    </div>
-                                    <!-- <img class="card-img-top" src="api/more/uploads/<?= $productPicture['picture1'] ?>" alt="Card image cap"> -->
-                                    <div class="card-body">
-                                        <p class="card-text text-center text-dark"><?= $product['pricing']['EUR']['monthly'] ?> €</p>
-                                    </div>
-                                </div>
-                        <?php
+                    <div class="card card__one" onclick="window.location.href = '?p=<?= $product['pid'] ?>';">
+                        <div class="product-image">
+                            <!-- <img src="app/assets/sneakersLV.png" alt="OFF-white Red Edition" draggable="false" /> -->
+                            <img class="card-img-top" src="api/more/uploads/<?= $productPicture['picture1'] ?>" alt="Card image cap">
+                        </div>
+                        <div class="product-info">
+                            <h2 class="nameSneakers"><?= $product['name'] ?></h2>
+                            <p class="nameMarque">Nike</p>
+                            <div class="price"><?= $product['pricing']['EUR']['monthly'] ?> €</div>
+                        </div>
+                    </div>
+                    <?php
                             }
                         } ?>
                     </div>
                 </div>
+                </section>
+                <!-- / CARD -->
             </div>
 
 

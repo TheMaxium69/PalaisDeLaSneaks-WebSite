@@ -4,8 +4,9 @@
    }
   
 #socialMedia .card {
-    /*width: 18rem;*/
+    width: 400px;
     transition: transform 0.3s;
+    box-shadow: 8px 8px 12px #aaa;
 }
 
 #socialMedia .card:hover {
