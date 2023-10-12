@@ -331,11 +331,13 @@ pointer-events: none;
 }
 
 #cardProductAll .product-info .nameSneakers {
-  color: red;
+  color: black;
+  font-weight: bold;
 }
 
 #cardProductAll .product-info .nameMarque {
   color: red;
+  text-transform: uppercase;
 }
 
 #cardProductAll .card:hover .product-image {

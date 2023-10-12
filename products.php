@@ -127,7 +127,7 @@ head($page); ?>
                         </div>
                         <div class="product-info">
                             <h2 class="nameSneakers"><?= $product['name'] ?></h2>
-                            <p class="nameMarque">Nike</p>
+                            <h6 class="nameMarque">Nike</h6>
                             <div class="price"><?= $product['pricing']['EUR']['monthly'] ?> €</div>
                         </div>
                     </div>
