@@ -39,16 +39,35 @@ lowerSlider.oninput = function () {
         }
     }
     document.querySelector('#one').value=this.value
-}; 
+};
+
+var cardProduct = document.querySelectorAll('div[name="cardProdcut"]');
+var priceProduct = document.querySelectorAll('p[name="priceProduct"]');
 
 function showValMin(newVal){
     priceMin = newVal;
+    for (let i = 0; i < cardProduct.length; i++) {
+        var split = priceProduct[i].innerHTML.split(' ');
+        var price = Number(split[0]);
+        if(price < priceMin){
+            cardProduct[i].style.display = "none";
+        }else{
+            cardProduct[i].style.display = "block";
+        }
+    }
 }
 
 function showValMax(newVal){
     priceMax = newVal;
+    for (let i = 0; i < cardProduct.length; i++) {
+        var split = priceProduct[i].innerHTML.split(' ');
+        var price = Number(split[0]);
+        if(price > priceMax){
+            cardProduct[i].style.display = "none";
+        }else{
+            cardProduct[i].style.display = "block";
+        }
+    }
 }
 
-function showProduct(priceProduct){
-    
-}
+
