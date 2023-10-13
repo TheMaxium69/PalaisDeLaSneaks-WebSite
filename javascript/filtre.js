@@ -45,11 +45,10 @@ var cardProduct = document.querySelectorAll('div[name="cardProdcut"]');
 var priceProduct = document.querySelectorAll('p[name="priceProduct"]');
 
 function showValMin(newVal){
-    priceMin = newVal;
     for (let i = 0; i < cardProduct.length; i++) {
         var split = priceProduct[i].innerHTML.split(' ');
         var price = Number(split[0]);
-        if(price < priceMin){
+        if(price < newVal){
             cardProduct[i].style.display = "none";
         }else{
             cardProduct[i].style.display = "block";
@@ -58,11 +57,10 @@ function showValMin(newVal){
 }
 
 function showValMax(newVal){
-    priceMax = newVal;
     for (let i = 0; i < cardProduct.length; i++) {
         var split = priceProduct[i].innerHTML.split(' ');
         var price = Number(split[0]);
-        if(price > priceMax){
+        if(price > newVal){
             cardProduct[i].style.display = "none";
         }else{
             cardProduct[i].style.display = "block";
@@ -71,3 +69,16 @@ function showValMax(newVal){
 }
 
 
+var marqueP  = document.querySelectorAll('p[name="marqueProduct"]');
+
+function selectGroup(groupValue){
+    for (let i = 0; i < cardProduct.length; i++) {
+        if('marque'+groupValue == 'marque0'){
+            cardProduct[i].style.display = "block";
+        }else if('marque'+groupValue == marqueP[i].classList[3]){
+            cardProduct[i].style.display = "block";
+        }else{
+            cardProduct[i].style.display = "none";
+        }
+    }
+}

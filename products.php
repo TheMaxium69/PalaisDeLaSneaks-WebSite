@@ -69,7 +69,7 @@ head($page); ?>
                         </select>
                     </div>
                     <div class="mt-2 w-100">
-                        <select class="form-select w-75 mx-auto" aria-label="Default select example">
+                        <select onchange="selectGroup(this.value)" class="form-select w-75 mx-auto" aria-label="Default select example">
                             <option value="0" selected>Marque</option>
                             <?php foreach ($productGroupAll as $productGroup) {
 
@@ -121,13 +121,14 @@ head($page); ?>
                         ?>
                                 <div name="cardProdcut" class="card card__one" style="width: 18rem;" onclick="window.location.href = '?p=<?= $product['pid'] ?>';">
                                     <h3 class="p-4 text-center"><?= $product['name'] ?></h3>
-                                    <p class="card-text text-center marque">
-                                        <?php foreach ($productGroupAll as $productGroup) {
-                                            if ($product['gid'] == $productGroup['id']) {
-                                                echo $productGroup['name'];
-                                            }
-                                        } ?>
-                                    </p> <!--                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="Card image cap">-->
+                                    <?php foreach ($productGroupAll as $productGroup) {
+                                        if ($product['gid'] == $productGroup['id']) {
+                                    ?>
+                                            <p name="marqueProduct" class="card-text text-center marque marque<?= $productGroup['id'] ?>"><?= $productGroup['name'] ?></p>
+                                    <?php
+                                        }
+                                    } ?>
+                                    <!--                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="Card image cap">-->
                                     <div class="cardSneaker" style="height: 200px; background-image: url('api/more/uploads/<?= $productPicture['picture1'] ?>')">
 
                                     </div>
