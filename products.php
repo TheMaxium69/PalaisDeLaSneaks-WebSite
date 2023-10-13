@@ -14,6 +14,8 @@ head($page); ?>
 
     $productAll = product();
 
+    $productGroupAll = productGroup();
+
     $productMax = 40;
     $productMin = 40;
 
@@ -69,10 +71,11 @@ head($page); ?>
                     <div class="mt-2 w-100">
                         <select class="form-select w-75 mx-auto" aria-label="Default select example">
                             <option selected>Marque</option>
-                            <option value="1">Nike</option>
-                            <option value="2">Adidas</option>
-                            <option value="3">Yeezy</option>
-                            <option value="4">Jordan</option>
+                            <?php foreach ($productGroupAll as $productGroup) {
+
+                            ?>
+                                <option value="<?= $productGroup['id'] ?>"><?= $productGroup['name'] ?></option>
+                            <?php } ?>
                         </select>
                     </div>
 
