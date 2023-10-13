@@ -5,7 +5,7 @@ header
 
 /* bannière */
 #header {
-    background-image: url(../app/assets/barriere.jpg);
+    background-image: url(../assets/barriere.jpg);
     background-size: cover;
     background-position: center 40%;
     height: 500px;
@@ -21,7 +21,11 @@ header
   padding: 30px;
   font-size: x-large;
   border-radius: 0px;
-  transform: translate(582px, 69px);
+  /*transform: translate(582px, 69px);*/
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 69px;
+
 }
 
 
