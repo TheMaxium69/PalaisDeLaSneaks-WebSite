@@ -4,7 +4,7 @@
 
 function getPicture($pid){
 
-    include "db.php";
+    include "../db.php";
 
     $requeteRecup = $db->prepare("SELECT * FROM picture WHERE pid=:pid");
     $requeteRecup->execute(['pid' => $pid]);
