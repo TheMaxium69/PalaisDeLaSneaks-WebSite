@@ -44,7 +44,16 @@ $productAll = product();
     var nbListe = 1;
 
     function addTaille() {
-        listTaille.innerHTML += '<input type="hidden" name="nbListe" value="'+ nbListe +'"> <li><label for="taille' + nbListe + '">Taille:</label><input type="number" id="taille' + nbListe + '" name="size' + nbListe + '" /></li><li><label for="qtn' + nbListe + '">Quantite:</label><input type="number" id="qtn' + nbListe + '" name="count' + nbListe + '" /></li>';
+        listTaille.innerHTML += '<input type="hidden" name="nbListe" value="' + nbListe + '"> <li><label for="taille' + nbListe + '">Taille:</label><input type="number" id="taille' + nbListe + '" name="size' + nbListe + '" /></li><li><label for="qtn' + nbListe + '">Quantite:</label><input type="number" id="qtn' + nbListe + '" name="count' + nbListe + '" /></li>';
         nbListe++;
     }
+
+    // const inputTaille = document.querySelector("#taille0");
+    // const inputQtn = document.querySelector("#qtn0");
+
+    // inputTaille.addEventListener("input", updateValue);
+
+    // function updateValue() {
+    //     console.log('updateValue');
+    // }
 </script>
