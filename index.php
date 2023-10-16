@@ -12,9 +12,11 @@ head($page); ?>
     ?>
 
     <main>
-        <div id="header">
-            <button type="button" class="btn">D E C O U V R I R</button>
-        </div>
+    <div id="header">
+    <a href="products.php">
+      <button type="button" class="btn">D E C O U V R I R</button>
+    </a>
+  </div>
 
         <section id="gallery">
             <h3 class="text-center title">N O U V E A U T E</h3>
@@ -57,9 +59,11 @@ head($page); ?>
                     </p>
                     <p class="w-50 mx-auto">Nous utilisons des techniques de nettoyage avancées et des produits de haute qualité pour éliminer la saleté,
                     les taches et les odeurs de vos baskets, tout en préservant leur couleur et leur texture d'origine.</p>
+                    <a href="nettoyage.php" class="btn">
                         <div class="d-flex justify-content-center mx-auto">
-                    <button class="custom-btn btn-2">Formules</button>
-                    </div>
+                            <button class="custom-btn btn-2">Formules</button>
+                        </div>
+                    </a>
                 </div>
                 <!-- / FORMULE DE NETTOYAGE -->
             </div>
