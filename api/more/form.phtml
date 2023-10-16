@@ -10,17 +10,44 @@ require_once '../whmcs/connect.php';
 $productAll = product();
 
 ?>
+<div class="upload">
+    <form action="add.php" method="post" enctype="multipart/form-data">
+        Selectionner une ou plusieurs images :
+        <select name="pid">
+            <option value> Chaussure Selectionné</option>
+            <?php foreach ($productAll['product'] as $product) { ?>
+                <option value="<?= $product['pid'] ?>"> <?= $product['name'] ?></option>
+            <?php } ?>
+        </select>
+        <input class="firstInput" type="file" name="fileToUpload1" id="fileToUpload">
+        <input type="file" name="fileToUpload2" id="fileToUpload">
+        <input type="file" name="fileToUpload3" id="fileToUpload">
+        <input class="btn btn-danger" type="submit" value="Upload Image" name="submit">
+    </form>
+</div>
 
-<form action="add.php" method="post" enctype="multipart/form-data">
-    Select image to upload:
-    <select name="pid">
-        <option value> Chaussure Selectionné</option>
-        <?php foreach ($productAll['product'] as $product) { ?>
-            <option value="<?= $product['pid'] ?>"> <?= $product['name'] ?></option>
-        <?php } ?>
-    </select>
-    <input type="file" name="fileToUpload1" id="fileToUpload">
-    <input type="file" name="fileToUpload2" id="fileToUpload">
-    <input type="file" name="fileToUpload3" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="submit">
-</form>
+<style>
+    .upload {
+        background-color: #E6E6E6;
+        width: 50%;
+        margin: auto;
+        margin-top: 50px !important;
+        padding: 30px;
+    }
+    form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    button, input, optgroup, select, textarea {
+        margin: 5px;
+    }
+    .firstInput {
+        margin-top: 30px;
+    }
+    .btn {
+        margin-top: 30px;
+    }
+    
+</style>
