@@ -18,13 +18,13 @@ header
 #header .btn {
   background-color: #bf081a;
   font-weight: 900;
-  padding: 30px;
+  padding: 20px;
   font-size: x-large;
   border-radius: 0px;
   /*transform: translate(582px, 69px);*/
     width: 30%;
     margin-left: 35%;
-    margin-top: 69px;
+    margin-top: 200px;
 
 }
 
@@ -51,6 +51,7 @@ header
     box-shadow: 8px 8px 12px #aaa;
     margin-bottom: 20px;
 }
+
 
 /***********
     section nettoyage
