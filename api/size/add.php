@@ -8,25 +8,28 @@ if(isset($_POST["submit"]) && $_POST['submit'] == 'Upload Size') {
 
     $nbListe = $_POST['nbListe'];
 
+    $counts = [];
     $sizes = [];
 
     for ($i = 0; $i <= $nbListe; $i++) {
 
         $nameSize = $_POST['size'.$i];
-        $sizes[$nameSize] = $_POST['count'.$i];
+        $counts[$nameSize] = $_POST['count'.$i];
+
+        $sizes[$i] = $_POST['size'.$i];
 
     }
 
     $pid = $_POST['pid'];
-    $jsonSizes = json_encode($sizes);
-
+    $jsonCount = json_encode($counts);
+    $jsonSize = json_encode($sizes);
 
     if($pid != 0){
-        uploadSize($pid, $jsonSizes);
+        uploadSize($pid, $jsonCount, $jsonSize);
     }
 }
 
-function uploadSize($pid, $json)
+function uploadSize($pid, $count, $size)
 {
 
     include "../more/db.php";
@@ -36,30 +39,21 @@ function uploadSize($pid, $json)
     $resultRecup = $requeteRecup->fetch();
 
     if (!empty($resultRecup)) {
-        $q = $db->prepare("UPDATE size SET json=:json WHERE size.pid = :pid");
+        $q = $db->prepare("UPDATE size SET count=:count, size=:size WHERE size.pid = :pid");
         $q->execute([
             'pid' => $pid,
-            'json' => $json,
+            'count' => $count,
+            'size' => $size
         ]);
         echo "Bien modifier";
     }else{
-        $q = $db->prepare("INSERT INTO size (pid,json) VALUES(:pid,:json)");
+        $q = $db->prepare("INSERT INTO size (pid,count,size) VALUES(:pid,:count,:size)");
         $q->execute([
             'pid' => $pid,
-            'json' => $json
+            'count' => $count,
+            'size' => $size
+
         ]);
         echo "Taille bien noté";
     }
 }
-
-function getSize($pid)
-{
-    include "../more/db.php";
-
-    $requeteRecup = $db->prepare("SELECT * FROM size WHERE pid=:pid");
-    $requeteRecup->execute(['pid' => $pid]);
-    $resultRecup = $requeteRecup->fetch();
-    return $resultRecup;
-
-}
-

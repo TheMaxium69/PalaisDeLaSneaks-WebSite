@@ -279,3 +279,7 @@
 .hidden {
     display: none !important;
 }
+
+.indisponible{
+    color: red;
+}

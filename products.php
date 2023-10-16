@@ -130,7 +130,6 @@ head($page); ?>
                                     } ?>
                                     <!--                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="Card image cap">-->
                                     <div class="cardSneaker" style="background-image: url('api/more/uploads/<?= $productPicture['picture1'] ?>')">
-
                                     </div>
                                     <!-- <img class="card-img-top" src="api/more/uploads/<?= $productPicture['picture1'] ?>" alt="Card image cap"> -->
                                     <div class="card-body">

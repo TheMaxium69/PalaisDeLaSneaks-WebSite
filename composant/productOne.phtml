@@ -10,6 +10,11 @@ $productAll = product();
     <?php
     foreach ($productAll['product'] as $product) {
         if ($product['pid'] == $id) {
+
+            $getSize = getSize($id);
+            $sizes = json_decode($getSize['size'], true);
+            $counts = json_decode($getSize['count'], true);
+
             $productPicture = getPicture($product['pid']); ?>
             <p id="hidd1" class="hidden"><?= $productPicture['picture1'] ?></p>
             <p id="hidd2" class="hidden"><?= $productPicture['picture2'] ?></p>
@@ -43,17 +48,13 @@ $productAll = product();
                         <!-- <p class="product__former-price baliseP">$250.00</p> -->
                     </div>
                     <div class="cart">
-                    <select class="form-select w-50 mx-auto" aria-label="Default select example">
+                        <?php if($counts){ ?>
+                        <select class="form-select w-50 mx-auto" aria-label="Default select example">
+
                             <option selected>Taille</option>
-                            <option value="1">37</option>
-                            <option value="2">38</option>
-                            <option value="3">39</option>
-                            <option value="4">40</option>
-                            <option value="5">41</option>
-                            <option value="6">42</option>
-                            <option value="7">43</option>
-                            <option value="8">44</option>
-                            <option value="9">45</option>
+                                <?php  foreach ($sizes as $size) { ?>
+                                    <option value="<?= $size ?>"><?= $size ?> Disponible : <?= $counts[$size] ?>/fois</option>
+                                <?php } ?>
                         </select>
                         <div class="cart__items">
                             <button onclick="removeQuantite()" type="button" id="less" class="cart__remove-item buttonP">
@@ -67,6 +68,9 @@ $productAll = product();
                         <a href="panel/cart.php?a=add&pid=<?= $product['pid'] ?>" id="addToCart" class="cart__button btn btnP btnP--primary" onclick="addToCart(<?= $product['pid'] ?>, '<?= $product['name'] ?>', <?= $product['pricing']['EUR']['monthly'] ?>)">
                             Add to cart
                         </a>
+                        <?php } else { ?>
+                            <h2 class="indisponible">INDISPONIBLE</h2>
+                        <?php } ?>
                     </div>
                 </section>
             </div>
