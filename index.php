@@ -18,10 +18,10 @@ head($page); ?>
     </a>
   </div>
 
-        <section id="gallery">
+  <section id="gallery">
             <h3 class="text-center title">N O U V E A U T E</h3>
 
-            <div class="row justify-content-around px-5">
+            <div class="row justify-content-center px-5">
 
 
                 <?php
@@ -43,13 +43,17 @@ head($page); ?>
 
             </div>
 
+            <div class="frame">
+                <button class="custom-btn btn-7"><span>Read More</span>   </button>
+            </div>
+
         </section>
 
         <!-- NETTOYAGE -->
         <article>
             <div class="row d-flex justify-content-center" id="sectionNettoyage">
                 <!-- <h3 class="text-center my-5">Nettoyage de vos sneakers</h3> -->
-                <div class="col-5 nettoyage">
+                <div class="col-5 picture">
                 </div>
 
                 <!-- FORMULES DE NETTOAYGE  -->
@@ -59,11 +63,9 @@ head($page); ?>
                     </p>
                     <p class="w-50 mx-auto">Nous utilisons des techniques de nettoyage avancées et des produits de haute qualité pour éliminer la saleté,
                     les taches et les odeurs de vos baskets, tout en préservant leur couleur et leur texture d'origine.</p>
-                    <a href="nettoyage.php" class="btn">
                         <div class="d-flex justify-content-center mx-auto">
-                            <button class="custom-btn btn-2">Formules</button>
-                        </div>
-                    </a>
+                    <button class="custom-btn btn-2">Formules</button>
+                    </div>
                 </div>
                 <!-- / FORMULE DE NETTOYAGE -->
             </div>
