@@ -54,30 +54,6 @@ head($page); ?>
             <div class="row">
                 <div class="col-3" id="filter">
                     <h3 class="text-center mb-5">Filtrer par : </h3>
-                    <div class="w-100">
-                        <select class="form-select w-75 mx-auto" aria-label="Default select example">
-                            <option selected>Taille</option>
-                            <option value="1">37</option>
-                            <option value="2">38</option>
-                            <option value="3">39</option>
-                            <option value="4">40</option>
-                            <option value="5">41</option>
-                            <option value="6">42</option>
-                            <option value="7">43</option>
-                            <option value="8">44</option>
-                            <option value="9">45</option>
-                        </select>
-                    </div>
-                    <div class="mt-2 w-100">
-                        <select class="form-select w-75 mx-auto" aria-label="Default select example">
-                            <option selected>Marque</option>
-                            <option value="1">Nike</option>
-                            <option value="2">Adidas</option>
-                            <option value="3">Yeezy</option>
-                            <option value="4">Jordan</option>
-                        </select>
-                    </div>
-
                     <!-- FILTRE PRICE -->
                     <p class="mt-4 text-center">Prix : </p>
                     <div class="wrapper" id="filterPrice">
@@ -106,6 +82,52 @@ head($page); ?>
                         </fieldset>
                     </div>
                     <!-- / FILTRE PRICE -->
+                    <div class="w-100">
+                        <select class="form-select w-75 mx-auto" aria-label="Default select example">
+                            <option selected>Taille</option>
+                            <option value="1">37</option>
+                            <option value="2">38</option>
+                            <option value="3">39</option>
+                            <option value="4">40</option>
+                            <option value="5">41</option>
+                            <option value="6">42</option>
+                            <option value="7">43</option>
+                            <option value="8">44</option>
+                            <option value="9">45</option>
+                        </select>
+                    </div>
+                    <!-- FILTRE MARQUE -->
+                    <div class="dropdown" data-control="checkbox-dropdown">
+                        <label class="dropdown-label">Choix des marques</label>
+
+                        <div class="dropdown-list">
+                            <a href="#" data-toggle="check-all" class="dropdown-option">
+                                Check All
+                            </a>
+
+                            <label class="dropdown-option">
+                                <input type="checkbox" name="dropdown-group" value="adidas" />
+                                Adidas
+                            </label>
+
+                            <label class="dropdown-option">
+                                <input type="checkbox" name="dropdown-group" value="nike" />
+                                Nike
+                            </label>
+
+                            <label class="dropdown-option">
+                                <input type="checkbox" name="dropdown-group" value="jordan" />
+                                Jordan
+                            </label>
+
+                            <label class="dropdown-option">
+                                <input type="checkbox" name="dropdown-group" value="yeezy" />
+                                Yeezy
+                            </label>
+
+                        </div>
+                    </div>
+
                 </div>
 
                 <!-- CARD -->
