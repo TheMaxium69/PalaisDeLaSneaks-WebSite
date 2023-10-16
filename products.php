@@ -123,7 +123,8 @@ head($page); ?>
                     <div class="card card__one" onclick="window.location.href = '?p=<?= $product['pid'] ?>';">
                         <div class="product-image">
                             <!-- <img src="app/assets/sneakersLV.png" alt="OFF-white Red Edition" draggable="false" /> -->
-                            <img class="card-img-top" src="api/more/uploads/<?= $productPicture['picture1'] ?>" alt="Card image cap">
+                            <!-- <img class="card-img-top" src="api/more/uploads/<?= $productPicture['picture1'] ?>" alt="Card image cap"> -->
+                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="">
                         </div>
                         <div class="product-info">
                             <h2 class="nameSneakers"><?= $product['name'] ?></h2>

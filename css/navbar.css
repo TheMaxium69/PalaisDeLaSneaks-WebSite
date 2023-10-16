@@ -78,7 +78,7 @@
 
 #nav-desktop ul li a:hover {
     color: red;
-    box-shadow: 0 0 2px red;
+    text-decoration: underline red;
 }
 
 #nav-desktop ul ul {
