@@ -52,7 +52,7 @@ $productAll = product();
                                 <i class="fa-solid fa-plus" style="color: #dc3545;"></i>
                             </button>
                         </div>
-                        <a id="addToCart" class="cart__button btn btnP btnP--primary" onclick="addToCart(<?= $product['pid'] ?>, '<?= $product['name'] ?>', <?= $product['pricing']['EUR']['monthly'] ?>)">
+                        <a href="panel/cart.php?a=add&pid=<?= $product['pid'] ?>" id="addToCart" class="cart__button btn btnP btnP--primary" onclick="addToCart(<?= $product['pid'] ?>, '<?= $product['name'] ?>', <?= $product['pricing']['EUR']['monthly'] ?>)">
                             Add to cart
                         </a>
                     </div>
