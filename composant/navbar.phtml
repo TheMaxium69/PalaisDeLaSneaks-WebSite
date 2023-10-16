@@ -94,15 +94,21 @@
 
                     $firstName = $_SESSION['cart']['user']['firstname']; ?>
 
-                    <a href="panel/clientarea.php" class="burger-btn-connect">Profil <?php if ($firstName) {
-                                                                                            echo $firstName;
-                                                                                        } ?></a>
+                    <div class="frame">
+                        <button class="custom-btn btn-7"><a href="panel/clientarea.php">Profil <?php if ($firstName) {
+                                                                                                echo $firstName;
+                                                                                            } ?></a> </button>
+                    </div>
 
                 <?php
                 } else {
                     $isLog = false;
 
-                    echo '<a href="panel/clientarea.php" class="burger-btn-connect">Espace Client</a>';
+                    echo '
+                    <div class="connexion">
+                    <a href="panel/clientarea.php"><button class="custom-btn btn-7"><span>Espace client</span>   </button></a>
+    
+                    </div>';
                 }
 
 
