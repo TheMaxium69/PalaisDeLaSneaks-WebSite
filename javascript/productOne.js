@@ -65,3 +65,33 @@
         console.log(quantiteAdd);
         quantiteAdd = Number(quantiteAdd) + 1;
     }
+
+let quantite = 0;
+const panier = [];
+
+function addQuantite() {
+    quantite++;
+    document.getElementById("quantiteAdd").innerText = quantite;
+}
+
+function removeQuantite() {
+    if (quantite > 0) {
+        quantite--;
+        document.getElementById("quantiteAdd").innerText = quantite;
+    }
+}
+
+// Fonction pour ajouter un article au panier
+function addToCart(pid, productName, price) {
+    for (let i = 0; i < quantite; i++) {
+        const item = {
+            pid: pid,
+            name: productName,
+            price: price
+        };
+        panier.push(item);
+    }
+    // Réinitialiser la quantité à zéro après l'ajout au panier
+    quantite = 0;
+    document.getElementById("quantiteAdd").innerText = quantite;
+}
