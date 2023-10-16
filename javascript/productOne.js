@@ -95,3 +95,4 @@ function addToCart(pid, productName, price) {
     quantite = 0;
     document.getElementById("quantiteAdd").innerText = quantite;
 }
+    
