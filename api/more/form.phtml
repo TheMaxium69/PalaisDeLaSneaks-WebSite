@@ -13,7 +13,7 @@ $productAll = product();
 <div class="upload">
     <form action="add.php" method="post" enctype="multipart/form-data">
         Selectionner une ou plusieurs images :
-        <select name="pid">
+        <select id="selectImageSneakers" name="pid">
             <option value> Chaussure Selectionné</option>
             <?php foreach ($productAll['product'] as $product) { ?>
                 <option value="<?= $product['pid'] ?>"> <?= $product['name'] ?></option>
