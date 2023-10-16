@@ -109,38 +109,39 @@ head($page); ?>
                     <!-- / FILTRE PRICE -->
                 </div>
 
+                <!-- CARD -->
                 <div class="container col-9" id="cardProductAll">
-                    <div class="row justify-content-around" id="tableTEST">
+                    <div class="row justify-content-center" id="tableTEST">
                         <?php foreach ($productAll['product'] as $product) {
                             $productPicture = getPicture($product['pid']);
 
+                            if ($productMax < $product['pricing']['EUR']['monthly']) {
+                                $productMax = $product['pricing']['EUR']['monthly'];
+                            }
 
-                            if ($product['pricing']['EUR']['monthly'] < $productMin) {
+                            if ($product['pricing']['EUR']['monthly'] < 40) {
                             } else {
 
                         ?>
-                                <div name="cardProdcut" class="card card__one" style="width: 18rem;" onclick="window.location.href = '?p=<?= $product['pid'] ?>';">
-                                    <h3 class="p-4 text-center"><?= $product['name'] ?></h3>
-                                    <?php foreach ($productGroupAll as $productGroup) {
-                                        if ($product['gid'] == $productGroup['id']) {
-                                    ?>
-                                            <p name="marqueProduct" class="card-text text-center marque marque<?= $productGroup['id'] ?>"><?= $productGroup['name'] ?></p>
-                                    <?php
-                                        }
-                                    } ?>
-                                    <!--                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="Card image cap">-->
-                                    <div class="cardSneaker" style="background-image: url('api/more/uploads/<?= $productPicture['picture1'] ?>')">
-                                    </div>
-                                    <!-- <img class="card-img-top" src="api/more/uploads/<?= $productPicture['picture1'] ?>" alt="Card image cap"> -->
-                                    <div class="card-body">
-                                        <p name="priceProduct" class="card-text text-center text-dark"><?= $product['pricing']['EUR']['monthly'] ?> €</p>
-                                    </div>
-                                </div>
-                        <?php
+                    <div class="card card__one" onclick="window.location.href = '?p=<?= $product['pid'] ?>';">
+                        <div class="product-image">
+                            <!-- <img src="app/assets/sneakersLV.png" alt="OFF-white Red Edition" draggable="false" /> -->
+                            <!-- <img class="card-img-top" src="api/more/uploads/<?= $productPicture['picture1'] ?>" alt="Card image cap"> -->
+                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="">
+                        </div>
+                        <div class="product-info">
+                            <h2 class="nameSneakers"><?= $product['name'] ?></h2>
+                            <h6 class="nameMarque">Nike</h6>
+                            <div class="price"><?= $product['pricing']['EUR']['monthly'] ?> €</div>
+                        </div>
+                    </div>
+                    <?php
                             }
                         } ?>
                     </div>
                 </div>
+                </section>
+                <!-- / CARD -->
             </div>
 
 
