@@ -90,10 +90,10 @@ function showProduct(priceProduct){
       var checked = this.$el.find(':checked');
       
       this.areAllChecked = false;
-      this.$checkAll.html('Check All');
+      this.$checkAll.html('Tout cocher');
       
       if(checked.length <= 0) {
-        this.$label.html('Select Options');
+        this.$label.html('Choix des marques');
       }
       else if(checked.length === 1) {
         this.$label.html(checked.parent('label').text());
@@ -101,7 +101,7 @@ function showProduct(priceProduct){
       else if(checked.length === this.$inputs.length) {
         this.$label.html('All Selected');
         this.areAllChecked = true;
-        this.$checkAll.html('Uncheck All');
+        this.$checkAll.html('Tout décocher');
       }
       else {
         this.$label.html(checked.length + ' Selected');
