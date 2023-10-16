@@ -23,7 +23,7 @@ if(isset($_POST["submit"])) {
 function uploadSize($pid, $json)
 {
 
-    include "../db.php";
+    include "../more/db.php";
 
     $requeteRecup = $db->prepare("SELECT * FROM size WHERE pid=:pid");
     $requeteRecup->execute(['pid' => $pid]);
@@ -46,7 +46,7 @@ function uploadSize($pid, $json)
 
 function getSize($pid)
 {
-    include "../db.php";
+    include "../more/db.php";
 
     $requeteRecup = $db->prepare("SELECT * FROM size WHERE pid=:pid");
     $requeteRecup->execute(['pid' => $pid]);
