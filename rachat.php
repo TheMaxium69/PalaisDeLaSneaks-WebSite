@@ -14,7 +14,7 @@ head($page); ?>
     <br>
     <p class="text-center">vous souhaitez revendre votre paire ? contactez-nous directement sur notre messagerie Instagram, notre équipe se chargera d'estimé et vous proposez le meilleur prix pour vous<p>
     <div class="container text-center">
-    <a name="" id="" class="btn btn-primary underline" href="#" role="button">je revends ma paire !</a>
+    <a name="" id="" class="btn btn-primary underline" href="https://www.instagram.com/palais.de.la.sneaks/" role="button">je revends ma paire !</a>
   </div>
 
 <?php socialLink($page); ?>
