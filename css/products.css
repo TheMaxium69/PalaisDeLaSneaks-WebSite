@@ -6,7 +6,7 @@
 /************
     CARDS
  ***********/
-
+/* 
 #cardProductAll .card__one {
   transition: transform 0.5s;
   margin-top: 30px;
@@ -24,14 +24,14 @@
   content: '';
   opacity: 0;
   z-index: -1;
-}
+} */
 /* #cardProductAll .card__one:hover, .card__one:focus {
   transform: scale3d(1.06, 1.06, 1);
 }
 #cardProductAll .card__one:hover::after, .card__one:focus::after {
   opacity: 1;
 } */
-
+/* 
 #cardProductAll .card__one:hover .card-body .card-text {
   font-weight: bold; 
 }
@@ -51,7 +51,7 @@ font-weight: bold;
 
 #cardProductAll .text-dark {
   font-weight: bold;
-}
+} */
 
 /************
     FILTER
@@ -364,21 +364,25 @@ pointer-events: none;
   margin: 70px 20px 20px 10px;
 }
 
-#cardProductAll .card-img-top {
-  margin-top: 50px;
-}
 
 #cardProductAll .product-image {
   display: flex;
   justify-content: center;
+  padding: 20px;
   height: 230px;
+  width: auto;
   width: 100%;
   transform: translate(0, -1.5rem);
   transition: transform 500ms ease-in-out;
 }
+#cardProductAll .product-image img {
+  object-fit: cover;
+  position: absolute;
+}
 #cardProductAll .product-info {
   text-align: center;
   text-transform: capitalize;
+  margin-top: 20px;
 }
 
 #cardProductAll .product-info .nameSneakers {
