@@ -26,6 +26,7 @@
     cursor: pointer;
     flex: 1; /* Distribuer l'espace disponible entre les cartes */
     max-width: 300px; /* Limiter la largeur des cartes si nécessaire */
+    
 }
 
 .carte:hover {
@@ -147,3 +148,10 @@
     z-index: 1;
   }
   
+  #sectionNettoyage {
+    margin-top: 100px;
+    background-color: #ececec;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 5px -3px 66px #aaa;
+}
