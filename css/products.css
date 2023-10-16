@@ -345,7 +345,7 @@ pointer-events: none;
 /************
     CARDS
  ***********/
-#cardProductAll {
+ #cardProductAll {
   margin: auto;
   display: flex;
   align-items: center;
@@ -364,25 +364,21 @@ pointer-events: none;
   margin: 70px 20px 20px 10px;
 }
 
+#cardProductAll .card-img-top {
+  margin-top: 50px;
+}
 
 #cardProductAll .product-image {
   display: flex;
   justify-content: center;
-  padding: 20px;
   height: 230px;
-  width: auto;
   width: 100%;
   transform: translate(0, -1.5rem);
   transition: transform 500ms ease-in-out;
 }
-#cardProductAll .product-image img {
-  object-fit: cover;
-  position: absolute;
-}
 #cardProductAll .product-info {
   text-align: center;
   text-transform: capitalize;
-  margin-top: 20px;
 }
 
 #cardProductAll .product-info .nameSneakers {
@@ -428,4 +424,3 @@ pointer-events: none;
     gap: 3rem;
   }
 }
-/* / NOUVELLE CARD */
