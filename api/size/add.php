@@ -4,19 +4,25 @@ require_once "form.phtml";
 
 
 
-if(isset($_POST["submit"])) {
+if(isset($_POST["submit"]) && $_POST['submit'] == 'Upload Size') {
 
-    $test = [
-        'test' => "test",
-        'test1' => "test1",
-        'test2' => "test2"
-    ];
+    $nbListe = $_POST['nbListe'];
 
-    $test2 = json_encode($test);
+    $sizes = [];
+
+    for ($i = 0; $i <= $nbListe; $i++) {
+
+        $nameSize = $_POST['size'.$i];
+        $sizes[$nameSize] = $_POST['count'.$i];
+
+    }
 
     $pid = $_POST['pid'];
-    if($pid !== 0){
-        uploadSize($pid, $test2);
+    $jsonSizes = json_encode($sizes);
+
+
+    if($pid != 0){
+        uploadSize($pid, $jsonSizes);
     }
 }
 
@@ -30,17 +36,19 @@ function uploadSize($pid, $json)
     $resultRecup = $requeteRecup->fetch();
 
     if (!empty($resultRecup)) {
-        $q = $db->prepare("UPDATE size SET json=:json WHERE picture.pid = :pid");
+        $q = $db->prepare("UPDATE size SET json=:json WHERE size.pid = :pid");
         $q->execute([
             'pid' => $pid,
             'json' => $json,
         ]);
+        echo "Bien modifier";
     }else{
         $q = $db->prepare("INSERT INTO size (pid,json) VALUES(:pid,:json)");
         $q->execute([
             'pid' => $pid,
             'json' => $json
         ]);
+        echo "Taille bien noté";
     }
 }
 
