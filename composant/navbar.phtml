@@ -18,7 +18,7 @@
             <li><a href="rachat.php">Rachat</a></li>
 
         </ul>
-        <ul class="col-2 connexion">
+        <ul class="col-2">
 
             <a href="panel/cart.php?a=view" class="panier">
                 <i class="fa-solid fa-basket-shopping"></i>
@@ -35,17 +35,32 @@
 
                 $firstName = $_SESSION['cart']['user']['firstname']; ?>
 
-                <a href="panel/clientarea.php" type="button" class="btn btn-danger">Profil <?php if ($firstName) {
+                <div class="frame">
+                    <button class="custom-btn btn-7"><a href="panel/clientarea.php">Profil <?php if ($firstName) {
                                                                                                 echo $firstName;
-                                                                                            } ?></a>
+                                                                                            } ?></a>   </button>
+                </div>
+
+                <div class="connexion">
+  <button class="custom-btn btn-7"><span>Read More</span>   </button>
+  
+</div>
+
+                <!-- <a href="panel/clientarea.php" type="button" class="btn btn-danger">Profil </a> -->
 
             <?php
             } else {
                 $isLog = false;
 
-                echo '<a href="panel/clientarea.php" type="button" class="btn btn-danger">Espace Client</a>';
+                echo '
+                <div class="connexion">
+                    <button class="custom-btn btn-7"><span>Espace client</span>   </button>
+  
+                </div>';
             }
-
+        //     <div class="frame">
+        //     <button class="custom-btn btn-7"><a href="panel/clientarea.php">Espace client </a>   </button>
+        // </div>
 
             ?>
         </ul>

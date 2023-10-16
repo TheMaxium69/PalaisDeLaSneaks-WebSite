@@ -40,6 +40,10 @@ head($page); ?>
 
             </div>
 
+            <div class="frame">
+                <button class="custom-btn btn-7"><span>Read More</span>   </button>
+            </div>
+
         </section>
 
         <!-- NETTOYAGE -->
