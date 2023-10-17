@@ -69,14 +69,8 @@
 
 }
 
-#nav-desktop ul li:hover {
-    border-bottom: 4px solid #dc3545;
-    background-color: rgba(220, 53, 69, 0.5);
-    color: white;
-}
-
 #nav-desktop ul li:hover a {
-color: white;
+color: #dc3545;
 }
 
 #nav-desktop ul li a {
@@ -85,6 +79,10 @@ color: white;
     line-height: 70px;
     font-size: 18px;
     padding: 8px 15px;
+}
+
+#nav-desktop ul li a:hover {
+    border-bottom: 4px solid #dc3545;
 }
 
 
