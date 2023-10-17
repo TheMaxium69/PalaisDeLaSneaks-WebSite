@@ -49,26 +49,22 @@ $productAll = product();
                     </div>
                     <div class="cart">
                         <?php if($counts){ ?>
-                        <select class="form-select w-50 mx-auto" aria-label="Default select example">
 
-                            <option selected>Taille</option>
-                                <?php  foreach ($sizes as $size) { ?>
-                                    <option value="<?= $size ?>"><?= $size ?> Disponible : <?= $counts[$size] ?>/fois</option>
-                                <?php } ?>
-                        </select>
-                        <div class="cart__items">
-                            <button onclick="removeQuantite()" type="button" id="less" class="cart__remove-item buttonP">
-                                <i class="fa-solid fa-minus" style="color: #dc3545;"></i>
-                            </button>
-                            <p id="quantiteAdd" class="cart__current-items baliseP">0</p>
-                            <button onclick="addQuantite()" type="button" id="more" class="cart__add-item buttonP">
-                                <i class="fa-solid fa-plus" style="color: #dc3545;"></i>
-                            </button>
-                        </div>
-                        <a href="panel/cart.php?a=add&pid=<?= $product['pid'] ?>" id="addToCart" class="cart__button btn btnP btnP--primary" onclick="addToCart(<?= $product['pid'] ?>, '<?= $product['name'] ?>', <?= $product['pricing']['EUR']['monthly'] ?>)">
-                            Add to cart
-                        </a>
-                        <?php } else { ?>
+                            <div class="cart__items">
+                                <button onclick="removeQuantite()" type="button" id="less" class="cart__remove-item buttonP">
+                                    <i class="fa-solid fa-minus" style="color: #dc3545;"></i>
+                                </button>
+                                <p id="quantiteAdd" class="cart__current-items baliseP">0</p>
+                                <button onclick="addQuantite()" type="button" id="more" class="cart__add-item buttonP">
+                                    <i class="fa-solid fa-plus" style="color: #dc3545;"></i>
+                                </button>
+                            </div>
+
+                        <?php
+
+                        btnProductOne($sizes, $counts, $product);
+
+                        } else { ?>
                             <h2 class="indisponible">INDISPONIBLE</h2>
                         <?php } ?>
                     </div>

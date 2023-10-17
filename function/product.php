@@ -7,3 +7,8 @@ function productOne($id)
 
 }
 
+function btnProductOne($sizes, $counts, $product)
+{
+    require_once "./composant/btnProductOne.php";
+}
+
