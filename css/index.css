@@ -43,21 +43,68 @@ header
     margin-right: auto;
 }
 
-#gallery .card {
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.10);
-    background: #FFF;
-    box-shadow: 8px 8px 12px #aaa;
-    margin: 10px 10px 20px 10px;
-    transition: transform 0.3s;
-}
-#gallery .card:hover, #gallery .card:focus {
-    transform: scale3d(1.06, 1.06, 1);
-}
+/* card */
+ #gallery .card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 310px;
+    height: 400px;
+    box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
+    border-radius: 0.9rem;
+    color: var(--text);
+    cursor: pointer;
+    margin: 70px 20px 20px 10px;
+  }
+  
+  #gallery .card-img-top {
+    margin-top: 50px;
+  }
+  
+  #gallery .product-image {
+    display: flex;
+    justify-content: center;
+    height: 230px;
+    width: 100%;
+    transform: translate(0, -1.5rem);
+    transition: transform 500ms ease-in-out;
+  }
+  #gallery .product-info {
+    text-align: center;
+    text-transform: capitalize;
+  }
+  
+  #gallery .product-info .nameSneakers {
+    color: black;
+    font-weight: bold;
+  }
+  
+  #gallery .product-info .nameMarque {
+    color: red;
+    text-transform: uppercase;
+    margin-top: 20pxWA;
+  }
+  
+  #gallery .card:hover .product-image {
+    transform: translate(-1.5rem, -7rem) rotate(-20deg);
+  }
+  
+  #gallery .product-info h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  
+  #gallery .product-info p {
+    margin: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  #gallery .price {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 30px;
+  }
 
-#gallery .card::after{
-    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
 
 /* bouton voir plus */
 #gallery .btn-2{
@@ -86,7 +133,12 @@ header
     border-radius: 15px;
     box-shadow: 8px 8px 12px #aaa;
     margin-bottom: 20px;
+    transition: transform 0.3s;
 }
+#sectionNettoyage .picture:hover {
+    transform: scale(1.05);
+}
+
 
 /* bouton formule nettoyage */
 
