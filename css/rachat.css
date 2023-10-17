@@ -1,0 +1,41 @@
+#rachat .cardRevente {
+    display: flex;
+    margin: 63px;
+
+}
+/* photo de la div */
+#rachat .picture {
+    height: 380px;
+    background-image: url('https://www.booska-p.com/wp-content/uploads/2020/10/le-marche-du-resell-de-sneakers-vaudra-bientot-25-milliards-d-euros-649.jpg');
+}
+
+
+/* bouton revendre ma paire */
+#rachat .btn-2 {
+    width: 200px;
+}
+
+
+#rachat .cardRight {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rachat .cardRight p {
+    width: 75%;
+    text-align: center;
+}
+
+#rachat .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    padding: 20px;
+    border: 1px solid grey;
+}
+#rachat .text:hover {
+    transform: scale(1.05);
+}
