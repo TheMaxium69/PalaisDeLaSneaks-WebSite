@@ -8,7 +8,7 @@
 }
 
 #nettoyage img {
-    max-width: 80%;
+    max-width: 50%;
     margin-top: 5px;
 }
 
@@ -153,7 +153,7 @@
   }
   
   #sectionNettoyage {
-    margin-top: 100px;
+    margin-top: 60px;
     background-color: #ececec;
     padding-top: 30px;
     padding-bottom: 30px;

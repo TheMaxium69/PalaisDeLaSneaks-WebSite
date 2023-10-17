@@ -28,7 +28,7 @@ head($page); ?>
 
         <br><br>
 
-        <div class="card mb-3">
+        <div id="sectionNettoyage" class="card mb-3">
             <div id="textPremium" class="card-body">
                 <h5 class="card-title">Clean Premium</h5>
                 <p class="card-text w-50 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor nec feugiat nisl pretium fusce. Suscipit adipiscing bibendum est ultricies. Dictum at tempor commodo ullamcorper. Adipiscing vitae proin sagittis nisl rhoncus mattis. Bibendum est ultricies integer quis auctor elit. Mauris in aliquam sem fringilla ut morbi. Quis eleifend quam adipiscing vitae proin sagittis. Orci phasellus egestas tellus rutrum. </p>
