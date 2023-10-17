@@ -67,6 +67,10 @@
     margin : 0 5px
 
 }
+#nav-desktop ul li:hover {
+    border-bottom: 4px solid red;
+ 
+ }
 
 #nav-desktop ul li a {
     color: black;
@@ -78,7 +82,7 @@
 
 #nav-desktop ul li a:hover {
     color: red;
-    box-shadow: 0 0 2px red;
+    /* border-bottom: 2px solid red; */
 }
 
 #nav-desktop ul ul {
@@ -108,15 +112,12 @@
     line-height: 50px;
 }
 
-#nav-desktop .connexion{
+#nav-desktop .panier{
     display: flex;
     justify-content: end;
     align-items: center;
 }
 
-#nav-desktop .connexion button {
-    height: 50px;
-}
 
 #nav-desktop .navbar-item.is-mega {
     position: static;
