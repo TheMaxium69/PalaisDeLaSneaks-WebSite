@@ -9,8 +9,6 @@ header
     background-size: cover;
     background-position: center 40%;
     height: 500px;
-    border-radius: 25px;
-    margin: 38px;
 }
     
 
@@ -19,6 +17,7 @@ header
   background-color: #bf081a;
   font-weight: 900;
   padding: 30px;
+  color: white;
   font-size: x-large;
   border-radius: 0px;
   transform: translate(582px, 69px);

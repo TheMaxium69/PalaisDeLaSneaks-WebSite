@@ -57,7 +57,7 @@
     display: flex;
     justify-content: center;
     list-style: none;
-    margin-right: 40px;
+    margin-right: 62px;
     position: relative;
 }
 
@@ -114,16 +114,11 @@
 
 #nav-desktop .panier{
     align-items: center;
-    font-size: 25px;
-    margin-top: 20px;
+    font-size: 20px;
+    margin-top: 25px;
 } 
 
 /* Bouton espace client */
-#nav-desktop .connexion {
-    width: 90%;
-    text-align: center;
-    
-}
 
 #nav-desktop  button {
     margin: 20px;
