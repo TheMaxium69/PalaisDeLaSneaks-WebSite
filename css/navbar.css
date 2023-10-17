@@ -64,11 +64,14 @@
 #nav-desktop ul li {
    float: left;
     display: inline-block;
-    margin : 0 5px
+    margin : 0 5px;
+    background-color: transparent;
+    transition: background-color 0.3s;
 
 }
 #nav-desktop ul li:hover {
     border-bottom: 4px solid red;
+    background-color: #dc3545;
  
  }
 
@@ -81,7 +84,7 @@
 }
 
 #nav-desktop ul li a:hover {
-    color: red;
+    color: rgb(255, 255, 255);
     /* border-bottom: 2px solid red; */
 }
 
