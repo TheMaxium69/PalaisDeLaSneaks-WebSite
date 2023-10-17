@@ -1,7 +1,7 @@
 #socialMedia {
     margin-top: 100px;
-    margin-bottom: 100px;
-   }
+    margin-bottom: 150px;
+}
   
 #socialMedia .card {
     /*width: 18rem;*/
@@ -19,5 +19,11 @@
 
 #socialMedia .card:hover .card-body .card-text {
     font-weight: bold; 
+}
+
+#socialMedia .card-body{
+
+    box-shadow: 5px -3px 66px #aaa;
+
 }
   

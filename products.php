@@ -51,8 +51,8 @@ head($page); ?>
             </div>
             <!-- FILTRE SEARCH -->
             
-            <div class="row">
-                <div class="col-3" id="filter">
+            <div class="">
+                <div class="col" id="filter" style="display: none">
                     <h3 class="text-center mb-5">Filtrer par : </h3>
                     <div class="w-100">
                         <!-- FILTRE PRICE -->
@@ -144,8 +144,8 @@ head($page); ?>
                 </div>
 
                 <!-- CARD -->
-                <div class="col-9" id="cardProductAll">
-                    <div class="row justify-content-center" id="tableTEST">
+                <div class="col-9" id="cardProductAll" style="border-top-left-radius: 10px; border-top-right-radius: 10px; background: #F8F9FA; box-shadow: -2px 1px 23px -8px rgb(32, 32, 32);">
+                    <div class="row justify-content-center" id="tableTEST" style="margin-bottom: 60px;">
                         <?php foreach ($productAll['product'] as $product) {
                             $productPicture = getPicture($product['pid']);
                             $productGroupName = getGroupByGid($product['gid']);

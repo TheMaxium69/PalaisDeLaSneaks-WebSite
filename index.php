@@ -29,7 +29,7 @@ head($page); ?>
                 <?php
 
                 $products = $productAll['product'];
-                for ($i = 0; $i <= 9; $i++) {
+                for ($i = 0; $i <= 7; $i++) {
 
                     $product = null;
                     $product = $products[$i];
@@ -41,8 +41,8 @@ head($page); ?>
 
                     <div class="card card__one" onclick="window.location.href = 'products.php?p=<?= $product['pid'] ?>';">
                         <div class="product-image">
-                             <img class="card-img-top" src="api/more/uploads/<?= $productPicture['picture1'] ?>" alt="Card image cap">
-<!--                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="">-->
+<!--                             <img class="card-img-top" src="api/more/uploads/--><?php //= $productPicture['picture1'] ?><!--" alt="Card image cap">-->
+                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="">
                         </div>
                         <div class="product-info">
                             <h2 class="nameSneakers"><?= $product['name'] ?></h2>
@@ -55,8 +55,8 @@ head($page); ?>
 
             </div>
 
-            <div class="d-flex justify-content-center mx-auto">
-                <button class="custom-btn btn-2">Voir plus</button>
+            <div class="btnSectionGalery d-flex justify-content-center mx-auto">
+                <button class="custom-btn btn-2" style="text-transform: uppercase">Voir plus</button>
             </div>
 
         </section>
@@ -70,10 +70,10 @@ head($page); ?>
 
                 <!-- FORMULES DE NETTOAYGE  -->
                 <div class="col-6 d-flex flex-column justify-content-center text-center">
-                    <h3 class="text-center mt-5">La deuxième vie de vos sneakers</h3>
-                    <p class="mt-5 w-50 mx-auto">Nos services de nettoyage de baskets sont conçus pour répondre aux besoins de tous les amateurs de sneakers.
+                    <h3 class="text-center" style="margin-top: 2rem!important">La deuxième vie de vos sneakers</h3>
+                    <p class="w-58 mx-auto" style="margin-top: 2rem!important;">Nos services de nettoyage de baskets sont conçus pour répondre aux besoins de tous les amateurs de sneakers.
                     </p>
-                    <p class="w-50 mx-auto">Nous utilisons des techniques de nettoyage avancées et des produits de haute qualité pour éliminer la saleté,
+                    <p class="mx-auto w-58">Nous utilisons des techniques de nettoyage avancées et des produits de haute qualité pour éliminer la saleté,
                     les taches et les odeurs de vos baskets, tout en préservant leur couleur et leur texture d'origine.</p>
                     <div class="d-flex justify-content-center mx-auto">
                         <button class="custom-btn btn-2">Découvrir nos formules</button>

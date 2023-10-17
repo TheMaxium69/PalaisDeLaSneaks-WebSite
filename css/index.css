@@ -31,6 +31,16 @@ header
 
     width: 400px;
     margin-top: 120px;
+
+    transition: transform 0.5s ease-out;
+    will-change: transform;
+
+
+}
+#header .btnHeader .btn:hover {
+    background-color: transparent;
+    transform: scale(1.05);
+
 }
 
 
@@ -41,7 +51,9 @@ header
  /* titre */
 #gallery .title {
     margin: 50px;
+    margin-top: 70px;
 }
+
 
 #gallery h3 {
     text-transform: capitalize;
@@ -62,12 +74,21 @@ header
     height: 400px;
     box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
     border-radius: 0.9rem;
-    color: var(--text);
+    /*color: var(--text);*/
     cursor: pointer;
-    margin: 70px 20px 20px 10px;
-  }
-  
-  #gallery .card-img-top {
+    margin: 20px 20px 20px 10px;
+     transition: transform 0.2s ease-out;
+     will-change: transform;
+
+ }
+
+#gallery .card:hover{
+
+    transform: scale(1.05);
+
+}
+
+#gallery .card-img-top {
     margin-top: 50px;
   }
   
@@ -123,6 +144,10 @@ header
     margin-top: 30px;
 }
 
+.btnSectionGalery{
+    margin-top: 30px;
+}
+
 
 /***********
     section nettoyage
@@ -143,6 +168,9 @@ header
     border-radius: 15px;
     box-shadow: 8px 8px 12px #aaa;
     margin-bottom: 20px;
+
+     transition: transform 0.2s ease-out;
+     will-change: transform;
     
 }
 #sectionNettoyage .picture:hover {
@@ -153,7 +181,9 @@ header
 /* bouton formule nettoyage */
 
 #sectionNettoyage .btn-2 {
-  width: 200px;
+
+    width: 249px;
+    height: 62px;
   
   }
 
