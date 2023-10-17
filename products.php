@@ -144,7 +144,7 @@ head($page); ?>
                 </div>
 
                 <!-- CARD -->
-                <div class="container col-9" id="cardProductAll">
+                <div class="col-9" id="cardProductAll">
                     <div class="row justify-content-center" id="tableTEST">
                         <?php foreach ($productAll['product'] as $product) {
                             $productPicture = getPicture($product['pid']);
