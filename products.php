@@ -155,9 +155,8 @@ head($page); ?>
 
                             if ($product['pricing']['EUR']['monthly'] < 40) {
                             } else {
-
                         ?>
-                    <div class="card card__one" onclick="window.location.href = '?p=<?= $product['pid'] ?>';">
+                    <div <?php if ( $product['paytype'] !== 'onetime'){ echo "style='display: none;'"; } ?>  class="card card__one" onclick="window.location.href = '?p=<?= $product['pid'] ?>';">
                         <div class="product-image">
                             <!-- <img src="app/assets/sneakersLV.png" alt="OFF-white Red Edition" draggable="false" /> -->
                             <!-- <img class="card-img-top" src="api/more/uploads/<?= $productPicture['picture1'] ?>" alt="Card image cap"> -->
@@ -170,7 +169,7 @@ head($page); ?>
                         </div>
                     </div>
                     <?php
-                            }
+                             }
                         } ?>
                     </div>
                 </div>
