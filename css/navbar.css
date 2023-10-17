@@ -369,6 +369,17 @@ outline: none;
     color: #dc3545;
     box-shadow: 0 0 5px #dc3545;
 }
+
+#nav-mobile input:checked ~ nav > ul > li:last-child:hover {
+    color: #dc3545;
+    box-shadow: unset;
+}
+
+
+
+
+
+
 #nav-mobile .img-mobile{
     width: 112px;
 }
@@ -399,4 +410,7 @@ outline: none;
     background-color: #dc3545;
     height: 52px;
     width: 200px;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-transform: uppercase;
 }
