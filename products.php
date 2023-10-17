@@ -149,10 +149,6 @@ head($page); ?>
                         <?php foreach ($productAll['product'] as $product) {
                             $productPicture = getPicture($product['pid']);
 
-                            if ($productMax < $product['pricing']['EUR']['monthly']) {
-                                $productMax = $product['pricing']['EUR']['monthly'];
-                            }
-
                             if ($product['pricing']['EUR']['monthly'] < 40) {
                             } else {
                         ?>

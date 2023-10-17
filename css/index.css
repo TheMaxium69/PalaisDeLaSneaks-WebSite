@@ -13,14 +13,24 @@ header
     
 
 /* Bouton décoouvrir */
-#header .btn {
+
+#header .btnHeader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#header .btnHeader .btn {
   background-color: #bf081a;
   font-weight: 900;
   padding: 30px;
   color: white;
   font-size: x-large;
   border-radius: 0px;
-  transform: translate(582px, 140px);
+
+
+    width: 400px;
+    margin-top: 120px;
 }
 
 

@@ -7,15 +7,17 @@ head($page); ?>
     <?php
 
     require_once 'api/whmcs/connect.php';
+    require_once 'api/more/get.php';
     $productAll = product();
     //var_dump($_SESSION);
     ?>
 
     <main>
     <div id="header">
-    <a href="products.php">
-      <button type="button" class="btn">D E C O U V R I R</button>
-    </a>
+        <div class="btnHeader">
+            <button type="button" class="btn">D E C O U V R I R</button>
+        </div>
+    </div>
   </div>
 
   <section id="gallery">
@@ -28,26 +30,23 @@ head($page); ?>
 
                 $products = $productAll['product'];
                 for ($i = 0; $i <= 9; $i++) {
+
+                    $product = null;
+                    $product = $products[$i];
+
+                    $productPicture = getPicture($product['pid']);
+
+                    $productGroupName = getGroupByGid($product['gid']);
                 ?>
 
-                    <!-- <div class="card" style="width: 18rem;" onclick="window.location.href = 'products.php?p=<?= $products[$i]['pid'] ?>';">
-                        <h3 class="p-4 text-center"><?= $products[$i]['name'] ?></h3>
-                        <p class="card-text text-center text-danger">Nike</p>
-                        <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text text-center bold">130 €</p>
-                        </div>
-                    </div> -->
-
-                    <div class="card card__one" onclick="window.location.href = '?p=<?= $product['pid'] ?>';">
+                    <div class="card card__one" onclick="window.location.href = 'products.php?p=<?= $product['pid'] ?>';">
                         <div class="product-image">
-                            <!-- <img src="app/assets/sneakersLV.png" alt="OFF-white Red Edition" draggable="false" /> -->
-                            <!-- <img class="card-img-top" src="api/more/uploads/<?= $productPicture['picture1'] ?>" alt="Card image cap"> -->
-                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="">
+                             <img class="card-img-top" src="api/more/uploads/<?= $productPicture['picture1'] ?>" alt="Card image cap">
+<!--                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="">-->
                         </div>
                         <div class="product-info">
-                            <h2 class="nameSneakers"><?= $products[$i]['name'] ?></h2>
-                            <h6 class="nameMarque">Nike</h6>
+                            <h2 class="nameSneakers"><?= $product['name'] ?></h2>
+                            <h6 class="nameMarque"><?= $productGroupName ?></h6>
                             <div class="price"><?= $product['pricing']['EUR']['monthly'] ?> €</div>
                         </div>
                     </div>

@@ -23,3 +23,22 @@ function getSize($pid)
 
 }
 
+
+function getGroupByGid($gid){
+
+    $groupsAll = productGroup();
+
+    var_dump($groupsAll);
+
+    $gid = 1;
+
+
+
+
+var_dump($name);
+
+//    return $name
+
+
+}
+
