@@ -395,3 +395,10 @@ outline: none;
     right: 63px;
     z-index: 4;
 }
+
+#nav-mobile .custom-btn {
+    border: 0;
+    background-color: #dc3545;
+    height: 52px;
+    width: 200px;
+}
