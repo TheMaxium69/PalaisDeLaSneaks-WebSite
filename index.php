@@ -43,8 +43,8 @@ head($page); ?>
 
             </div>
 
-            <div class="frame">
-                <button class="custom-btn btn-7"><span>Read More</span>   </button>
+            <div class="d-flex justify-content-center mx-auto">
+                <button class="custom-btn btn-2">Voir plus</button>
             </div>
 
         </section>
@@ -63,8 +63,8 @@ head($page); ?>
                     </p>
                     <p class="w-50 mx-auto">Nous utilisons des techniques de nettoyage avancées et des produits de haute qualité pour éliminer la saleté,
                     les taches et les odeurs de vos baskets, tout en préservant leur couleur et leur texture d'origine.</p>
-                        <div class="d-flex justify-content-center mx-auto">
-                    <button class="custom-btn btn-2">Formules</button>
+                    <div class="d-flex justify-content-center mx-auto">
+                        <button class="custom-btn btn-2">Découvrir nos formules</button>
                     </div>
                 </div>
                 <!-- / FORMULE DE NETTOYAGE -->

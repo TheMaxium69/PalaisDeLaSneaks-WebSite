@@ -50,11 +50,39 @@ head($page); ?>
                 </div>
             </div>
             <!-- FILTRE SEARCH -->
-
+            
             <div class="row">
                 <div class="col-3" id="filter">
                     <h3 class="text-center mb-5">Filtrer par : </h3>
                     <div class="w-100">
+                        <!-- FILTRE PRICE -->
+                        <p class="mt-4 text-center">Prix : </p>
+                        <div class="wrapper" id="filterPrice">
+                            <fieldset class="filter-price">
+            
+                                <div class="price-field">
+                                    <input oninput="showValMin(this.value)" onchange="showValMin(this.value)" type="range" min="<?= $productMin ?>" max="<?= $productMax ?>" value="<?= $productMin ?>" id="lower">
+                                    <input oninput="showValMax(this.value)" onchange="showValMax(this.value)" type="range" min="<?= $productMin ?>" max="<?= $productMax ?>" value="<?= $productMax ?>" id="upper">
+                                </div>
+                                <div class="price-wrap">
+            
+                                    <div class="price-container">
+                                        <div class="price-wrap-1">
+            
+                                            <input id="one">
+                                            <label for="one">€</label>
+                                        </div>
+                                        <div class="price-wrap_line">-</div>
+                                        <div class="price-wrap-2">
+                                            <input id="two">
+                                            <label for="two">€</label>
+            
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <!-- / FILTRE PRICE -->
                         <select class="form-select w-75 mx-auto" aria-label="Default select example">
                             <option selected>Taille</option>
                             <option value="1">37</option>
@@ -68,7 +96,41 @@ head($page); ?>
                             <option value="9">45</option>
                         </select>
                     </div>
-                    <div class="mt-2 w-100">
+
+                    <!-- FILTRE MARQUE -->
+                    <div class="dropdown" data-control="checkbox-dropdown">
+                        <label class="dropdown-label">Choix des marques</label>
+                        
+                        <div class="dropdown-list">
+                            <a href="#" data-toggle="check-all" class="dropdown-option">
+                            Check All  
+                            </a>
+                            
+                            <label class="dropdown-option">
+                            <input type="checkbox" name="dropdown-group" value="adidas" />
+                            Adidas
+                            </label>
+                            
+                            <label class="dropdown-option">
+                            <input type="checkbox" name="dropdown-group" value="nike" />
+                            Nike
+                            </label>
+                            
+                            <label class="dropdown-option">
+                            <input type="checkbox" name="dropdown-group" value="jordan" />
+                            Jordan
+                            </label>
+                            
+                            <label class="dropdown-option">
+                            <input type="checkbox" name="dropdown-group" value="yeezy" />
+                            Yeezy
+                            </label>
+                                
+                        </div>
+                    </div>
+                    <!-- / FILTRE MARQUE -->
+
+                    <!-- <div class="mt-2 w-100">
                         <select onchange="selectGroup(this.value)" class="form-select w-75 mx-auto" aria-label="Default select example">
                             <option value="0" selected>Marque</option>
                             <?php foreach ($productGroupAll as $productGroup) {
@@ -77,36 +139,8 @@ head($page); ?>
                                 <option value="<?= $productGroup['id'] ?>"><?= $productGroup['name'] ?></option>
                             <?php } ?>
                         </select>
-                    </div>
+                    </div> -->
 
-                    <!-- FILTRE PRICE -->
-                    <p class="mt-4 text-center">Prix : </p>
-                    <div class="wrapper" id="filterPrice">
-                        <fieldset class="filter-price">
-
-                            <div class="price-field">
-                                <input oninput="showValMin(this.value)" onchange="showValMin(this.value)" type="range" min="<?= $productMin ?>" max="<?= $productMax ?>" value="<?= $productMin ?>" id="lower">
-                                <input oninput="showValMax(this.value)" onchange="showValMax(this.value)" type="range" min="<?= $productMin ?>" max="<?= $productMax ?>" value="<?= $productMax ?>" id="upper">
-                            </div>
-                            <div class="price-wrap">
-
-                                <div class="price-container">
-                                    <div class="price-wrap-1">
-
-                                        <input id="one">
-                                        <label for="one">€</label>
-                                    </div>
-                                    <div class="price-wrap_line">-</div>
-                                    <div class="price-wrap-2">
-                                        <input id="two">
-                                        <label for="two">€</label>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </div>
-                    <!-- / FILTRE PRICE -->
                 </div>
 
                 <!-- CARD -->

@@ -59,6 +59,12 @@ header
     transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+/* bouton voir plus */
+#gallery .btn-2{
+    height: 53px;
+    width: 219px;
+    margin-top: 30px;
+}
 
 
 /***********
@@ -82,24 +88,12 @@ header
     margin-bottom: 20px;
 }
 
+/* bouton formule nettoyage */
 
-/* bouton formule nettoayge */
-
-.btn-2 {
-  background: #dc3545;
-  background: linear-gradient #dc3545;
-  border: none;
+#sectionNettoyage .btn-2 {
+  width: 200px;
   
   }
-  .btn-2:before {
-  height: 0%;
-  width: 2px;
-  }
-  .btn-2:hover {
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-      inset -4px -4px 6px 0 rgba(255,255,255,.2),
-      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
-  }
+
 
 

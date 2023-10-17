@@ -3,7 +3,7 @@
  ***********/
 
 
-@media(max-width: 1200px){
+@media(max-width: 1300px){
 
     #nav-desktop{
         display: none;
@@ -11,7 +11,7 @@
 
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1301px) {
     #nav-mobile{
         display: none;
     }
@@ -57,7 +57,6 @@
     display: flex;
     justify-content: center;
     list-style: none;
-    margin-right: 62px;
     position: relative;
 }
 
@@ -69,11 +68,16 @@
     transition: background-color 0.3s;
 
 }
+
 #nav-desktop ul li:hover {
-    border-bottom: 4px solid red;
-    background-color: #dc3545;
- 
- }
+    border-bottom: 4px solid #dc3545;
+    background-color: rgba(220, 53, 69, 0.5);
+    color: white;
+}
+
+#nav-desktop ul li:hover a {
+color: white;
+}
 
 #nav-desktop ul li a {
     color: black;
@@ -83,10 +87,6 @@
     padding: 8px 15px;
 }
 
-#nav-desktop ul li a:hover {
-    color: rgb(255, 255, 255);
-    /* border-bottom: 2px solid red; */
-}
 
 #nav-desktop ul ul {
     position: absolute;
@@ -115,17 +115,22 @@
     line-height: 50px;
 }
 
+#nav-desktop .endNavbar{
+    display: flex;
+    justify-content: end;
+} 
+
 #nav-desktop .panier{
     align-items: center;
     font-size: 20px;
-    margin-top: 25px;
+    margin-top: 20px;
 } 
 
 /* Bouton espace client */
-
-#nav-desktop  button {
-    margin: 20px;
-  }
+#nav-desktop .connexion{
+    display: flex;
+    align-items: center;
+} 
 
 #nav-desktop .custom-btn {
 width: 130px;
@@ -133,6 +138,7 @@ height: 40px;
 color: white;
 border-radius: 5px;
 padding: 10px 25px;
+margin: 0;
 font-family: 'Lato', sans-serif;
 font-weight: 500;
 background: transparent;
@@ -147,10 +153,10 @@ outline: none;
 }
 
 #nav-desktop .btn-7 {
-    background-color: #bf081a;
-      line-height: 42px;
-      padding: 0;
-      border: none;
+    background-color: #dc3545;
+    line-height: 42px;
+    padding: 0;
+    border: none;
     }
 
 #nav-desktop.btn-7 span {
@@ -160,19 +166,19 @@ outline: none;
     height: 100%;
     }
 
-    #nav-desktop .btn-7:before,
-    #nav-desktop .btn-7:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  background: #bf081a;
-  box-shadow:
-   -7px -7px 20px 0px rgba(255,255,255,.9),
-   -4px -4px 5px 0px rgba(255,255,255,.9),
-   7px 7px 20px 0px rgba(0,0,0,.2),
-   4px 4px 5px 0px rgba(0,0,0,.3);
-  transition: all 0.3s ease;
+#nav-desktop .btn-7:before,
+#nav-desktop .btn-7:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #dc3545;
+    box-shadow:
+    -7px -7px 20px 0px rgba(255,255,255,.9),
+    -4px -4px 5px 0px rgba(255,255,255,.9),
+    7px 7px 20px 0px rgba(0,0,0,.2),
+    4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
 }
 #nav-desktop .btn-7:before{
    height: 0%;
@@ -183,7 +189,7 @@ outline: none;
   height: 2px;
 }
 #nav-desktop .btn-7:hover{
-  color: #bf081a;
+  color: #dc3545;
   background: transparent;
 }
 #nav-desktop .btn-7:hover:before {
@@ -198,7 +204,7 @@ outline: none;
   content: "";
   left: 0;
   top: 0;
-  background: #bf081a;
+  background: #dc3545;
   box-shadow:
    -7px -7px 20px 0px rgba(255,255,255,.9),
    -4px -4px 5px 0px rgba(255,255,255,.9),
@@ -362,8 +368,8 @@ outline: none;
     list-style: none;
 }
 #nav-mobile input:checked ~ nav > ul > li:hover {
-    color: red;
-    box-shadow: 0 0 5px red;
+    color: #dc3545;
+    box-shadow: 0 0 5px #dc3545;
 }
 #nav-mobile .img-mobile{
     width: 112px;
@@ -378,7 +384,7 @@ outline: none;
 }
 
 .burger-btn-connect{
-    background-color: #e51e1e;
+    background-color: #dc3545;
     border-radius: 20px;
     color: white;
 }
