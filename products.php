@@ -148,6 +148,7 @@ head($page); ?>
                     <div class="row justify-content-center" id="tableTEST">
                         <?php foreach ($productAll['product'] as $product) {
                             $productPicture = getPicture($product['pid']);
+                            $productGroupName = getGroupByGid($product['gid']);
 
                             if ($product['pricing']['EUR']['monthly'] < 40) {
                             } else {
@@ -160,7 +161,7 @@ head($page); ?>
                         </div>
                         <div class="product-info">
                             <h2 class="nameSneakers"><?= $product['name'] ?></h2>
-                            <h6 class="nameMarque">Nike</h6>
+                            <h6 class="nameMarque"><?= $productGroupName ?></h6>
                             <div class="price"><?= $product['pricing']['EUR']['monthly'] ?> €</div>
                         </div>
                     </div>
