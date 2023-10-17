@@ -29,6 +29,10 @@
     
 }
 
+#nettoyage .btn-2 {
+  width: 200px;
+}
+
 .carte:hover {
     background-color: #f0f0f0;
 }
