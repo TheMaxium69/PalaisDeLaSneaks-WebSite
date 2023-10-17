@@ -28,16 +28,17 @@ function getGroupByGid($gid){
 
     $groupsAll = productGroup();
 
-    var_dump($groupsAll);
 
-    $gid = 1;
+    foreach ($groupsAll as $group){
 
+        if ($gid == $group['id']){
 
+            $name = $group['name'];
 
+        }
+    }
 
-var_dump($name);
-
-//    return $name
+    return $name;
 
 
 }
