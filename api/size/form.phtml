@@ -1,7 +1,3 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-
 <?php
 
 require_once '../../panel/init.php';
@@ -20,40 +16,101 @@ $productAll = product();
             <?php } ?>
         </select>
 
-        <ul id="newTaille">
+        <div id="nbListe">
             <input type="hidden" name="nbListe" value="0">
-            <li>
-                <label for="taille0">Taille:</label>
-                <input type="number" id="taille0" name="size0" />
-            </li>
-            <li>
-                <label for="qtn0">Quantite:</label>
-                <input type="number" id="qtn0" name="count0" />
-            </li>
-        </ul>
+        </div>
 
+        <table id="newTaille">
 
+                <tr>
+                    <th>
+                        <label for="taille0">Taille:</label>
+                    </th>
+                    <th>
+
+                        <label for="qtn0">Quantite:</label>
+                    </th>
+                </tr>
+
+                <tr id="input0">
+                    <td>
+                        <input type="number" id="taille" name="size0" oninput="addTaille(0)"/>
+                    </td>
+                    <td>
+                        <input type="number" id="qtn" name="count0" oninput="addTaille(0)"/>
+                    </td>
+                </tr>
+
+        </table>
 
         <input class="btn btn-danger" type="submit" value="Upload Size" name="submit">
     </form>
-    <button onclick="addTaille()">Ajouter une taille</button>
 </div>
 
 <script>
     var listTaille = document.getElementById("newTaille");
+    var divNumber = document.getElementById("nbListe");
     var nbListe = 1;
 
-    function addTaille() {
-        listTaille.innerHTML += '<input type="hidden" name="nbListe" value="' + nbListe + '"> <li><label for="taille' + nbListe + '">Taille:</label><input type="number" id="taille' + nbListe + '" name="size' + nbListe + '" /></li><li><label for="qtn' + nbListe + '">Quantite:</label><input type="number" id="qtn' + nbListe + '" name="count' + nbListe + '" /></li>';
-        nbListe++;
+    function addTaille(nbInput) {
+        // listTaille.innerHTML = '<input type="hidden" name="nbListe" value="' + nbListe + '"> <li><label for="taille' + nbListe + '">Taille:</label><input type="number" id="taille' + nbListe + '" name="size' + nbListe + '" /></li><li><label for="qtn' + nbListe + '">Quantite:</label><input type="number" id="qtn' + nbListe + '" name="count' + nbListe + '" /></li>';
+
+        console.log(nbListe, nbInput+1);
+        if (nbListe !== nbInput+1){
+            console.log("form add old")
+        } else {
+            var nouvelDiv = document.createElement("tr");
+            nouvelDiv.id = "input" + nbListe;
+            nouvelDiv.innerHTML = ' <td> <input type="number" id="taille" name="size'+ nbListe +'" oninput="addTaille('+ nbListe +')"/> </td> <td> <input type="number" id="qtn" name="count'+ nbListe +'" oninput="addTaille('+ nbListe +')"/> </td>';
+
+            listTaille.appendChild(nouvelDiv);
+
+            var nbHidden = nbListe-1;
+            divNumber.innerHTML = '<input type="hidden" name="nbListe" value="'+ nbHidden +'">'
+
+            nbListe++;
+        }
+    }
+</script>
+
+<style>
+    body{
+        background-color: #E6E6E6
+    }
+    .upload {
+        background-color: #E6E6E6;
+        width: 100%;
+        margin: auto;
+        padding: 30px;
     }
 
-    // const inputTaille = document.querySelector("#taille0");
-    // const inputQtn = document.querySelector("#qtn0");
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-    // inputTaille.addEventListener("input", updateValue);
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        margin: 5px;
+    }
 
-    // function updateValue() {
-    //     console.log('updateValue');
-    // }
-</script>
+    .btn {
+        margin-top: 30px;
+    }
+    th{
+        padding: 4px;
+        font-weight: 700;
+        background-color: #bb2d3b;
+        border-bottom: 1px solid #ddd;
+        border-radius: 3px;
+        text-align: center;
+        color: #fff;
+    }
+    td{
+        background-color: #ffbdbd;
+    }
+</style>
