@@ -69,6 +69,55 @@ head($page); ?>
             </div>
         </div>
 
+        <!-- Gallery -->
+        <div class="gallery">
+            <!-- image 1 -->
+            <div class="container__items">
+                <div class="polaroid one">
+                    <div class="polaroid__content">
+                        <div class="polaroid__content-image">
+                            <img src='assets/avant1.PNG' alt=''>
+                        </div>
+                        <div class="polaroid__content-caption">
+                            <p>AirForce :before</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="polaroid one">
+                    <div class="polaroid__content">
+                        <div class="polaroid__content-image">
+                            <img src='assets/apres1.png' alt=''>
+                        </div>
+                        <div class="polaroid__content-caption">
+                            <p>Air Force :after</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="polaroid one">
+                    <div class="polaroid__content">
+                        <div class="polaroid__content-image">
+                            <img src='https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+                        </div>
+                        <div class="polaroid__content-caption">
+                            <p>Converse :after</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="polaroid one">
+                    <div class="polaroid__content">
+                        <div class="polaroid__content-image">
+                            <img src='https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+                        </div>
+                        <div class="polaroid__content-caption">
+                            <p>Converse :before</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+
         <style>
             .hiddenNett {
                 display: none;
@@ -117,6 +166,12 @@ head($page); ?>
                         break;
                 }
             }
+
+            var polaroids = document.querySelectorAll('.polaroid');
+polaroids.forEach(item => {
+const randomRotation = Math.floor(Math.random() * (6 - -6 + 1) + -6);
+item.style.transform = `rotate(${randomRotation}deg)`
+})
         </script>
 
 
