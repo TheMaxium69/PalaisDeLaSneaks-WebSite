@@ -46,13 +46,14 @@ head($page); ?>
                             <i class="ion-location"></i>
                         </label>
                         <input class="w-100 pe-4" id="searchInput" type="search" placeholder="Recherchez un produit ...">
+                        <div id="btn-filter" onclick="activeFilter()"><i class="fas fa-sliders-h"></i></div>
                     </form>
                 </div>
             </div>
             <!-- FILTRE SEARCH -->
             
             <div class="">
-                <div class="col" id="filter" style="display: none">
+                <div class="col" id="filter" style="display: none" data-display="0">
                     <h3 class="text-center mb-5">Filtrer par : </h3>
                     <div class="w-100">
                         <!-- FILTRE PRICE -->

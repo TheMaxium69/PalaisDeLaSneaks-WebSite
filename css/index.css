@@ -187,5 +187,41 @@ header
   
   }
 
+@media (max-width: 1098px) {
+    #nettoyageIndex .row .col-5{
+
+        flex: unset!important;
+        width: 100%;
+        border-radius: unset;
 
 
+    }
+
+    #sectionNettoyage .picture:hover {
+        transform: none;
+    }
+
+    #nettoyageIndex .row .col-6{
+
+        flex: unset!important;
+        width: unset!important;
+
+    }
+}
+
+
+
+@media (max-width: 1112px) {
+    #index-max .card__one{
+        display: none;
+    }
+
+    #index-max .card__one:nth-child(1),
+    #index-max .card__one:nth-child(2),
+    #index-max .card__one:nth-child(3),
+    #index-max .card__one:nth-child(4){
+        display: unset;
+    }
+}
+
+/* :nth-child  */

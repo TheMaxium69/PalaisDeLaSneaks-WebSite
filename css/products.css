@@ -425,3 +425,16 @@ pointer-events: none;
     gap: 3rem;
   }
 }
+
+#search #btn-filter i:hover{
+  color: #dc3545;
+
+  /*transform: scale(1.05);*/
+}
+
+#search #btn-filter i{
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+  font-size: 32px;
+  transform: translate(-11px, 8px);
+}

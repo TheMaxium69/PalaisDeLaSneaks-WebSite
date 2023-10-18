@@ -12,10 +12,10 @@ head($page); ?>
     //var_dump($_SESSION);
     ?>
 
-    <main>
+    <main id="index-max">
     <div id="header">
         <div class="btnHeader">
-            <button type="button" class="btn">D E C O U V R I R</button>
+            <button type="button" class="btn" onclick="window.location.href = 'products.php'">D E C O U V R I R</button>
         </div>
     </div>
   </div>
@@ -56,13 +56,13 @@ head($page); ?>
             </div>
 
             <div class="btnSectionGalery d-flex justify-content-center mx-auto">
-                <button class="custom-btn btn-2" style="text-transform: uppercase">Voir plus</button>
+                <button onclick="window.location.href = 'products.php'" class="custom-btn btn-2" style="text-transform: uppercase">Voir plus</button>
             </div>
 
         </section>
 
         <!-- NETTOYAGE -->
-        <article>
+        <article id="nettoyageIndex">
             <div class="row d-flex justify-content-center" id="sectionNettoyage">
                 <!-- <h3 class="text-center my-5">Nettoyage de vos sneakers</h3> -->
                 <div class="col-5 picture">
@@ -76,7 +76,7 @@ head($page); ?>
                     <p class="mx-auto w-58">Nous utilisons des techniques de nettoyage avancées et des produits de haute qualité pour éliminer la saleté,
                     les taches et les odeurs de vos baskets, tout en préservant leur couleur et leur texture d'origine.</p>
                     <div class="d-flex justify-content-center mx-auto">
-                        <button class="custom-btn btn-2">Découvrir nos formules</button>
+                        <button class="custom-btn btn-2 uppercase" onclick="window.location.href = 'nettoyage.php'">Découvrir nos formules</button>
                     </div>
                 </div>
                 <!-- / FORMULE DE NETTOYAGE -->

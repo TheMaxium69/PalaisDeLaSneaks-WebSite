@@ -179,3 +179,26 @@ function selectGroup(groupValue){
     new CheckboxDropdown(checkboxesDropdowns[i]);
   }
 })(jQuery);
+
+
+function activeFilter() {
+
+    var divFilter = document.getElementById("filter");
+
+    isDisplay = divFilter.getAttribute("data-display");
+
+    if (isDisplay == 0) {
+        //on l'affiche
+
+        divFilter.style.display = "unset";
+        divFilter.setAttribute("data-display","1")
+
+    } else {
+        //on l'elenleve
+
+        divFilter.style.display = "none";
+        divFilter.setAttribute("data-display","0")
+    }
+
+
+}

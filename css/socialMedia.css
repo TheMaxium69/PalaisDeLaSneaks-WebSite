@@ -26,4 +26,14 @@
     box-shadow: 5px -3px 66px #aaa;
 
 }
-  
+@media (max-width: 1473px) {
+
+    #card-reseau-max{
+        width: 100%!important;
+    }
+
+    #card-reseau-max .media-body{
+        margin: auto;
+    }
+
+}
