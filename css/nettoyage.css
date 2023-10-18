@@ -158,6 +158,14 @@
     padding-top: 30px;
     padding-bottom: 30px;
     box-shadow: 5px -3px 66px #aaa;
-      margin: 118px 0 157px 0;
+      margin: 90px 0 157px 0;
+}
+
+#sectionNettoyage h3 {
+  margin: 30px;
+}
+
+#sectionNettoyage ul {
+  margin-top: 14%;
 }
 

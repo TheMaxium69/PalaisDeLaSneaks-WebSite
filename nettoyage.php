@@ -14,38 +14,57 @@ head($page); ?>
 
         <br><br>
 
-        <div class="topcoat-button-bar d-flex justify-content-center">
-            <div class="topcoat-button-bar__item">
-                <button onclick="nettoyageChange('Standard')" class="custom-btn btn-2" id="Standard">Standard</button>
-            </div>
-            <div class="topcoat-button-bar__item">
-                <button onclick="nettoyageChange('Medium')" class="custom-btn btn-2" id="Medium">Medium</button>
-            </div>
-            <div class="topcoat-button-bar__item">
-                <button onclick="nettoyageChange('Premium')" class="custom-btn btn-2" id="Premium">Premium</button>
-            </div>
-        </div>
-
+        
         <div id="sectionNettoyage" class="card mb-3">
+            <div class="topcoat-button-bar d-flex justify-content-center">
+                <div class="topcoat-button-bar__item">
+                    <button onclick="nettoyageChange('Standard')" class="custom-btn btn-2" id="Standard">Standard</button>
+                </div>
+                <div class="topcoat-button-bar__item">
+                    <button onclick="nettoyageChange('Medium')" class="custom-btn btn-2" id="Medium">Medium</button>
+                </div>
+                <div class="topcoat-button-bar__item">
+                    <button onclick="nettoyageChange('Premium')" class="custom-btn btn-2" id="Premium">Premium</button>
+                </div>
+            </div>
             <div id="textPremium" class="card-body hiddenNett">
-                <h5 class="card-title">Clean Premium</h5>
-                <p class="card-text w-50 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor nec feugiat nisl pretium fusce. Suscipit adipiscing bibendum est ultricies. Dictum at tempor commodo ullamcorper. Adipiscing vitae proin sagittis nisl rhoncus mattis. Bibendum est ultricies integer quis auctor elit. Mauris in aliquam sem fringilla ut morbi. Quis eleifend quam adipiscing vitae proin sagittis. Orci phasellus egestas tellus rutrum. </p>
-                <!-- <a name="" id="" class="btn btn-primary underline" href="https://calendly.com/d/4r6-2z4-dn6/reservation-nettoyage" role="button">je choisis cette formule !</a> -->
-                <button class="custom-btn btn-2">Découvrir nos formules</button>
+                <h3>Clean Premium</h3>
+                <p>Pour le choix de cette formule, nous vous proposons :</p>
+                <div class="w-25 mx-auto">
+                    <ul>
+                        <li>Lacets</li>
+                        <li>Insole (semelle intérieure)</li>
+                        <li>Midsole</li>
+                        <li>Semelle</li>
+                        <li>Surface</li>
+                    </ul>
+                </div>
+                <button class="custom-btn btn-2">Choisir cette formule</button>
             </div>
             <div id="textMedium" class="card-body hiddenNett">
-                <h5 class="card-title">Clean Medium</h5>
-                <p class="card-text w-50 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor nec feugiat nisl pretium fusce. Suscipit adipiscing bibendum est ultricies. Dictum at tempor commodo ullamcorper. Adipiscing vitae proin sagittis nisl rhoncus mattis. Bibendum est ultricies integer quis auctor elit. Mauris in aliquam sem fringilla ut morbi. Quis eleifend quam adipiscing vitae proin sagittis. Orci phasellus egestas tellus rutrum.</p>
+                <h3>Clean Medium</h3>
+                <p>Pour le choix de cette formule, nous vous proposons :</p>
+                <div class="w-25 mx-auto">
+                    <ul>
+                        <li>Lacets</li>
+                        <li>Midsole</li>
+                        <li>Surface</li>
+                    </ul>
+                </div>
                 <!-- <a name="" id="" class="btn btn-primary underline" href="https://calendly.com/d/4r6-2z4-dn6/reservation-nettoyage" role="button">je choisis cette formule !</a> -->
-                <button class="custom-btn btn-2">Découvrir nos formules</button>
-
-
+                <button class="custom-btn btn-2">Choisir cette formule</button>
             </div>
             <div id="textStandard" class="card-body">
-                <h5 class="card-title">Clean Standard</h5>
-                <p class="card-text w-50 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor nec feugiat nisl pretium fusce. Suscipit adipiscing bibendum est ultricies. Dictum at tempor commodo ullamcorper. Adipiscing vitae proin sagittis nisl rhoncus mattis. Bibendum est ultricies integer quis auctor elit. Mauris in aliquam sem fringilla ut morbi. Quis eleifend quam adipiscing vitae proin sagittis. Orci phasellus egestas tellus rutrum.</p>
+                <h3>Clean Standard</h3>
+                <p>Pour le choix de cette formule, nous vous proposons :</p>
+                <div class="w-25 mx-auto">
+                    <ul>
+                        <li>Lacets</li>
+                        <li>Surface</li>
+                    </ul>
+                </div>
                 <!-- <a name="" id="" class="btn btn-primary underline" href="https://calendly.com/d/4r6-2z4-dn6/reservation-nettoyage" role="button">je choisis cette formule !</a> -->
-                <button class="custom-btn btn-2">Découvrir nos formules</button>
+                <button class="custom-btn btn-2">Choisir cette formule</button>
 
             </div>
         </div>
