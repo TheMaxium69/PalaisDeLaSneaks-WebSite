@@ -351,6 +351,8 @@ pointer-events: none;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  width: 80%;
+  margin-bottom: 100px;
 }
 #cardProductAll .card {
   display: flex;
@@ -437,4 +439,23 @@ pointer-events: none;
   will-change: transform;
   font-size: 32px;
   transform: translate(-11px, 8px);
+}
+
+@media (max-width: 864px) {
+  #cardProductAll {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  #cardProductAll {
+    width: 100%;
+  }
+}
+
+@media (max-width: 695px) {
+  #cardProductAll .card {
+    width: 248px;
+    margin: 20px 5px 20px 5px;
+  }
 }
