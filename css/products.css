@@ -9,7 +9,6 @@
 /* FILTRE SEARCH */
 #search {
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 #search ul, nav{
@@ -107,7 +106,6 @@
   align-items: center;
   width: 70%;
   margin: auto;
-  margin-bottom: 100px;
 }
 
 @media (max-width:965px) {
@@ -341,6 +339,7 @@ pointer-events: none;
   justify-content: space-evenly;
   width: 80%;
   margin-bottom: 100px;
+  margin-top: 25px;
 }
 #cardProductAll .card {
   display: flex;
