@@ -52,10 +52,9 @@ head($page); ?>
             </div>
             <!-- FILTRE SEARCH -->
             
-            <div class="d-flex">
+            <div>
                 <div id="filter" style="display: none" data-display="0">
-                    <h3 class="text-center mb-5">Filtrer par : </h3>
-                    <div>
+                    <div class="allFilter">
                         <select class="form-select size" aria-label="Default select example">
                             <option selected>Taille</option>
                             <option value="1">37</option>
@@ -69,31 +68,33 @@ head($page); ?>
                             <option value="9">45</option>
                         </select>
                         <!-- FILTRE PRICE -->
-                        <p class="mt-4 text-center">Prix : </p>
-                        <div class="wrapper" id="filterPrice">
-                            <fieldset class="filter-price">
-            
-                                <div class="price-field">
-                                    <input oninput="showValMin(this.value)" onchange="showValMin(this.value)" type="range" min="<?= $productMin ?>" max="<?= $productMax ?>" value="<?= $productMin ?>" id="lower">
-                                    <input oninput="showValMax(this.value)" onchange="showValMax(this.value)" type="range" min="<?= $productMin ?>" max="<?= $productMax ?>" value="<?= $productMax ?>" id="upper">
-                                </div>
-                                <div class="price-wrap">
-            
-                                    <div class="price-container">
-                                        <div class="price-wrap-1">
-            
-                                            <input id="one">
-                                            <label for="one">€</label>
-                                        </div>
-                                        <div class="price-wrap_line">-</div>
-                                        <div class="price-wrap-2">
-                                            <input id="two">
-                                            <label for="two">€</label>
-            
+                        <div class="price">
+                            <p class="mt-4 text-center">Prix : </p>
+                            <div class="wrapper" id="filterPrice">
+                                <fieldset class="filter-price">
+                
+                                    <div class="price-field">
+                                        <input oninput="showValMin(this.value)" onchange="showValMin(this.value)" type="range" min="<?= $productMin ?>" max="<?= $productMax ?>" value="<?= $productMin ?>" id="lower">
+                                        <input oninput="showValMax(this.value)" onchange="showValMax(this.value)" type="range" min="<?= $productMin ?>" max="<?= $productMax ?>" value="<?= $productMax ?>" id="upper">
+                                    </div>
+                                    <div class="price-wrap">
+                
+                                        <div class="price-container">
+                                            <div class="price-wrap-1">
+                
+                                                <input id="one">
+                                                <label for="one">€</label>
+                                            </div>
+                                            <div class="price-wrap_line">-</div>
+                                            <div class="price-wrap-2">
+                                                <input id="two">
+                                                <label for="two">€</label>
+                
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </fieldset>
+                                </fieldset>
+                            </div>
                         </div>
                         <!-- / FILTRE PRICE -->
 

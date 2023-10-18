@@ -3,7 +3,7 @@
     position: relative;
     font-size: 14px;
     color: #333;
-    width: 75%;
+    width: 30%;
   
     .dropdown-list {
       padding: 12px;
@@ -19,6 +19,7 @@
       max-height: 66vh;
       overflow-y: scroll;
       margin-top: 20px;
+      z-index: 1;
     }
     
     .dropdown-option {
@@ -30,7 +31,6 @@
     
     .dropdown-label {
       display: block;
-      margin-top: 20px;
       height: 35px;
       background: #fff;
       border: 1px solid #ccc;
