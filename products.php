@@ -172,6 +172,7 @@ head($page); ?>
                     <?php
                              }
                         } ?>
+                        <p id="noProduct">Y a R</p>
                     </div>
                 </div>
                 </section>
@@ -182,6 +183,7 @@ head($page); ?>
         </main>
 
         <script src="javascript/filtre.js"></script>
+        <script src="javascript/products.js"></script>
 
     <?php } ?>
     <footer> <?php footer($page); ?> </footer>
