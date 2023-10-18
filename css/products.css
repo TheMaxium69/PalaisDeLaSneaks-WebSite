@@ -340,8 +340,20 @@ pointer-events: none;
     padding-left: 5px;
 }
 
-   
 /* / FILTRE PRICE */
+
+/* filtre taille */
+#filter .size {
+  width: 50%;
+  margin: auto;
+}
+
+/* filtre marque */
+#filter .dropdown {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 100px;
+}
 
 /************
     CARDS

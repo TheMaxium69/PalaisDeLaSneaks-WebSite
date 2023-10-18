@@ -84,7 +84,7 @@ head($page); ?>
                             </fieldset>
                         </div>
                         <!-- / FILTRE PRICE -->
-                        <select class="form-select w-75 mx-auto" aria-label="Default select example">
+                        <select class="form-select size" aria-label="Default select example">
                             <option selected>Taille</option>
                             <option value="1">37</option>
                             <option value="2">38</option>
