@@ -33,29 +33,19 @@
 
             if ($_SESSION['login_auth_tk']) {
                 $isLog = true;
-
-                $firstName = $_SESSION['cart']['user']['firstname']; ?>
-
-                <div>
-                    <button class="custom-btn btn-7"><a href="panel/clientarea.php">Profil <?php if ($firstName) {
-                                                                                                echo $firstName;
-                                                                                            } ?></a> </button>
-                </div>
+                ?>
 
                 <div class="connexion">
-                    <button class="custom-btn btn-7"><span>Read More</span> </button>
+                    <a href="panel/clientarea.php"><button class="custom-btn btn-7"> <span> Mon Profil</span> </button></a>
 
                 </div>
-
-                <!-- <a href="panel/clientarea.php" type="button" class="btn btn-danger">Profil </a> -->
-
             <?php
             } else {
                 $isLog = false;
 
                 echo '
                 <div class="connexion">
-                <a href="panel/clientarea.php"><button class="custom-btn btn-7"><span>Espace client</span>   </button></a>
+                <a href="panel/clientarea.php"><button class="custom-btn btn-7"> <span>Espace client</span>   </button></a>
   
                 </div>';
             }
