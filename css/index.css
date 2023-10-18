@@ -77,8 +77,8 @@ header
     /*color: var(--text);*/
     cursor: pointer;
     margin: 20px 20px 20px 10px;
-     transition: transform 0.2s ease-out;
-     will-change: transform;
+    transition: transform 0.2s ease-out;
+    will-change: transform;
 
  }
 
