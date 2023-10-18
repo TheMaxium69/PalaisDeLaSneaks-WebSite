@@ -6,30 +6,28 @@ head($page); ?>
     <header> <?php navbar($page); ?> </header>
 
     <main>
-        <h1 class="mt-5">Service de Nettoyage</h1>
+        <h1 class="text-center mt-5 bold">Service de Nettoyage</h1>
 
-        <img id="imgPremium" class="" src="assets/cleanPremium.jpg" alt="nettoyage">
+        <img id="imgPremium" class="hiddenNett" src="assets/cleanPremium.jpg" alt="nettoyage">
         <img id="imgMedium" class="hiddenNett" src="assets/cleanMedium.jpg" alt="nettoyage">
-        <img id="imgStandard" class="hiddenNett" src="assets/cleanStandard.jpg" alt="nettoyage">
+        <img id="imgStandard" class="" src="assets/cleanStandard.jpg" alt="nettoyage">
 
         <br><br>
 
         <div class="topcoat-button-bar d-flex justify-content-center">
             <div class="topcoat-button-bar__item">
-                <button onclick="nettoyageChange('Premium')" class="topcoat-button-bar__button" id="Premium">Clean Premium</button>
+                <button onclick="nettoyageChange('Standard')" class="custom-btn btn-2" id="Standard">Standard</button>
             </div>
             <div class="topcoat-button-bar__item">
-                <button onclick="nettoyageChange('Medium')" class="topcoat-button-bar__button" id="Medium">Clean Medium</button>
+                <button onclick="nettoyageChange('Medium')" class="custom-btn btn-2" id="Medium">Medium</button>
             </div>
             <div class="topcoat-button-bar__item">
-                <button onclick="nettoyageChange('Standard')" class="topcoat-button-bar__button" id="Standard">Clean Standard</button>
+                <button onclick="nettoyageChange('Premium')" class="custom-btn btn-2" id="Premium">Premium</button>
             </div>
         </div>
 
-        <br><br>
-
         <div id="sectionNettoyage" class="card mb-3">
-            <div id="textPremium" class="card-body">
+            <div id="textPremium" class="card-body hiddenNett">
                 <h5 class="card-title">Clean Premium</h5>
                 <p class="card-text w-50 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor nec feugiat nisl pretium fusce. Suscipit adipiscing bibendum est ultricies. Dictum at tempor commodo ullamcorper. Adipiscing vitae proin sagittis nisl rhoncus mattis. Bibendum est ultricies integer quis auctor elit. Mauris in aliquam sem fringilla ut morbi. Quis eleifend quam adipiscing vitae proin sagittis. Orci phasellus egestas tellus rutrum. </p>
                 <!-- <a name="" id="" class="btn btn-primary underline" href="https://calendly.com/d/4r6-2z4-dn6/reservation-nettoyage" role="button">je choisis cette formule !</a> -->
@@ -43,7 +41,7 @@ head($page); ?>
 
 
             </div>
-            <div id="textStandard" class="card-body hiddenNett">
+            <div id="textStandard" class="card-body">
                 <h5 class="card-title">Clean Standard</h5>
                 <p class="card-text w-50 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor nec feugiat nisl pretium fusce. Suscipit adipiscing bibendum est ultricies. Dictum at tempor commodo ullamcorper. Adipiscing vitae proin sagittis nisl rhoncus mattis. Bibendum est ultricies integer quis auctor elit. Mauris in aliquam sem fringilla ut morbi. Quis eleifend quam adipiscing vitae proin sagittis. Orci phasellus egestas tellus rutrum.</p>
                 <!-- <a name="" id="" class="btn btn-primary underline" href="https://calendly.com/d/4r6-2z4-dn6/reservation-nettoyage" role="button">je choisis cette formule !</a> -->
