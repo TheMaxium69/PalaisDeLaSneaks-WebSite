@@ -2,26 +2,22 @@
 $page = 6;
 head($page); ?>
 
-<body>
+<body class>
     <header> <?php navbar($page); ?> </header>
 
 
   <main id="rachat">
-    <h1 class="text-center m-5">Revendez votre paire !</h1>
-
+  <h1 style="background-color:#dc3545; color: #ffffff; text-transform: uppercase; font-weight: bold; text-align: center;padding:10px;font-size:24px;margin: 0">Nous achetons vos paires au meilleur prix</h1>
     <div class="cardRevente">
-      <div class="w-50 picture">
-      </div>
-      <div class="w-50 cardRight">
+    </div>
+
+      <div>
         <div class="text">
-          <p>Vous souhaitez revendre votre paire ?</p>
+          <h2>Vous souhaitez revendre votre paire ?</h2>
            <p>Contactez-nous directement sur notre messagerie Instagram, notre équipe se chargera d'estimer et vous proposer le meilleur prix pour vous.</p>
-          <!-- <a name="" id="" class="btn btn-primary underline" href="https://www.instagram.com/palais.de.la.sneaks/" role="button">Je revends ma paire !</a> -->
           <button class="custom-btn btn-2">Revendre ma paire</button>
         </div>
     </div>
-  </div>
-
   <?php socialLink($page); ?>
 
   </main>
