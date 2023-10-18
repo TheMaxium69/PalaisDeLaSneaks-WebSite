@@ -52,10 +52,22 @@ head($page); ?>
             </div>
             <!-- FILTRE SEARCH -->
             
-            <div class="">
-                <div class="col" id="filter" style="display: none" data-display="0">
+            <div class="d-flex">
+                <div id="filter" style="display: none" data-display="0">
                     <h3 class="text-center mb-5">Filtrer par : </h3>
-                    <div class="w-100">
+                    <div>
+                        <select class="form-select size" aria-label="Default select example">
+                            <option selected>Taille</option>
+                            <option value="1">37</option>
+                            <option value="2">38</option>
+                            <option value="3">39</option>
+                            <option value="4">40</option>
+                            <option value="5">41</option>
+                            <option value="6">42</option>
+                            <option value="7">43</option>
+                            <option value="8">44</option>
+                            <option value="9">45</option>
+                        </select>
                         <!-- FILTRE PRICE -->
                         <p class="mt-4 text-center">Prix : </p>
                         <div class="wrapper" id="filterPrice">
@@ -84,23 +96,12 @@ head($page); ?>
                             </fieldset>
                         </div>
                         <!-- / FILTRE PRICE -->
-                        <select class="form-select size" aria-label="Default select example">
-                            <option selected>Taille</option>
-                            <option value="1">37</option>
-                            <option value="2">38</option>
-                            <option value="3">39</option>
-                            <option value="4">40</option>
-                            <option value="5">41</option>
-                            <option value="6">42</option>
-                            <option value="7">43</option>
-                            <option value="8">44</option>
-                            <option value="9">45</option>
-                        </select>
-                    </div>
 
-                    <!-- FILTRE MARQUE -->
-                    <div class="dropdown" data-control="checkbox-dropdown">
-                        <label class="dropdown-label">Choix des marques</label>
+                        
+                        
+                        <!-- FILTRE MARQUE -->
+                        <div class="dropdown" data-control="checkbox-dropdown">
+                            <label class="dropdown-label">Choix des marques</label>
                         
                         <div class="dropdown-list">
                             <a href="#" data-toggle="check-all" class="dropdown-option">
@@ -110,25 +111,26 @@ head($page); ?>
                             <label class="dropdown-option">
                             <input type="checkbox" name="dropdown-group" value="adidas" />
                             Adidas
-                            </label>
-                            
-                            <label class="dropdown-option">
+                        </label>
+                        
+                        <label class="dropdown-option">
                             <input type="checkbox" name="dropdown-group" value="nike" />
                             Nike
-                            </label>
-                            
-                            <label class="dropdown-option">
+                        </label>
+                        
+                        <label class="dropdown-option">
                             <input type="checkbox" name="dropdown-group" value="jordan" />
                             Jordan
-                            </label>
-                            
-                            <label class="dropdown-option">
+                        </label>
+                        
+                        <label class="dropdown-option">
                             <input type="checkbox" name="dropdown-group" value="yeezy" />
                             Yeezy
-                            </label>
-                                
-                        </div>
+                        </label>
+                        
                     </div>
+                </div>
+            </div>
                     <!-- / FILTRE MARQUE -->
 
                     <!-- <div class="mt-2 w-100">
