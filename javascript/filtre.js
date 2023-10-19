@@ -1,9 +1,26 @@
+var nameSneakers = document.querySelectorAll(".nameSneakers");
+var cardSneakers = document.querySelectorAll(".card.card__one");
+var noCard = document.querySelector("#noProduct");
+
 $("#searchInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
+    var count = 0;
     $("#tableTEST .card").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
+    $("#tableTEST .card").each(function(key) {
+      if ( this.style.display == "" ) {
+        count++;
+      }
+      if ( count == 0 ){
+        noCard.style.display = "block";
+      }else{
+        noCard.style.display = "none";
+      }
+    })
   });
+
+
 
 // FILTRE PRICE 
 

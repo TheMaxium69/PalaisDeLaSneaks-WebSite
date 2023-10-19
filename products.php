@@ -172,7 +172,7 @@ head($page); ?>
                     <?php
                              }
                         } ?>
-                        <p id="noProduct">Y a R</p>
+                        <p id="noProduct" style="display: none;">Y a R</p>
                     </div>
                 </div>
                 </section>
