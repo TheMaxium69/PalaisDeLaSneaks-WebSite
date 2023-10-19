@@ -78,7 +78,27 @@ head($page); ?>
         </div>
 
         <!-- PROCEDURE -->
-
+        <h3 class="text-center">Comment procéder ? Rien de plus simple</h3>
+        <div class="step">
+            <div class="one">
+                <i class="fa-solid fa-1"></i>
+                <h4 class="text-center">Choisir ta formule</h4>
+            </div>
+            <div class="array">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="two">
+                <i class="fa-solid fa-2"></i>
+                <h4 class="text-center">Dépose-nous ta paire</h4>
+            </div>
+            <div class="array">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="tree">
+                <i class="fa-solid fa-3"></i>
+                <h4 class="text-center">Récupère la sous 48h à 72H</h4>
+            </div>
+        </div>
         <!-- / PROCEDURE -->
 
         <!-- Gallery -->

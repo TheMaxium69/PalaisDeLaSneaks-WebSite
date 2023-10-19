@@ -131,6 +131,7 @@ font-size: 25px;
   display: flex;
   justify-content: space-around;
   margin : 5%;
+  margin-bottom: 10%;
 }
 #nettoyage .banniere .sneakers {
   width: 50%;
@@ -142,9 +143,38 @@ font-size: 25px;
   border: 5px solid black;
 }
 /* /BANNIERE */
+
+/* STEP */
+#nettoyage .step {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-inline: 14%;
+  color: #dc3545;
+}
+
+#nettoyage .step >* {
+  width: 20%;
+}
+/* icone */
+#nettoyage .step i {
+  font-size: 70px;
+}
+
+#nettoyage .step h4 {
+  margin-top: 6%;
+  color: black !important;
+}
+/* / STEP */
+
+
 #nettoyage img {
   max-width: 620px;
     margin-top: 5px;
+}
+
+#nettoyage .gallery {
+margin-top: 10%;
 }
 
 .cartes-container {
