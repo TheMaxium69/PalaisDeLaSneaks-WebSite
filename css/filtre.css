@@ -71,10 +71,7 @@
 
   .wrapperPrice {
     width: 400px;
-    background: #fff;
-    border-radius: 10px;
     padding: 20px 25px 40px;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
 }
 
 .price-inputPrice {
