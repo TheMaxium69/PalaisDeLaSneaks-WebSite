@@ -153,15 +153,7 @@
   z-index: 2;
 }
 
-#filterPrice .price-title {
-  position: relative;
-  color: #fff;
-  font-size: 14px;
-  line-height: 1.2em;
-  font-weight: 400;
-  background: #d58e32;
-  padding:10px;
-}
+
 
 #filterPrice .price-container {
   display: flex;
@@ -235,22 +227,31 @@ pointer-events: none;
     z-index: 100;
 }
 
+/* FIREFOX */
 #filterPrice .price-field input[type=range]::-moz-range-thumb { 
-  /* Firefox */
   position: relative;
   appearance: none;
   margin: 0;
   border: 0;
   outline: 0;
   border-radius: 50%;
-  height: 10px;
-  width: 10px;
-  margin-top: -5px;
-  background-color: #fff;
+  height: 15px;
+  width: 15px;
+  background-color: red;
   cursor: pointer;
   cursor: pointer;
   pointer-events: all;
   z-index: 100;
+}
+/* / FIREFOX */
+
+#filterPrice .price-field input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%; /* Ajustement de la largeur de la barre */
+  height: 8px;
+  border-radius: 5px;
+  background: black;
 }
 
 #filterPrice .price-field input[type=range]::-ms-thumb  { 
