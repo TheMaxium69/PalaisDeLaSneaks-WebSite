@@ -216,6 +216,3 @@ function activeFilter() {
         divFilter.style.display = "none";
         divFilter.setAttribute("data-display","0")
     }
-
-
-}

@@ -96,6 +96,15 @@ head($page); ?>
                                 </fieldset>
                             </div>
                         </div>
+                        <div class="container">
+        <div class="row">
+            <div class="col-md-3" style="margin-top: 50px;">
+                <div class="slider-wrapper">
+                    <input class="input-range"  data-slider-id='ex12cSlider' type="text" data-slider-step="1" data-slider-value="0, 100" data-slider-min="0" data-slider-max="100" data-slider-range="true" data-slider-tooltip_split="true" />
+                </div>
+            </div>
+        </div>
+    </div>
                         <!-- / FILTRE PRICE -->
 
                         

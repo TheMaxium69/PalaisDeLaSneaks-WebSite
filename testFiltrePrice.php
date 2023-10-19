@@ -1,156 +1,244 @@
-<html>
+<!DOCTYPE html>
+<!-- Coding By Danish Laeeq - patreon.com/danishlaeeq -->
+<html lang="en" dir="ltr">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <title>Price Range Slider | Danish Laeeq</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>range</title>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-	<link rel="stylesheet" href="range.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="https://use.fontawesome.com/fd9dba5260.js"></script>
-	<script src="range.js"></script>
-
-    <style> 
-    /**********************************************************GENERAL***************************************************************************/
-body { 
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: bold;
+    <style>
+        /* Import Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #17a2b8;
+}
+::selection {
+  color: #fff;
+  background: #17a2b8;
+}
+.wrapper {
+  width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 25px 40px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+header h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+header p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+.price-input {
+  width: 100%;
+  display: flex;
+  margin: 30px 0 35px;
+}
+.price-input .field {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+}
+.field input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 19px;
+  margin-left: 12px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #999;
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.price-input .separator {
+  width: 130px;
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  justify-content: center;
+}
+.slider {
+  height: 5px;
+  position: relative;
+  background: #ddd;
+  border-radius: 5px;
+}
+.slider .progress {
+  height: 100%;
+  left: 25%;
+  right: 25%;
+  position: absolute;
+  border-radius: 5px;
+  background: #17a2b8;
+}
+.range-input {
+  position: relative;
+}
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: #17a2b8;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+input[type="range"]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: #17a2b8;
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
-.slider-selection {
-	background: #f77500 !important;
+/* Support */
+.support-box {
+  top: 2rem;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  display: block;
 }
-.slider-success .slider-selection {
-	background-color: #5cb85c !important;
+.b-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
-.slider-primary .slider-selection {
-	background-color: #428bca !important;
+.b-btn.paypal i {
+  color: blue;
 }
-.slider-info .slider-selection {
-	background-color: #5bc0de !important;
+.b-btn:hover {
+  text-decoration: none;
+  font-weight: bold;
 }
-.slider-warning .slider-selection {
-	background-color: #f0ad4e !important;
-}
-.slider-danger .slider-selection {
-	background-color: #d9534f !important;
-}
-.slider.slider-horizontal {
-    width: 100% !important;
-    height: 20px;
-}
-.slider-handle {
-	background-color: #fff !important;
-	background-image: none !important;
-	-webkit-box-shadow: 1px 1px 24px -2px rgba(0,0,0,0.75) !important;
-	-moz-box-shadow: 1px 1px 24px -2px rgba(0,0,0,0.75) !important;
-	box-shadow: 1px 1px 24px -2px rgba(0,0,0,0.75) !important;
-}
-
-.slider-strips .slider-selection {
-	background-image: repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255,252,252,0.08) 5px, rgba(252,252,252,0.08) 10px) !important;
-	background-image: -ms-repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255,252,252,0.08) 5px, rgba(252,252,252,0.08) 10px) !important;
-	background-image: -o-repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255,252,252,0.08) 5px, rgba(252,252,252,0.08) 10px) !important;
-	background-image: -webkit-repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255,252,252,0.08) 5px, rgba(252,252,252,0.08) 10px) !important; 
-}
-.tooltip-inner {
-    max-width: 200px;
-    padding: 3px 8px;
-    color: #bdbdbd !important;
-    text-align: center;
-    background-color: transparent !important;
-    border-radius: 4px;
-}
-.tooltip.top .tooltip-arrow {
-    display: none !important;
-}
-.slider .tooltip.top {
-    margin-top: -25px !important;
-}
-.well {
-	background: transparent !important;
-	border: none !important;
-	box-shadow: none !important;
-	width: 100% !important;
-	padding: 0;
-}
-.slider-ghost .slider-track {
-	height: 5px !important;
-}
-.slider-ghost .slider-handle {
-	top: -2px !important;
-	border: 5px solid #f77500;
-}
-.slider-success.slider-ghost .slider-handle {
-	border-color: #5cb85c;
-}
-.slider-primary.slider-ghost .slider-handle {
-	border-color: #428bca;
-}
-.slider-info.slider-ghost .slider-handle {
-	border-color: #5bc0de;
-}
-.slider-warning.slider-ghost .slider-handle {
-	border-color: #f0ad4e;
-}
-.slider-danger.slider-ghost .slider-handle {
-	border-color: #d9534f;
+.b-btn i {
+  font-size: 20px;
+  color: yellow;
+  margin-top: 2rem;
 }
 
     </style>
 </head>
-<body>
-<div class="container">
-	<div class="row">
-		<div class="col-md-6" style="margin-top: 50px;">
-			<div class="slider-wrapper">
-				<input class="input-range"  data-slider-id='ex12cSlider' type="text" data-slider-step="1" data-slider-value="50, 60" data-slider-min="0" data-slider-max="100" data-slider-range="true" data-slider-tooltip_split="true" />
-			</div>
-		</div>
-	</div>
-</div>
 
-<script>
-    (function( $ ){
-$( document ).ready( function() {
-	$( '.input-range').each(function(){
-		var value = $(this).attr('data-slider-value');
-		var separator = value.indexOf(',');
-		if( separator !== -1 ){
-			value = value.split(',');
-			value.forEach(function(item, i, arr) {
-				arr[ i ] = parseFloat( item );
-			});
-		} else {
-			value = parseFloat( value );
-		}
-		$( this ).slider({
-			formatter: function(value) {
-				console.log(value);
-				return '$' + value;
-			},
-			min: parseFloat( $( this ).attr('data-slider-min') ),
-			max: parseFloat( $( this ).attr('data-slider-max') ), 
-			range: $( this ).attr('data-slider-range'),
-			value: value,
-			tooltip_split: $( this ).attr('data-slider-tooltip_split'),
-			tooltip: $( this ).attr('data-slider-tooltip')
-		});
-	});
-	
- } );
-} )( jQuery );
+<body>
+  <div class="d-flex">
+    <div class="wrapper">
+      <header>
+        <h2>Price Range</h2>
+        <p>Use slider or enter min and max price</p>
+      </header>
+      <div class="price-input">
+        <div class="field">
+          <span>Min</span>
+          <input type="number" class="input-min" value="2500">
+        </div>
+        <div class="separator">-</div>
+        <div class="field">
+          <span>Max</span>
+          <input type="number" class="input-max" value="7500">
+        </div>
+      </div>
+      <div class="slider">
+        <div class="progress"></div>
+      </div>
+      <div class="range-input">
+        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+      </div>
+    </div>
+
+    <!--   Support Section -->
+    <div class="support-box">
+      <h1>Best for Ecommerce Projects</h1>
+      </br>
+      <h2>Support Me :) </h2>
+      <a class="b-btn" target="blank" href="https://www.buymeacoffee.com/danishlaeeq">
+        &nbsp;<i class="fa fa-coffee"></i>&nbsp;&nbsp;Buy Me a Coffee
+      </a>
+      &nbsp;&nbsp;-&nbsp;&nbsp;
+      <a class="b-btn paypal" target="_blank" href="https://www.paypal.com/paypalme/danishlaiq">
+        <i class="fab fa-paypal"></i>
+        Donate</a>
+      </br></br>
+    </div>
+  </div>
+
+  <script>
+    const rangeInput = document.querySelectorAll(".range-input input"),
+  priceInput = document.querySelectorAll(".price-input input"),
+  range = document.querySelector(".slider .progress");
+let priceGap = 1000;
+
+priceInput.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    let minPrice = parseInt(priceInput[0].value),
+      maxPrice = parseInt(priceInput[1].value);
+
+    if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
+      if (e.target.className === "input-min") {
+        rangeInput[0].value = minPrice;
+        range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+      } else {
+        rangeInput[1].value = maxPrice;
+        range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+      }
+    }
+  });
+});
+
+rangeInput.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    let minVal = parseInt(rangeInput[0].value),
+      maxVal = parseInt(rangeInput[1].value);
+
+    if (maxVal - minVal < priceGap) {
+      if (e.target.className === "range-min") {
+        rangeInput[0].value = maxVal - priceGap;
+      } else {
+        rangeInput[1].value = minVal + priceGap;
+      }
+    } else {
+      priceInput[0].value = minVal;
+      priceInput[1].value = maxVal;
+      range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+      range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+    }
+  });
+});
+
     </script>
 </body>
+
 </html>
