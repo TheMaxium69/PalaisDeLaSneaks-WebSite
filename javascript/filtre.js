@@ -63,8 +63,6 @@ function selectGroup(groupValue){
     }
 }
 
-
-
 // FILTRE MARQUE
 (function($) {
   var CheckboxDropdown = function(el) {
@@ -159,6 +157,7 @@ function selectGroup(groupValue){
     new CheckboxDropdown(checkboxesDropdowns[i]);
   }
 })(jQuery);
+
 
 
 function activeFilter() {
