@@ -3,6 +3,17 @@
 }
 
 /* BOUTON FORMULE */
+#nettoyage .btn-2 {
+  width: 200px;
+}
+
+@media (max-width: 733px) {
+  #nettoyage .btn-2 {
+    width: 150px;
+    margin: 5px;
+  }
+}
+
 .topcoat-button-bar {
   display: table;
   table-layout: fixed;
@@ -141,6 +152,36 @@ font-size: 25px;
   display: flex;
   align-items: center;
   border: 5px solid black;
+  justify-content: center;
+}
+
+@media (max-width: 1277px) {
+  #nettoyage .banniere {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #nettoyage .banniere .sneakers img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 933px) {
+  #nettoyage .banniere .sneakers img {
+    width: 350px;
+  }
+}
+
+@media (max-width: 763px) {
+  #nettoyage .banniere .sneakers img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 625px) {
+  #nettoyage .banniere .sneakers img {
+    width: 250px;
+  }
 }
 /* /BANNIERE */
 
@@ -194,9 +235,6 @@ margin-top: 10%;
     
 }
 
-#nettoyage .btn-2 {
-  width: 200px;
-}
 
 .carte:hover {
     background-color: #f0f0f0;
