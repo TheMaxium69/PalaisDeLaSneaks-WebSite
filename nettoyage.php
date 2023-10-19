@@ -8,66 +8,78 @@ head($page); ?>
     <main>
         <h1 class="text-center mt-5 bold">Service de Nettoyage</h1>
 
-        <img id="imgPremium" class="hiddenNett" src="assets/cleanPremium.jpg" alt="nettoyage">
-        <img id="imgMedium" class="hiddenNett" src="assets/cleanMedium.jpg" alt="nettoyage">
-        <img id="imgStandard" class="" src="assets/cleanStandard.jpg" alt="nettoyage">
-
-        <br><br>
-
-        
-        <div id="sectionNettoyage" class="card mb-3">
-            <div class="topcoat-button-bar d-flex justify-content-center">
-                <div class="topcoat-button-bar__item">
-                    <button onclick="nettoyageChange('Standard')" class="custom-btn btn-2" id="Standard">Standard</button>
-                </div>
-                <div class="topcoat-button-bar__item">
-                    <button onclick="nettoyageChange('Medium')" class="custom-btn btn-2" id="Medium">Medium</button>
-                </div>
-                <div class="topcoat-button-bar__item">
-                    <button onclick="nettoyageChange('Premium')" class="custom-btn btn-2" id="Premium">Premium</button>
-                </div>
+        <!-- button choix formule -->
+        <div class="topcoat-button-bar d-flex justify-content-center">
+            <div class="topcoat-button-bar__item">
+                <button onclick="nettoyageChange('Standard')" class="custom-btn btn-2" id="Standard">Standard</button>
             </div>
-            <div id="textPremium" class="card-body hiddenNett">
-                <h3>Clean Premium</h3>
-                <p>Pour le choix de cette formule, nous vous proposons :</p>
-                <div class="w-25 mx-auto">
-                    <ul>
-                        <li>Lacets</li>
-                        <li>Insole (semelle intérieure)</li>
-                        <li>Midsole</li>
-                        <li>Semelle</li>
-                        <li>Surface</li>
-                    </ul>
-                </div>
-                <button class="custom-btn btn-2">Choisir cette formule</button>
+            <div class="topcoat-button-bar__item">
+                <button onclick="nettoyageChange('Medium')" class="custom-btn btn-2" id="Medium">Medium</button>
             </div>
-            <div id="textMedium" class="card-body hiddenNett">
-                <h3>Clean Medium</h3>
-                <p>Pour le choix de cette formule, nous vous proposons :</p>
-                <div class="w-25 mx-auto">
-                    <ul>
-                        <li>Lacets</li>
-                        <li>Midsole</li>
-                        <li>Surface</li>
-                    </ul>
-                </div>
-                <!-- <a name="" id="" class="btn btn-primary underline" href="https://calendly.com/d/4r6-2z4-dn6/reservation-nettoyage" role="button">je choisis cette formule !</a> -->
-                <button class="custom-btn btn-2">Choisir cette formule</button>
-            </div>
-            <div id="textStandard" class="card-body">
-                <h3>Clean Standard</h3>
-                <p>Pour le choix de cette formule, nous vous proposons :</p>
-                <div class="w-25 mx-auto">
-                    <ul>
-                        <li>Lacets</li>
-                        <li>Surface</li>
-                    </ul>
-                </div>
-                <!-- <a name="" id="" class="btn btn-primary underline" href="https://calendly.com/d/4r6-2z4-dn6/reservation-nettoyage" role="button">je choisis cette formule !</a> -->
-                <button class="custom-btn btn-2">Choisir cette formule</button>
-
+            <div class="topcoat-button-bar__item">
+                <button onclick="nettoyageChange('Premium')" class="custom-btn btn-2" id="Premium">Premium</button>
             </div>
         </div>
+        <!-- / button choix formule -->
+
+        <!-- banniere nettoyage -->
+        <div class="banniere">
+
+            <!-- image sneakers -->
+            <div class="sneakers">
+                <img id="imgPremium" class="hiddenNett" src="assets/cleanPremium.jpg" alt="nettoyage">
+                <img id="imgMedium" class="hiddenNett" src="assets/cleanMedium.jpg" alt="nettoyage">
+                <img id="imgStandard" class="" src="assets/cleanStandard.jpg" alt="nettoyage">
+            </div>
+
+            <!-- Text formule -->
+            <div class="details">
+                <div id="textPremium" class="card-body hiddenNett">
+                    <h3>Clean Premium</h3>
+                    <p>Pour le choix de cette formule, nous vous proposons :</p>
+                    <div class="w-25 mx-auto">
+                        <ul>
+                            <li>Lacets</li>
+                            <li>Insole (semelle intérieure)</li>
+                            <li>Midsole</li>
+                            <li>Semelle</li>
+                            <li>Surface</li>
+                        </ul>
+                    </div>
+                    <button class="custom-btn btn-2">Choisir cette formule</button>
+                </div>
+                <div id="textMedium" class="card-body hiddenNett">
+                    <h3>Clean Medium</h3>
+                    <p>Pour le choix de cette formule, nous vous proposons :</p>
+                    <div class="w-25 mx-auto">
+                        <ul>
+                            <li>Lacets</li>
+                            <li>Midsole</li>
+                            <li>Surface</li>
+                        </ul>
+                    </div>
+                    <!-- <a name="" id="" class="btn btn-primary underline" href="https://calendly.com/d/4r6-2z4-dn6/reservation-nettoyage" role="button">je choisis cette formule !</a> -->
+                    <button class="custom-btn btn-2">Choisir cette formule</button>
+                </div>
+                <div id="textStandard" class="card-body">
+                    <h3>Clean Standard</h3>
+                    <p>Pour le choix de cette formule, nous vous proposons :</p>
+                    <div class="w-25 mx-auto">
+                        <ul>
+                            <li>Lacets</li>
+                            <li>Surface</li>
+                        </ul>
+                    </div>
+                    <!-- <a name="" id="" class="btn btn-primary underline" href="https://calendly.com/d/4r6-2z4-dn6/reservation-nettoyage" role="button">je choisis cette formule !</a> -->
+                    <button class="custom-btn btn-2">Choisir cette formule</button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- PROCEDURE -->
+
+        <!-- / PROCEDURE -->
 
         <!-- Gallery -->
         <div class="gallery">
@@ -96,7 +108,7 @@ head($page); ?>
                 <div class="polaroid one">
                     <div class="polaroid__content">
                         <div class="polaroid__content-image">
-                            <img src='https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+                            <img src='assets/avant2.png' alt=''>
                         </div>
                         <div class="polaroid__content-caption">
                             <p>Converse :after</p>
@@ -106,7 +118,7 @@ head($page); ?>
                 <div class="polaroid one">
                     <div class="polaroid__content">
                         <div class="polaroid__content-image">
-                            <img src='https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+                            <img src='assets/apres2.png' alt=''>
                         </div>
                         <div class="polaroid__content-caption">
                             <p>Converse :before</p>
@@ -114,7 +126,7 @@ head($page); ?>
                     </div>
                 </div>
             </div>
-        
+
         </div>
 
 
@@ -168,10 +180,10 @@ head($page); ?>
             }
 
             var polaroids = document.querySelectorAll('.polaroid');
-polaroids.forEach(item => {
-const randomRotation = Math.floor(Math.random() * (6 - -6 + 1) + -6);
-item.style.transform = `rotate(${randomRotation}deg)`
-})
+            polaroids.forEach(item => {
+                const randomRotation = Math.floor(Math.random() * (6 - -6 + 1) + -6);
+                item.style.transform = `rotate(${randomRotation}deg)`
+            })
         </script>
 
 
