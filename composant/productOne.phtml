@@ -48,7 +48,7 @@ $productAll = product();
                         <!-- <p class="product__former-price baliseP">$250.00</p> -->
                     </div>
                     <div class="cart">
-                        <?php if($counts){ ?>
+                        <?php if ($counts) { ?>
 
                             <div class="cart__items">
                                 <button onclick="removeQuantite()" type="button" id="less" class="cart__remove-item buttonP">
@@ -62,8 +62,7 @@ $productAll = product();
 
                         <?php
 
-                        btnProductOne($sizes, $counts, $product);
-
+                            btnProductOne($sizes, $counts, $product);
                         } else { ?>
                             <h2 class="indisponible">INDISPONIBLE</h2>
                         <?php } ?>

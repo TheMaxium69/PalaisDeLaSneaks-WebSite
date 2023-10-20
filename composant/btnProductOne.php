@@ -1,13 +1,13 @@
 <?php
 
 
-if(isset($_POST["submit"])) {
+if (isset($_POST["submit"])) {
 
     $countPanier = count($_SESSION['cart']['products']);
 
     $sizeSelected = $_POST['sizeSelected'];
 
-    if($sizeSelected !== "NULL"){
+    if ($sizeSelected !== "NULL") {
 
         $newProductBuy = [
             'pid' => $product['pid'],
@@ -21,15 +21,15 @@ if(isset($_POST["submit"])) {
             'server' => []
         ];
 
-        if($counts[$sizeSelected]){ if ($counts[$sizeSelected] !== "0"){
+        if ($counts[$sizeSelected]) {
+            if ($counts[$sizeSelected] !== "0") {
                 $_SESSION['cart']['products'][$countPanier] = $newProductBuy;
                 unset($_POST['submit']);
 
-                    echo '<script>window.location.href = "panel/cart.php?a=view";</script>';
-                    exit();
-
-
-        } }
+                echo '<script>window.location.href = "panel/cart.php?a=view";</script>';
+                exit();
+            }
+        }
 
         //err
 
@@ -42,7 +42,7 @@ if(isset($_POST["submit"])) {
     <select name="sizeSelected" class="form-select w-50 mx-auto" aria-label="Default select example">
 
         <option value="NULL" selected>Taille</option>
-        <?php  foreach ($sizes as $size) { ?>
+        <?php foreach ($sizes as $size) { ?>
             <option value="<?= $size ?>"><?= $size ?> Disponible : <?= $counts[$size] ?>/fois</option>
         <?php } ?>
     </select>

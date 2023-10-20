@@ -11,20 +11,29 @@ head($page); ?>
     require_once 'api/whmcs/connect.php';
     require_once 'api/more/get.php';
 
-
     $productAll = product();
 
     $productGroupAll = productGroup();
+    $sizeList = [];
 
     $productMax = 40;
     $productMin = 40;
 
     foreach ($productAll['product'] as $product) {
+        $sizeLisible = substr(getSize($product['pid'])['size'], 2, -2);
+        $sizeListProd = explode('", "', $sizeLisible);
+        foreach ($sizeListProd as $size) {
+            if (!in_array($size, $sizeList)) {
+                array_push($sizeList, $size);
+            }
+        }
 
         if ($productMax < $product['pricing']['EUR']['monthly']) {
             $productMax = $product['pricing']['EUR']['monthly'];
         }
     }
+    sort($sizeList);
+
 
     $productMax = intval($productMax + 10);
 
@@ -58,15 +67,11 @@ head($page); ?>
                     <div class="allFilter">
                         <select class="form-select size" aria-label="Default select example">
                             <option selected>Taille</option>
-                            <option value="1">37</option>
-                            <option value="2">38</option>
-                            <option value="3">39</option>
-                            <option value="4">40</option>
-                            <option value="5">41</option>
-                            <option value="6">42</option>
-                            <option value="7">43</option>
-                            <option value="8">44</option>
-                            <option value="9">45</option>
+                            <?php
+                            foreach ($sizeList as $size) {
+                                echo "<option value='$size'>$size</option>";
+                            }
+                            ?>
                         </select>
                         <!-- FILTRE PRICE -->
                         <div class="filtrePrix">
@@ -145,6 +150,13 @@ head($page); ?>
                                         <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2358/2817/products/vaporwaffle-sacai-black-white-131891.png?v=1638814653" alt="">
                                     </div>
                                     <div class="product-info">
+                                        <?php
+                                        $sizeLisible = substr(getSize($product['pid'])['size'], 2, -2);
+                                        $sizeListProd = explode('", "', $sizeLisible);
+                                        foreach ($sizeListProd as $size) {
+                                            echo "<p class='sizeProdAll' style='display: none;'>$size</p>";
+                                        }
+                                        ?>
                                         <h2 class="nameSneakers"><?= $product['name'] ?></h2>
                                         <h6 class="nameMarque marqueSneakAll"><?= $productGroupName ?></h6>
                                         <div class="price"><span class="priceSneakAll"><?= $product['pricing']['EUR']['monthly'] ?></span> €</div>
