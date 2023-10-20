@@ -27,6 +27,12 @@
     place-items: center;
     overflow: hidden;
     border-radius: 20px;
+    transition: transform 0.2s ease-out;
+    will-change: transform;
+}
+
+.socialMedia:hover {
+    transform: scale(1.05);
 }
 
 .socialMedia i {
