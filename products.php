@@ -26,6 +26,8 @@ head($page); ?>
         }
     }
 
+    $productMax = intval($productMax + 10);
+
     ?>
 
 
@@ -74,15 +76,15 @@ head($page); ?>
                                         <input type="number" class="input-min" value="0">
                                     </div>
                                     <div class="fieldPrice">
-                                        <input type="number" class="input-max" value="100">
+                                        <input type="number" class="input-max" value="<?= $productMax ?>">
                                     </div>
                                 </div>
                                 <div class="sliderPrice">
                                     <div class="progress"></div>
                                 </div>
                                 <div class="range-inputPrice">
-                                    <input type="range" class="range-min" min="0" max="100" value="0" step="10">
-                                    <input type="range" class="range-max" min="0" max="100" value="100" step="10">
+                                    <input type="range" class="range-min" min="0" max="<?= $productMax ?>" value="0" step="10">
+                                    <input type="range" class="range-max" min="0" max="<?= $productMax ?>" value="<?= $productMax ?>" step="10">
                                 </div>
                             </div>
                         </div>
@@ -158,7 +160,7 @@ head($page); ?>
                                     <div class="product-info">
                                         <h2 class="nameSneakers"><?= $product['name'] ?></h2>
                                         <h6 class="nameMarque"><?= $productGroupName ?></h6>
-                                        <div class="price"><?= $product['pricing']['EUR']['monthly'] ?> €</div>
+                                        <div class="price"><span class="priceSneakAll"><?= $product['pricing']['EUR']['monthly'] ?></span> €</div>
                                     </div>
                                 </div>
                         <?php
