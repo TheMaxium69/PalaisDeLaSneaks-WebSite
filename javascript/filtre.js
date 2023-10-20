@@ -1,6 +1,7 @@
 var nameSneakers = document.querySelectorAll(".nameSneakers");
 var cardSneakers = document.querySelectorAll(".card.card__one");
 var priceSneakAll = document.querySelectorAll(".priceSneakAll");
+var marqueSneakAll = document.querySelectorAll(".marqueSneakAll");
 var noCard = document.querySelector("#noProduct");
 
 $("#searchInput").on("keyup", function() {
@@ -146,8 +147,12 @@ function selectGroup(groupValue){
   };
   
   CheckboxDropdown.prototype.updateStatus = function() {
-    console.log('OK');
     var checked = this.$el.find(':checked');
+    var checkedList = [];
+
+    for (var i = 0; i < checked.length; i++) {
+      checkedList.push(checked[i].defaultValue);
+    }
     
     this.areAllChecked = false;
     this.$checkAll.html('Tout cocher');
@@ -165,6 +170,22 @@ function selectGroup(groupValue){
     }
     else {
       this.$label.html(checked.length + ' Selected');
+    }
+
+    if(checked.length <= 0){
+      marqueSneakAll.forEach((marque, index) => {
+        cardSneakers[index].classList.remove('noneMarque');
+      })
+    }else{
+      marqueSneakAll.forEach((marque, index) => {
+        cardSneakers[index].classList.add('noneMarque');
+        checkedList.forEach((checked) => {
+          if(checked == marque.innerHTML) {
+            cardSneakers[index].classList.remove('noneMarque');
+          }
+        })
+
+      })
     }
   };
   

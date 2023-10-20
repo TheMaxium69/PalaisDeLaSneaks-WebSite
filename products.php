@@ -101,25 +101,12 @@ head($page); ?>
                                     Check All
                                 </a>
 
-                                <label class="dropdown-option">
-                                    <input type="checkbox" name="dropdown-group" value="adidas" />
-                                    Adidas
-                                </label>
-
-                                <label class="dropdown-option">
-                                    <input type="checkbox" name="dropdown-group" value="nike" />
-                                    Nike
-                                </label>
-
-                                <label class="dropdown-option">
-                                    <input type="checkbox" name="dropdown-group" value="jordan" />
-                                    Jordan
-                                </label>
-
-                                <label class="dropdown-option">
-                                    <input type="checkbox" name="dropdown-group" value="yeezy" />
-                                    Yeezy
-                                </label>
+                                <?php foreach ($productGroupAll as $productGroup) { ?>
+                                    <label class="dropdown-option">
+                                        <input type="checkbox" name="dropdown-group" value="<?= $productGroup['name'] ?>" />
+                                        <?= $productGroup['name'] ?>
+                                    </label>
+                                <?php } ?>
 
                             </div>
                         </div>
@@ -159,7 +146,7 @@ head($page); ?>
                                     </div>
                                     <div class="product-info">
                                         <h2 class="nameSneakers"><?= $product['name'] ?></h2>
-                                        <h6 class="nameMarque"><?= $productGroupName ?></h6>
+                                        <h6 class="nameMarque marqueSneakAll"><?= $productGroupName ?></h6>
                                         <div class="price"><span class="priceSneakAll"><?= $product['pricing']['EUR']['monthly'] ?></span> €</div>
                                     </div>
                                 </div>
