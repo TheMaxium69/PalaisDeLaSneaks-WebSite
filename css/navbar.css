@@ -269,13 +269,15 @@ outline: none;
 #nav-mobile h1 {
     position: fixed;
     top: 0px;
-    left: 40px;
+    left: 5px;
     z-index: 6;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 900;
     font-family: sans-serif;
     text-transform: uppercase;
 }
+
+
 #nav-mobile h1 > span {
     text-transform: none;
     opacity: 0.5;
@@ -375,13 +377,8 @@ outline: none;
     box-shadow: unset;
 }
 
-
-
-
-
-
 #nav-mobile .img-mobile{
-    width: 112px;
+    width: 60px;
 }
 
 #nav-mobile a:first-child{
@@ -390,6 +387,7 @@ outline: none;
 
 .titleMobile{
     text-decoration: none !important;
+    font-size: small;
 }
 
 .burger-btn-connect{
