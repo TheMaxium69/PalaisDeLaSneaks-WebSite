@@ -41,7 +41,7 @@ head($page); ?>
 
                     <div class="card card__one" onclick="window.location.href = 'products.php?p=<?= $product['pid'] ?>';">
                         <div class="product-image">
-                            <img class="card-img-top" src="api/more/uploads/--><?php //= $productPicture['picture1'] ?><!--" alt="Card image cap">
+                            <img class="card-img-top" src="api/more/uploads/<?= $productPicture['picture1'] ?>" alt="Card image cap">
                         </div>
                         <div class="product-info">
                             <h2 class="nameSneakers"><?= $product['name'] ?></h2>
