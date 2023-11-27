@@ -14,6 +14,29 @@
   }
 }
 
+@media (max-width: 520px) {
+  #nettoyage .topcoat-button-bar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  #nettoyage .step {
+    flex-direction: column;
+    margin-inline: 0 !important;
+    align-items: center;
+  }
+  #nettoyage .step >* {
+    width: 70% !important;
+    margin-top: 5% !important;
+  }
+
+  #nettoyage .step .array {
+    display: none;
+  }  
+}
+
 .topcoat-button-bar {
   display: table;
   table-layout: fixed;
@@ -148,11 +171,12 @@ font-size: 25px;
   width: 50%;
 }
 #nettoyage .banniere .details{
-  width: 50%;
+  width: 60%;
   display: flex;
   align-items: center;
   border: 5px solid black;
   justify-content: center;
+  padding: 10px;
 }
 
 @media (max-width: 1277px) {
@@ -170,6 +194,9 @@ font-size: 25px;
   #nettoyage .banniere .sneakers img {
     width: 350px;
   }
+  #nettoyage .banniere .details {
+    width: 80%;
+  }
 }
 
 @media (max-width: 763px) {
@@ -181,6 +208,24 @@ font-size: 25px;
 @media (max-width: 625px) {
   #nettoyage .banniere .sneakers img {
     width: 250px;
+  }
+}
+
+@media (max-width: 625px) {
+  #nettoyage .banniere .sneakers img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 530px) {
+  #nettoyage .banniere .sneakers img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 435px) {
+  #nettoyage .banniere .sneakers img {
+    width: 150px;
   }
 }
 /* /BANNIERE */
