@@ -5,6 +5,10 @@
 /************
     FILTER
  ***********/
+
+ #search #btn-filter i {
+  display: none;
+}
   
 /* FILTRE SEARCH */
 #search {

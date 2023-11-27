@@ -1,3 +1,4 @@
+
 #rachat h1 {
     background-color: #dc3545;
     color: white;
@@ -23,7 +24,7 @@
     margin: auto;
     margin-top: 10%;
     margin-bottom: 10%;
-    width: 50%;
+    width: 60%;
     text-align: center;
     border: 5px solid black;
     padding: 5%;
@@ -35,4 +36,24 @@
 
 #rachat .btnVendre {
     width: 300px;
+}
+
+@media (max-width: 730px) {
+    #rachat .btnVendre {
+     width: 250px;
+    }
+}
+
+@media (max-width: 595px) {
+    #rachat .btnVendre {
+     font-size: x-small;
+     width: 170px;
+    }
+}
+
+@media (max-width: 450px) {
+    #rachat .btnVendre {
+     font-size: 8px;
+     width: 131px;
+    }
 }
