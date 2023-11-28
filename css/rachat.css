@@ -38,22 +38,22 @@
     width: 300px;
 }
 
+
+
 @media (max-width: 730px) {
     #rachat .btnVendre {
      width: 250px;
     }
 }
 
-@media (max-width: 595px) {
-    #rachat .btnVendre {
-     font-size: x-small;
-     width: 170px;
+@media (max-width: 950px) {
+    #rachat .text {
+        width: 80%;
     }
 }
 
-@media (max-width: 450px) {
-    #rachat .btnVendre {
-     font-size: 8px;
-     width: 131px;
+@media (max-width: 595px) {
+    #rachat .text {
+        width: 100%;
     }
 }
