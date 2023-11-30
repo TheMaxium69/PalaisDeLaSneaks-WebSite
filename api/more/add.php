@@ -83,7 +83,7 @@ if(isset($_POST["submit"])) {
             }
         }
     } else {
-        echo 'danger"> x( désolé votre fichier n\'a pas été upload.';
+        echo 'danger"> x( désolé votre fichier n\'a pas été upload. 0 Image Envoyé';
     }
 } else {
     echo 'secondary"> Ici vous pouvez mettre les images de vos chaussure';
