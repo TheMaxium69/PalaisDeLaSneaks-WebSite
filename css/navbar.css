@@ -268,8 +268,8 @@ outline: none;
 
 #nav-mobile h1 {
     position: fixed;
-    top: 0px;
-    left: 5px;
+    top: 22px;
+    left: 18px;
     z-index: 6;
     font-size: 15px;
     font-weight: 900;
