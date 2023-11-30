@@ -164,7 +164,7 @@ head($page); ?>
                         <?php
                             }
                         } ?>
-                        <p id="noProduct" style="display: none;">Y a R</p>
+                        <p id="noProduct" style="display: none;">Aucun élément trouvé</p>
                     </div>
                 </div>
                 </section>
