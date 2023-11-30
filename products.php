@@ -174,8 +174,8 @@ head($page); ?>
 
         </main>
 
-        <script src="javascript/filtre.js"></script>
-        <script src="javascript/products.js"></script>
+        <script src="js/filtre.js"></script>
+        <script src="js/products.js"></script>
 
     <?php } ?>
     <footer> <?php footer($page); ?> </footer>
