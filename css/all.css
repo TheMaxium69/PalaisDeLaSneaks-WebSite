@@ -65,6 +65,11 @@ h3 {
 button {
 margin: 20px;
 }
+
+#nav-mobile button{
+    margin: unset!important;
+}
+
 .custom-btn {
 width: 130px;
 height: 40px;
