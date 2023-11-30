@@ -25,35 +25,10 @@
                 <i class="fa-solid fa-basket-shopping"></i>
             </a>
 
-            <?php
-
-
-            require_once './panel/init.php';
-
-
-            if ($_SESSION['login_auth_tk']) {
-                $isLog = true;
-                ?>
-
-                <div class="connexion">
-                    <a href="panel/clientarea.php"><button class="custom-btn btn-7"> <span> Mon Profil</span> </button></a>
-
-                </div>
-            <?php
-            } else {
-                $isLog = false;
-
-                echo '
                 <div class="connexion">
                 <a href="panel/clientarea.php"><button class="custom-btn btn-7"> <span>Espace client</span>   </button></a>
   
-                </div>';
-            }
-            //     <div class="frame">
-            //     <button class="custom-btn btn-7"><a href="panel/clientarea.php">Espace client </a>   </button>
-            // </div>
-
-            ?>
+                </div>
         </ul>
     </div>
 </nav>
@@ -100,9 +75,7 @@
                     $firstName = $_SESSION['cart']['user']['firstname']; ?>
 
                     <div class="frame">
-                        <button class="custom-btn btn-7"><a href="panel/clientarea.php">Profil <?php if ($firstName) {
-                                                                                                echo $firstName;
-                                                                                            } ?></a> </button>
+                        <a href="panel/clientarea.php"><button class="custom-btn btn-7"><span> Profil </span> </button></a>
                     </div>
 
                 <?php
