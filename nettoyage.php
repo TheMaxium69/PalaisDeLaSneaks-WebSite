@@ -46,7 +46,7 @@ head($page); ?>
                             <li>Surface</li>
                         </ul>
                     </div>
-                    <button class="custom-btn btn-2">Choisir cette formule</button>
+                    <button class="custom-btn btn-2" onclick="window.location.href = 'https://www.instagram.com/palais.de.la.sneaks/';">Choisir cette formule</button>
                 </div>
                 <div id="textMedium" class="card-body hiddenNett">
                     <h3>Clean Medium</h3>
@@ -59,7 +59,7 @@ head($page); ?>
                         </ul>
                     </div>
                     <!-- <a name="" id="" class="btn btn-primary underline" href="https://calendly.com/d/4r6-2z4-dn6/reservation-nettoyage" role="button">je choisis cette formule !</a> -->
-                    <button class="custom-btn btn-2">Choisir cette formule</button>
+                    <button class="custom-btn btn-2" onclick="window.location.href = 'https://www.instagram.com/palais.de.la.sneaks/';">Choisir cette formule</button>
                 </div>
                 <div id="textStandard" class="card-body">
                     <h3>Clean Standard</h3>
@@ -71,7 +71,7 @@ head($page); ?>
                         </ul>
                     </div>
                     <!-- <a name="" id="" class="btn btn-primary underline" href="https://calendly.com/d/4r6-2z4-dn6/reservation-nettoyage" role="button">je choisis cette formule !</a> -->
-                    <button class="custom-btn btn-2">Choisir cette formule</button>
+                    <button class="custom-btn btn-2" onclick="window.location.href = 'https://www.instagram.com/palais.de.la.sneaks/';">Choisir cette formule</button>
 
                 </div>
             </div>
