@@ -48,7 +48,7 @@ if (isset($_POST["submit"])) {
     </select>
 
     <button type="submit" value="add" name="submit" id="addToCart" class="cart__button btn btnP btnP--primary">
-        Add to cart
+        Ajoutez ce produit
     </button>
 
 </form>
