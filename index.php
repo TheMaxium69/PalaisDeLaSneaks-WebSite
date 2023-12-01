@@ -31,12 +31,15 @@ head($page); ?>
                 $products = $productAll['product'];
                 for ($i = 0; $i <= 7; $i++) {
 
+
                     $product = null;
                     $product = $products[$i];
 
                     $productPicture = getPicture($product['pid']);
 
                     $productGroupName = getGroupByGid($product['gid']);
+
+                if ($product['pricing']['EUR']['monthly'] > 40) {
                 ?>
 
                     <div class="card card__one" onclick="window.location.href = 'products.php?p=<?= $product['pid'] ?>';">
@@ -50,7 +53,7 @@ head($page); ?>
                         </div>
                     </div>
 
-                <?php } ?>
+                <?php } } ?>
 
             </div>
 
