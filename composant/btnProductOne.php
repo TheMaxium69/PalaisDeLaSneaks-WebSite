@@ -16,7 +16,10 @@ if (isset($_POST["submit"])) {
             'configoptions' => [],
             'customfields' => [
                 1 => $sizeSelected,
-                2 => $sizeSelected
+                2 => $sizeSelected,
+                3 => $sizeSelected,
+                4 => $sizeSelected,
+                5 => $sizeSelected,
             ],
             'addons' => [],
             'server' => []
