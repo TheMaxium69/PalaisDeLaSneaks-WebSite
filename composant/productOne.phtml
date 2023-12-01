@@ -12,6 +12,7 @@ $productAll = product();
         if ($product['pid'] == $id) {
 
             $getSize = getSize($id);
+            $productGroupName = getGroupByGid($product['gid']);
             $sizes = json_decode($getSize['size'], true);
             $counts = json_decode($getSize['count'], true);
 
@@ -33,7 +34,7 @@ $productAll = product();
                     </div>
                 </div>
                 <section aria-labelledby="product" class="product">
-                    <h3 class="product__brand">NIKE</h3>
+                    <h3 class="product__brand"><?= $productGroupName ?></h3>
                     <h2 id="product" class="product__title">
                         <?= $product['name'] ?>
                     </h2>
@@ -43,7 +44,7 @@ $productAll = product();
                     <div class="product__price">
                         <div class="product__current">
                             <p class="product__current-price baliseP"><?= $product['pricing']['EUR']['monthly'] ?> €</p>
-                            <!-- <span class="product__discount">50%</span> -->
+<!--                             <span class="product__discount">50%</span>-->
                         </div>
                         <!-- <p class="product__former-price baliseP">$250.00</p> -->
                     </div>
