@@ -15,7 +15,8 @@ if (isset($_POST["submit"])) {
             'billingcycle' => null,
             'configoptions' => [],
             'customfields' => [
-                1 => $sizeSelected
+                1 => $sizeSelected,
+                2 => $sizeSelected
             ],
             'addons' => [],
             'server' => []
@@ -33,6 +34,8 @@ if (isset($_POST["submit"])) {
 
         //err
 
+    } else {
+        echo '<script>alert("Choisir une taille")</script>';
     }
 }
 ?>
